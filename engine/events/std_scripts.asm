@@ -56,7 +56,7 @@ StdScripts::
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
 
-	opentext
+;	opentext
 	checktime MORN
 	iftrue .morn
 	checktime DAY
@@ -68,10 +68,11 @@ PokecenterNurseScript:
 .morn
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	iftrue .morn_comcenter
-	farwritetext NurseMornText
-	promptbutton
+;	farwritetext NurseMornText
+;	promptbutton
 	sjump .ok
 .morn_comcenter
+	opentext
 	farwritetext PokeComNurseMornText
 	promptbutton
 	sjump .ok
@@ -79,10 +80,11 @@ PokecenterNurseScript:
 .day
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	iftrue .day_comcenter
-	farwritetext NurseDayText
-	promptbutton
+;	farwritetext NurseDayText
+;	promptbutton
 	sjump .ok
 .day_comcenter
+	opentext
 	farwritetext PokeComNurseDayText
 	promptbutton
 	sjump .ok
@@ -90,10 +92,11 @@ PokecenterNurseScript:
 .nite
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	iftrue .nite_comcenter
-	farwritetext NurseNiteText
-	promptbutton
+;	farwritetext NurseNiteText
+;	promptbutton
 	sjump .ok
 .nite_comcenter
+	opentext
 	farwritetext PokeComNurseNiteText
 	promptbutton
 	sjump .ok
@@ -102,11 +105,11 @@ PokecenterNurseScript:
 	; only do this once
 	clearevent EVENT_WELCOMED_TO_POKECOM_CENTER
 
-	farwritetext NurseAskHealText
-	yesorno
-	iffalse .done
+;	farwritetext NurseAskHealText
+;	yesorno
+;	iffalse .done
 
-	farwritetext NurseTakePokemonText
+;	farwritetext NurseTakePokemonText
 	pause 20
 	special StubbedTrainerRankings_Healings
 	turnobject LAST_TALKED, LEFT
@@ -128,20 +131,22 @@ PokecenterNurseScript:
 	iftrue .pokerus
 .no
 
-	farwritetext NurseReturnPokemonText
-	pause 20
+;	farwritetext NurseReturnPokemonText
+;	pause 20
 
 .done
-	farwritetext NurseGoodbyeText
+;	farwritetext NurseGoodbyeText
 
 	turnobject LAST_TALKED, UP
 	pause 10
 	turnobject LAST_TALKED, DOWN
 	pause 10
-
-	waitbutton
-	closetext
+	turnobject PLAYER, DOWN
 	end
+
+;	waitbutton
+;	closetext
+;	end
 
 .pokerus
 	; already cleared earlier in the script
