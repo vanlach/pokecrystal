@@ -206,7 +206,7 @@ Script_CutFromMenu:
 	special UpdateTimePals
 
 Script_Cut:
-	callasm GetPartyNick
+;	callasm GetPartyNick
 	writetext UseCutText
 	reloadmappart
 	callasm CutDownTreeOrGrass
@@ -508,9 +508,9 @@ TrySurfOW::
 	call CheckEngineFlag
 	jr c, .quit
 
-	ld d, SURF
-	call CheckPartyMove
-	jr c, .quit
+;	ld d, SURF
+;	call CheckPartyMove
+;	jr c, .quit
 
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_ALWAYS_ON_BIKE_F, [hl]
@@ -676,7 +676,7 @@ Script_WaterfallFromMenu:
 	special UpdateTimePals
 
 Script_UsedWaterfall:
-	callasm GetPartyNick
+;	callasm GetPartyNick
 	writetext .UseWaterfallText
 	waitbutton
 	closetext
@@ -707,9 +707,9 @@ Script_UsedWaterfall:
 	text_end
 
 TryWaterfallOW::
-	ld d, WATERFALL
-	call CheckPartyMove
-	jr c, .failed
+;	ld d, WATERFALL
+;	call CheckPartyMove
+;	jr c, .failed
 	ld de, ENGINE_RISINGBADGE
 	call CheckEngineFlag
 	jr c, .failed
@@ -1059,9 +1059,9 @@ BouldersMayMoveText:
 	text_end
 
 TryStrengthOW:
-	ld d, STRENGTH
-	call CheckPartyMove
-	jr c, .nope
+;	ld d, STRENGTH
+;	call CheckPartyMove
+;	jr c, .nope
 
 	ld de, ENGINE_PLAINBADGE
 	call CheckEngineFlag
@@ -1167,7 +1167,7 @@ Script_WhirlpoolFromMenu:
 	special UpdateTimePals
 
 Script_UsedWhirlpool:
-	callasm GetPartyNick
+;	callasm GetPartyNick
 	writetext UseWhirlpoolText
 	reloadmappart
 	callasm DisappearWhirlpool
@@ -1192,9 +1192,9 @@ DisappearWhirlpool:
 	ret
 
 TryWhirlpoolOW::
-	ld d, WHIRLPOOL
-	call CheckPartyMove
-	jr c, .failed
+;	ld d, WHIRLPOOL
+;	call CheckPartyMove
+;	jr c, .failed
 	ld de, ENGINE_GLACIERBADGE
 	call CheckEngineFlag
 	jr c, .failed
@@ -1762,9 +1762,9 @@ GotOffBikeText:
 	text_end
 
 TryCutOW::
-	ld d, CUT
-	call CheckPartyMove
-	jr c, .cant_cut
+;	ld d, CUT
+;	call CheckPartyMove
+;	jr c, .cant_cut
 
 	ld de, ENGINE_HIVEBADGE
 	call CheckEngineFlag

@@ -300,10 +300,15 @@ _CantUseItemText::
 	line "here."
 	prompt
 
+;_UseCutText::
+;	text_ram wStringBuffer2
+;	text " used"
+;	line "CUT!"
+;	prompt
+
 _UseCutText::
-	text_ram wStringBuffer2
-	text " used"
-	line "CUT!"
+	text "<PLAYER>"
+	line "used CUT!"
 	prompt
 
 _CutNothingText::
@@ -319,10 +324,15 @@ _BlindingFlashText::
 
 	text_end ; unused
 
+;_UsedSurfText::
+;	text_ram wStringBuffer2
+;	text " used"
+;	line "SURF!"
+;	done
+
 _UsedSurfText::
-	text_ram wStringBuffer2
-	text " used"
-	line "SURF!"
+	text "<PLAYER>"
+	line "used SURF!"
 	done
 
 _CantSurfText::
@@ -340,10 +350,15 @@ _AskSurfText::
 	line "Want to SURF?"
 	done
 
+;_UseWaterfallText::
+;	text_ram wStringBuffer2
+;	text " used"
+;	line "WATERFALL!"
+;	done
+
 _UseWaterfallText::
-	text_ram wStringBuffer2
-	text " used"
-	line "WATERFALL!"
+	text "<PLAYER>"
+	line "used WATERFALL!"
 	done
 
 _HugeWaterfallText::
@@ -389,10 +404,15 @@ _AlreadyUsingStrengthText::
 	line "STRENGTH already."
 	prompt
 
+;_UseStrengthText::
+;	text_ram wStringBuffer2
+;	text " used"
+;	line "STRENGTH!"
+;	done
+
 _UseStrengthText::
-	text_ram wStringBuffer2
-	text " used"
-	line "STRENGTH!"
+	text "<PLAYER>"
+	line "used STRENGTH!"
 	done
 
 _MoveBoulderText::
@@ -419,10 +439,15 @@ _BouldersMayMoveText::
 	line "able to move this."
 	done
 
+;_UseWhirlpoolText::
+;	text_ram wStringBuffer2
+;	text " used"
+;	line "WHIRLPOOL!"
+;	prompt
+
 _UseWhirlpoolText::
-	text_ram wStringBuffer2
-	text " used"
-	line "WHIRLPOOL!"
+	text "<PLAYER>"
+	line "used WHIRLPOOL!"
 	prompt
 
 _MayPassWhirlpoolText::
