@@ -173,10 +173,6 @@ FalknerTMMudSlapText:
 	para "instantly learn a"
 	line "new move."
 
-	para "Think before you"
-	line "act--a TM can be"
-	cont "used only once."
-
 	para "TM31 contains"
 	line "MUD-SLAP."
 
