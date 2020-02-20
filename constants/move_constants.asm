@@ -257,11 +257,10 @@
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
+	const MOONBLAST    ; fc
+	const PLAY_ROUGH   ; fd
+	const DISARM_VOICE ; fe
 NUM_ATTACKS EQU const_value + -1
-
-	const MOVE_OR_ANIM_FC ; fc
-	const MOVE_OR_ANIM_FD ; fd
-	const MOVE_OR_ANIM_FE ; fe
 
 ; Battle animations use the same constants as the moves up to this point
 	const ANIM_SWEET_SCENT_2     ; ff

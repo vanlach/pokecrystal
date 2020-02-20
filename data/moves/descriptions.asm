@@ -251,15 +251,12 @@ MoveDescriptions::
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
-	dw MoveFCDescription
-	dw MoveFDDescription
-	dw MoveFEDescription
+	dw MoonblastDescription
+	dw PlayRoughDescription
+	dw DisarmVoiceDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFCDescription:
-MoveFDDescription:
-MoveFEDescription:
 MoveFFDescription:
 Move00Description:
 	db "?@"
@@ -1267,3 +1264,15 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
+
+MoonblastDescription:
+	db   "A blast that may"
+	next "lower SPCL.ATK.@"
+
+PlayRoughDescription:
+	db   "A FAIRY move that"
+	next "may lower ATTACK.@"
+
+DisarmVoiceDescription:
+	db   "A FAIRY move that"
+	next "never misses."
