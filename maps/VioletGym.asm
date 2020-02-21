@@ -48,9 +48,20 @@ VioletGymFalknerScript:
 
 .SpeechAfterTM:
 	writetext FalknerFightDoneText
-	waitbutton
+	yesorno
+	iftrue .FalknerRematch
+	closetext
+	end
 .NoRoomForMudSlap:
 	closetext
+	end
+
+.FalknerRematch:
+	special HealParty
+	winlosstext Falkner_RematchDefeatText, 0
+	loadtrainer FALKNER, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 VioletGymActivateRockets:
@@ -201,6 +212,23 @@ FalknerFightDoneText:
 
 	para "the greatest bird"
 	line "master!"
+
+	para "Actually, I'm"
+	line "feeling pumped up"
+	cont "right now."
+
+	para "Let's have a"
+	line "rematch!"
+	done
+
+Falkner_RematchDefeatText:
+	text "FALKNER: …Darn!"
+
+	para "My dad's cherished"
+	line "bird #MON…"
+
+	para "You sure are"
+	line "tough."
 	done
 
 BirdKeeperRodSeenText:

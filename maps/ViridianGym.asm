@@ -32,8 +32,17 @@ ViridianGymBlueScript:
 
 .FightDone:
 	writetext LeaderBlueEpilogueText
-	waitbutton
+	yesorno
+	iftrue .BlueRematch
 	closetext
+	end
+
+.BlueRematch:
+	special HealParty
+	winlosstext Blue_RematchDefeatText, 0
+	loadtrainer BLUE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 ViridianGymGuyScript:
@@ -134,6 +143,24 @@ LeaderBlueEpilogueText:
 	para "You'd better not"
 	line "lose until I beat"
 	cont "you. Got it?"
+
+	para "<……><……><……>"
+	line "<……><……><……>"
+
+	para "Why are you still"
+	line "here? You know"
+
+	para "what, let's have"
+	line "a rematch."
+	done
+
+Blue_RematchDefeatText:
+	text "BLUE: What?"
+
+	para "How the heck did I"
+	line "lose to you again?"
+
+	para "…"
 	done
 
 ViridianGymGuyText:

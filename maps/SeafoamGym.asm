@@ -39,8 +39,17 @@ SeafoamGymBlaineScript:
 
 .FightDone:
 	writetext BlaineFightDoneText
-	waitbutton
+	yesorno
+	iftrue .BlaineRematch
 	closetext
+	end
+
+.BlaineRematch:
+	special HealParty
+	winlosstext Blaine_RematchDefeatText, 0
+	loadtrainer BLAINE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 SeafoamGymGuyScript:
@@ -121,6 +130,17 @@ BlaineFightDoneText:
 
 	para "even stronger."
 	line "Just you watch!"
+
+	para "I'll even let"
+	line "you help me train."
+
+	para "Let's have a"
+	line "rematch!"
+	done
+
+Blaine_RematchDefeatText:
+	text "BLAINE: Awesome."
+	line "I've burnt out…"
 	done
 
 SeafoamGymGuyWinText:

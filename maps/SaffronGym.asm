@@ -40,8 +40,17 @@ SaffronGymSabrinaScript:
 
 .FightDone:
 	writetext SabrinaFightDoneText
-	waitbutton
+	yesorno
+	iftrue .SabrinaRematch
 	closetext
+	end
+
+.SabrinaRematch:
+	special HealParty
+	winlosstext Sabrina_RematchDefeatText, 0
+	loadtrainer SABRINA, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 TrainerMediumRebecca:
@@ -191,6 +200,26 @@ SabrinaFightDoneText:
 
 	para "kind of psychic"
 	line "power…"
+
+	para "Can you show me"
+	line "your power again"
+
+	para "so that I may"
+	line "learn from you?"
+	done
+
+Sabrina_RematchDefeatText:
+	text "SABRINA: Your"
+	line "power…"
+
+	para "It far exceeds"
+	line "what I foresaw…"
+
+	para "Maybe it isn't"
+	line "possible to fully"
+
+	para "predict what the"
+	line "future holds…"
 	done
 
 MediumRebeccaSeenText:

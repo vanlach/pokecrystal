@@ -43,8 +43,17 @@ CeladonGymErikaScript:
 	setevent EVENT_GOT_TM19_GIGA_DRAIN
 .GotGigaDrain:
 	writetext ErikaAfterBattleText
-	waitbutton
+	yesorno
+	iftrue .ErikaRematch
 	closetext
+	end
+
+.ErikaRematch:
+	special HealParty
+	winlosstext Erika_RematchDefeatText, 0
+	loadtrainer ERIKA, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 TrainerLassMichelle:
@@ -185,6 +194,22 @@ ErikaAfterBattleText:
 
 	para "trainers spurs me"
 	line "to do better…"
+
+	para "Want to have a"
+	line "rematch so that I"
+
+	para "can learn how to"
+	line "be a better"
+	cont "trainer?"
+	done
+
+Erika_RematchDefeatText:
+	text "ERIKA: Oh!"
+
+	para "I concede defeat…"
+
+	para "You are quite"
+	line "strong"
 	done
 
 LassMichelleSeenText:

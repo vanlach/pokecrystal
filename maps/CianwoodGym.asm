@@ -68,9 +68,20 @@ CianwoodGymChuckScript:
 
 .AlreadyGotTM:
 	writetext ChuckAfterText
-	waitbutton
+	yesorno
+	iftrue .ChuckRematch
+	closetext
+	end
 .BagFull:
 	closetext
+	end
+
+.ChuckRematch:
+	special HealParty
+	winlosstext Chuck_RematchDefeatText, 0
+	loadtrainer CHUCK, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 CianwoodGymActivateRockets:
@@ -236,6 +247,22 @@ ChuckAfterText:
 	para "From now on, I'm"
 	line "going to train 24"
 	cont "hours a day!"
+
+	para "Let's start the"
+	line "training right"
+	cont "now!"
+
+	para "Have a rematch"
+	line "with me!"
+	done
+
+Chuck_RematchDefeatText:
+	text "CHUCK: WAHAHAH!"
+	line "That's another"
+	cont "loss for me."
+
+	para "Guess I'll train"
+	line "even harder!"
 	done
 
 BlackbeltYoshiSeenText:

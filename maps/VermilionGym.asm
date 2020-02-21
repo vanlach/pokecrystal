@@ -38,8 +38,17 @@ VermilionGymSurgeScript:
 
 .FightDone:
 	writetext LtSurgeFightDoneText
-	waitbutton
+	yesorno
+	iftrue .LtSurgeRematch
 	closetext
+	end
+
+.LtSurgeRematch:
+	special HealParty
+	winlosstext LtSurge_RematchDefeatText, 0
+	loadtrainer LT_SURGE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 TrainerGentlemanGregory:
@@ -157,6 +166,18 @@ LtSurgeFightDoneText:
 
 	para "My #MON and I"
 	line "are still at it!"
+
+	para "Why don't you try"
+	line "and shock me with"
+	cont "a rematch?"
+	done
+
+LtSurge_RematchDefeatText:
+	text "SURGE: Arrrgh!"
+	line "You are strong!"
+
+	para "Maybe next time"
+	line "I will win."
 	done
 
 GentlemanGregorySeenText:

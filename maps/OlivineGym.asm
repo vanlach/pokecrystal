@@ -42,9 +42,20 @@ OlivineGymJasmineScript:
 
 .GotIronTail:
 	writetext Jasmine_GoodLuck
-	waitbutton
+	yesorno
+	iftrue .JasmineRematch
+	closetext
+	end
 .NoRoomForIronTail:
 	closetext
+	end
+
+.JasmineRematch:
+	special HealParty
+	winlosstext Jasmine_RematchDefeatText, 0
+	loadtrainer JASMINE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 OlivineGymActivateRockets:
@@ -160,6 +171,17 @@ Jasmine_GoodLuck:
 	text "Um… I don't know"
 	line "how to say this,"
 	cont "but good luck…"
+
+	para "…Um. Mind if we"
+	line "have a rematch?"
+	done
+
+Jasmine_RematchDefeatText:
+	text "…You are a better"
+	line "trainer than me,"
+
+	para "in both skill and"
+	line "kindness."
 	done
 
 OlivineGymGuyText:

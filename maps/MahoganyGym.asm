@@ -52,9 +52,20 @@ MahoganyGymPryceScript:
 
 PryceScript_Defeat:
 	writetext PryceText_CherishYourPokemon
-	waitbutton
+	yesorno
+	iftrue PryceRematch
+	closetext
+	end
 MahoganyGym_NoRoomForIcyWind:
 	closetext
+	end
+
+PryceRematch:
+	special HealParty
+	winlosstext Pryce_RematchDefeatText, 0
+	loadtrainer PRYCE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 MahoganyGymActivateRockets:
@@ -236,6 +247,26 @@ PryceText_CherishYourPokemon:
 
 	para "Cherish your time"
 	line "together!"
+
+	para "And what better"
+	line "way to build your"
+
+	para "relationship with"
+	line "your #MON"
+
+	para "than having a"
+	line "rematch?"
+	done
+
+Pryce_RematchDefeatText:
+	text "Ah, I am impressed"
+	line "by your prowess."
+
+	para "With your strong"
+	line "will, I know you"
+
+	para "will overcome all"
+	line "life's obstacles."
 	done
 
 BoarderRonaldSeenText:

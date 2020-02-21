@@ -74,9 +74,20 @@ GoldenrodGymWhitneyScript:
 
 .GotAttract:
 	writetext WhitneyGoodCryText
-	waitbutton
+	yesorno
+	iftrue .WhitneyRematch
+	closetext
+	end
 .NoRoomForAttract:
 	closetext
+	end
+
+.WhitneyRematch:
+	special HealParty
+	winlosstext Whitney_RematchDefeatText, 0
+	loadtrainer WHITNEY, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 GoldenrodGymActivateRockets:
@@ -266,6 +277,26 @@ WhitneyGoodCryText:
 
 	para "Come for a visit"
 	line "again! Bye-bye!"
+
+	para "<……><……><……>"
+	line "<……><……><……>"
+
+	para "Um… Why are you"
+	line "just staring at"
+	cont "me?"
+
+	para "Do you want a"
+	line "rematch?"
+	done
+
+Whitney_RematchDefeatText:
+	text "WHITNEY: Hmph."
+	line "You're still a"
+	cont "meanie."
+
+	para "Why can't you let"
+	line "a pretty girl like"
+	cont "me win?"
 	done
 
 LassCarrieSeenText:

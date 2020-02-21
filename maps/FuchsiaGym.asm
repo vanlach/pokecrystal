@@ -53,8 +53,17 @@ FuchsiaGymJanineScript:
 	setevent EVENT_GOT_TM06_TOXIC
 .AfterTM:
 	writetext JanineText_ApplyMyself
-	waitbutton
+	yesorno
+	iftrue .JanineRematch
 	closetext
+	end
+
+.JanineRematch:
+	special HealParty
+	winlosstext Janine_RematchDefeatText, 0
+	loadtrainer JANINE, 1
+	startbattle
+	reloadmapafterbattle
 	end
 
 LassAliceScript:
@@ -283,6 +292,22 @@ JanineText_ApplyMyself:
 	para "I want to become"
 	line "better than both"
 	cont "Father and you!"
+
+	para "And what better"
+	line "to train my #-"
+	cont "MON than with"
+
+	para "a rematch against"
+	line "a strong trainer"
+
+	para "like you. What do"
+	line "you say?"
+	done
+
+Janine_RematchDefeatText:
+	text "JANINE: You're a"
+	line "tough one, you"
+	cont "definitely won…"
 	done
 
 LassAliceBeforeText:
