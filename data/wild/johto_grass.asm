@@ -466,19 +466,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, ZUBAT
 	db 22, GOLBAT
-	db 22, ZUBAT
 	db 21, RATICATE
 	db 20, GEODUDE
 	db 23, ONIX
 	db 23, ONIX
+	db 20, LARVITAR
 	; day
 	db 22, ZUBAT
 	db 22, GOLBAT
-	db 22, ZUBAT
 	db 21, RATICATE
 	db 20, GEODUDE
 	db 23, ONIX
 	db 23, ONIX
+	db 20, LARVITAR
 	; nite
 	db 22, ZUBAT
 	db 22, GOLBAT
@@ -605,7 +605,7 @@ JohtoGrassWildMons:
 	db 14, RATICATE
 	db 15, ZUBAT
 	db 15, GOLBAT
-	db 15, GOLBAT
+	db 15, LARVITAR
 	; day
 	db 13, GEODUDE
 	db 14, RATTATA
@@ -613,7 +613,7 @@ JohtoGrassWildMons:
 	db 14, RATICATE
 	db 15, ZUBAT
 	db 15, GOLBAT
-	db 15, GOLBAT
+	db 15, LARVITAR
 	; nite
 	db 13, GEODUDE
 	db 14, RATTATA
@@ -632,7 +632,7 @@ JohtoGrassWildMons:
 	db 30, RATICATE
 	db 28, MACHOP
 	db 30, GOLBAT
-	db 30, GOLBAT
+	db 25, LARVITAR
 	; day
 	db 31, GRAVELER
 	db 32, MACHOKE
@@ -640,7 +640,7 @@ JohtoGrassWildMons:
 	db 30, RATICATE
 	db 28, MACHOP
 	db 30, GOLBAT
-	db 30, GOLBAT
+	db 25, LARVITAR
 	; nite
 	db 31, GRAVELER
 	db 31, GEODUDE
@@ -680,137 +680,137 @@ JohtoGrassWildMons:
 	map_id ICE_PATH_1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 21, SWINUB
-	db 22, ZUBAT
-	db 22, GOLBAT
-	db 23, SWINUB
-	db 24, GOLBAT
-	db 22, GOLBAT
-	db 22, GOLBAT
+	db 26, SWINUB
+	db 27, ZUBAT
+	db 27, GOLBAT
+	db 28, SWINUB
+	db 29, GOLBAT
+	db 27, GOLBAT
+	db 27, GOLBAT
 	; day
-	db 21, SWINUB
-	db 22, ZUBAT
-	db 22, GOLBAT
-	db 23, SWINUB
-	db 24, GOLBAT
-	db 22, GOLBAT
-	db 22, GOLBAT
+	db 26, SWINUB
+	db 27, ZUBAT
+	db 27, GOLBAT
+	db 28, SWINUB
+	db 29, GOLBAT
+	db 27, GOLBAT
+	db 27, GOLBAT
 	; nite
-	db 21, DELIBIRD
-	db 22, ZUBAT
-	db 22, GOLBAT
-	db 23, DELIBIRD
-	db 24, GOLBAT
-	db 22, GOLBAT
-	db 22, GOLBAT
+	db 26, DELIBIRD
+	db 27, ZUBAT
+	db 27, GOLBAT
+	db 28, DELIBIRD
+	db 29, GOLBAT
+	db 27, GOLBAT
+	db 27, GOLBAT
 
 	map_id ICE_PATH_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 22, SWINUB
-	db 23, ZUBAT
-	db 23, GOLBAT
-	db 24, SWINUB
-	db 25, GOLBAT
-	db 23, GOLBAT
-	db 22, JYNX
+	db 27, SWINUB
+	db 28, ZUBAT
+	db 28, GOLBAT
+	db 29, SWINUB
+	db 30, GOLBAT
+	db 28, GOLBAT
+	db 27, JYNX
 	; day
-	db 22, SWINUB
-	db 23, ZUBAT
-	db 23, GOLBAT
-	db 24, SWINUB
-	db 25, GOLBAT
-	db 23, GOLBAT
-	db 22, JYNX
+	db 27, SWINUB
+	db 28, ZUBAT
+	db 28, GOLBAT
+	db 29, SWINUB
+	db 30, GOLBAT
+	db 28, GOLBAT
+	db 27, JYNX
 	; nite
-	db 22, DELIBIRD
-	db 23, ZUBAT
-	db 23, GOLBAT
-	db 24, DELIBIRD
-	db 25, GOLBAT
-	db 23, GOLBAT
-	db 22, SNEASEL
+	db 27, DELIBIRD
+	db 28, ZUBAT
+	db 28, GOLBAT
+	db 29, DELIBIRD
+	db 30, GOLBAT
+	db 28, GOLBAT
+	db 27, SNEASEL
 
 	map_id ICE_PATH_B2F_MAHOGANY_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, SWINUB
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, SWINUB
-	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 28, SWINUB
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, SWINUB
+	db 31, GOLBAT
+	db 27, JYNX
+	db 29, JYNX
 	; day
-	db 23, SWINUB
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, SWINUB
-	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 28, SWINUB
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, SWINUB
+	db 31, GOLBAT
+	db 27, JYNX
+	db 29, JYNX
 	; nite
-	db 23, DELIBIRD
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, DELIBIRD
-	db 26, GOLBAT
-	db 22, SNEASEL
-	db 24, SNEASEL
+	db 28, DELIBIRD
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, DELIBIRD
+	db 31, GOLBAT
+	db 27, SNEASEL
+	db 29, SNEASEL
 
 	map_id ICE_PATH_B2F_BLACKTHORN_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, SWINUB
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, SWINUB
-	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 28, SWINUB
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, SWINUB
+	db 31, GOLBAT
+	db 27, JYNX
+	db 29, JYNX
 	; day
-	db 23, SWINUB
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, SWINUB
-	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 28, SWINUB
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, SWINUB
+	db 31, GOLBAT
+	db 27, JYNX
+	db 29, JYNX
 	; nite
-	db 23, DELIBIRD
-	db 24, ZUBAT
-	db 24, GOLBAT
-	db 25, DELIBIRD
-	db 26, GOLBAT
-	db 22, SNEASEL
-	db 24, SNEASEL
+	db 28, DELIBIRD
+	db 29, ZUBAT
+	db 29, GOLBAT
+	db 30, DELIBIRD
+	db 31, GOLBAT
+	db 27, SNEASEL
+	db 29, SNEASEL
 
 	map_id ICE_PATH_B3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 24, SWINUB
-	db 25, ZUBAT
-	db 25, GOLBAT
-	db 26, SWINUB
-	db 22, JYNX
-	db 24, JYNX
-	db 26, JYNX
+	db 29, SWINUB
+	db 30, ZUBAT
+	db 30, GOLBAT
+	db 31, SWINUB
+	db 27, JYNX
+	db 29, JYNX
+	db 31, JYNX
 	; day
-	db 24, SWINUB
-	db 25, ZUBAT
-	db 25, GOLBAT
-	db 26, SWINUB
-	db 22, JYNX
-	db 24, JYNX
-	db 26, JYNX
+	db 29, SWINUB
+	db 30, ZUBAT
+	db 30, GOLBAT
+	db 31, SWINUB
+	db 27, JYNX
+	db 29, JYNX
+	db 31, JYNX
 	; nite
-	db 24, DELIBIRD
-	db 25, ZUBAT
-	db 25, GOLBAT
-	db 26, DELIBIRD
-	db 22, SNEASEL
-	db 24, SNEASEL
-	db 26, SNEASEL
+	db 29, DELIBIRD
+	db 30, ZUBAT
+	db 30, GOLBAT
+	db 31, DELIBIRD
+	db 27, SNEASEL
+	db 29, SNEASEL
+	db 31, SNEASEL
 
 	map_id WHIRL_ISLAND_NW
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1280,7 +1280,7 @@ JohtoGrassWildMons:
 	db 6, HOPPIP
 	db 7, PIDGEY
 	db 7, HOPPIP
-	db 7, HOPPIP
+	db 7, MAREEP
 	; day
 	db 4, EKANS
 	db 5, RATTATA
@@ -1288,7 +1288,7 @@ JohtoGrassWildMons:
 	db 6, HOPPIP
 	db 7, PIDGEY
 	db 7, HOPPIP
-	db 7, HOPPIP
+	db 7, MAREEP
 	; nite
 	db 4, WOOPER
 	db 5, RATTATA
@@ -1388,7 +1388,7 @@ JohtoGrassWildMons:
 	db 5, GROWLITHE
 	db 5, PIDGEY
 	db 6, PIDGEY
-	db 6, PIDGEY
+	db 6, VULPIX
 	; day
 	db 4, PIDGEY
 	db 4, PIDGEY
@@ -1396,7 +1396,7 @@ JohtoGrassWildMons:
 	db 5, GROWLITHE
 	db 5, PIDGEY
 	db 6, PIDGEY
-	db 6, PIDGEY
+	db 6, VULPIX
 	; nite
 	db 4, SPINARAK
 	db 4, HOOTHOOT
@@ -1412,7 +1412,7 @@ JohtoGrassWildMons:
 	db 13, LEDYBA
 	db 14, GROWLITHE
 	db 15, PIDGEY
-	db 16, GROWLITHE
+	db 16, VULPIX
 	db 15, PIDGEOTTO
 	db 15, LEDIAN
 	db 15, LEDIAN
@@ -1420,7 +1420,7 @@ JohtoGrassWildMons:
 	db 13, PIDGEY
 	db 14, GROWLITHE
 	db 15, PIDGEY
-	db 16, GROWLITHE
+	db 16, VULPIX
 	db 15, PIDGEOTTO
 	db 15, PIDGEY
 	db 15, PIDGEY
@@ -1463,137 +1463,137 @@ JohtoGrassWildMons:
 	map_id ROUTE_39
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 21, RATTATA
+	db 21, RATICATE
+	db 21, MAGNEMITE
+	db 21, PIDGEOTTO
+	db 20, MILTANK
+	db 20, TAUROS
+	db 20, TAUROS
 	; day
-	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 21, RATTATA
+	db 21, RATICATE
+	db 21, MAGNEMITE
+	db 21, PIDGEOTTO
+	db 20, MILTANK
+	db 20, TAUROS
+	db 20, TAUROS
 	; nite
-	db 16, MEOWTH
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, NOCTOWL
-	db 18, MEOWTH
-	db 18, MEOWTH
-	db 18, MEOWTH
+	db 21, MEOWTH
+	db 21, RATICATE
+	db 21, MAGNEMITE
+	db 21, NOCTOWL
+	db 23, MEOWTH
+	db 23, MEOWTH
+	db 23, MEOWTH
 
 	map_id ROUTE_42
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, EKANS
-	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
-	db 15, ARBOK
-	db 16, FEAROW
-	db 16, FEAROW
+	db 18, EKANS
+	db 19, SPEAROW
+	db 20, RATTATA
+	db 21, RATICATE
+	db 20, ARBOK
+	db 21, MANKEY
+	db 21, FEAROW
 	; day
-	db 13, EKANS
-	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
-	db 15, ARBOK
-	db 16, FEAROW
-	db 16, FEAROW
+	db 18, EKANS
+	db 19, SPEAROW
+	db 20, RATTATA
+	db 21, RATICATE
+	db 20, ARBOK
+	db 21, MAREEP
+	db 21, FEAROW
 	; nite
-	db 13, RATTATA
-	db 14, ZUBAT
-	db 15, RATICATE
-	db 16, GOLBAT
-	db 15, MARILL
-	db 16, GOLBAT
-	db 16, GOLBAT
+	db 18, RATTATA
+	db 19, ZUBAT
+	db 20, RATICATE
+	db 21, GOLBAT
+	db 20, MARILL
+	db 21, GOLBAT
+	db 21, GOLBAT
 
 	map_id ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, SENTRET
-	db 16, PIDGEOTTO
-	db 16, FARFETCH_D
-	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
-	db 17, FURRET
+	db 20, SENTRET
+	db 21, PIDGEOTTO
+	db 21, FARFETCH_D
+	db 20, FURRET
+	db 22, RATICATE
+	db 22, MAREEP
+	db 22, FURRET
 	; day
-	db 15, SENTRET
-	db 16, PIDGEOTTO
-	db 16, FARFETCH_D
-	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
-	db 17, FURRET
+	db 20, SENTRET
+	db 21, PIDGEOTTO
+	db 21, FARFETCH_D
+	db 20, FURRET
+	db 22, RATICATE
+	db 22, GIRAFARIG
+	db 22, FURRET
 	; nite
-	db 15, VENONAT
-	db 16, NOCTOWL
-	db 16, RATICATE
-	db 17, VENONAT
-	db 17, RATICATE
-	db 17, VENOMOTH
-	db 17, VENOMOTH
+	db 20, VENONAT
+	db 21, NOCTOWL
+	db 21, RATICATE
+	db 22, VENONAT
+	db 22, RATICATE
+	db 22, VENOMOTH
+	db 22, VENOMOTH
 
 	map_id ROUTE_44
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, TANGELA
-	db 22, LICKITUNG
-	db 22, BELLSPROUT
-	db 24, WEEPINBELL
-	db 24, LICKITUNG
-	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 28, TANGELA
+	db 27, LICKITUNG
+	db 27, BELLSPROUT
+	db 29, WEEPINBELL
+	db 29, LICKITUNG
+	db 30, LICKITUNG
+	db 30, LICKITUNG
 	; day
-	db 23, TANGELA
-	db 22, LICKITUNG
-	db 22, BELLSPROUT
-	db 24, WEEPINBELL
-	db 24, LICKITUNG
-	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 28, TANGELA
+	db 27, LICKITUNG
+	db 27, BELLSPROUT
+	db 29, WEEPINBELL
+	db 29, LICKITUNG
+	db 31, LICKITUNG
+	db 31, LICKITUNG
 	; nite
-	db 23, TANGELA
-	db 22, POLIWAG
-	db 22, BELLSPROUT
-	db 24, WEEPINBELL
-	db 24, POLIWHIRL
-	db 26, POLIWHIRL
-	db 26, POLIWHIRL
+	db 28, TANGELA
+	db 27, POLIWAG
+	db 27, BELLSPROUT
+	db 29, WEEPINBELL
+	db 29, POLIWHIRL
+	db 31, POLIWHIRL
+	db 31, POLIWHIRL
 
 	map_id ROUTE_45
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 25, DONPHAN
-	db 20, PHANPY
-	db 27, SKARMORY
-	db 27, SKARMORY
+	db 33, GEODUDE
+	db 33, GRAVELER
+	db 34, GLIGAR
+	db 35, DONPHAN
+	db 30, PHANPY
+	db 37, SKARMORY
+	db 37, SKARMORY
 	; day
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 25, DONPHAN
-	db 30, DONPHAN
-	db 27, SKARMORY
-	db 27, SKARMORY
+	db 33, GEODUDE
+	db 33, GRAVELER
+	db 34, GLIGAR
+	db 35, DONPHAN
+	db 40, DONPHAN
+	db 37, SKARMORY
+	db 37, SKARMORY
 	; nite
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 25, GRAVELER
-	db 27, GRAVELER
-	db 27, GRAVELER
-	db 27, GRAVELER
+	db 33, GEODUDE
+	db 33, GRAVELER
+	db 34, GLIGAR
+	db 35, GRAVELER
+	db 37, GRAVELER
+	db 37, GRAVELER
+	db 37, GRAVELER
 
 	map_id ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
