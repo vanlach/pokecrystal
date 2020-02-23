@@ -415,9 +415,14 @@ _UseStrengthText::
 	line "used STRENGTH!"
 	done
 
+;_MoveBoulderText::
+;	text_ram wStringBuffer1
+;	text " can"
+;	line "move boulders."
+;	prompt
+
 _MoveBoulderText::
-	text_ram wStringBuffer1
-	text " can"
+	text "<PLAYER> can"
 	line "move boulders."
 	prompt
 
