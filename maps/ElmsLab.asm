@@ -50,11 +50,12 @@ ElmsLab_MapScripts:
 	turnobject ELMSLAB_ELM, RIGHT
 	opentext
 	writetext ElmText_Intro
-.MustSayYes:
-	yesorno
-	iftrue .ElmGetsEmail
-	writetext ElmText_Refused
-	sjump .MustSayYes
+	sjump .ElmGetsEmail
+;.MustSayYes:
+;	yesorno
+;	iftrue .ElmGetsEmail
+;	writetext ElmText_Refused
+;	sjump .MustSayYes
 
 .ElmGetsEmail:
 	writetext ElmText_Accepted
