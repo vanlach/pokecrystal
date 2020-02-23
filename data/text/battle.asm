@@ -185,7 +185,7 @@ BattleText_EnemyWasDefeated:
 
 BattleText_PluralEnemyWereDefeated:
 	text "<ENEMY>"
-	line "werre defeated!"
+	line "were defeated!"
 	prompt
 
 TiedAgainstText:
