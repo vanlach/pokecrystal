@@ -212,6 +212,9 @@ Route29FruitTree:
 Route29Potion:
 	itemball POTION
 
+Route29HiddenLuckyEgg:
+	hiddenitem LUCKY_EGG, EVENT_ROUTE_29_HIDDEN_LUCKY_EGG
+
 DudeMovementData1a:
 	step UP
 	step UP
@@ -423,9 +426,10 @@ Route29_MapEvents:
 	coord_event 53,  8, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial1
 	coord_event 53,  9, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial2
 
-	db 2 ; bg events
+	db 3 ; bg events
 	bg_event 51,  7, BGEVENT_READ, Route29Sign1
 	bg_event  3,  5, BGEVENT_READ, Route29Sign2
+	bg_event 49,  2, BGEVENT_ITEM, Route29HiddenLuckyEgg
 
 	db 8 ; object events
 	object_event 50, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
