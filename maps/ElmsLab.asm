@@ -405,6 +405,72 @@ ElmGiveMasterBallScript:
 	writetext ElmGiveMasterBallText2
 	waitbutton
 .notdone
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .ElmGiveJohtoStarters
+	closetext
+	end
+
+.ElmGiveJohtoStarters:
+	checkevent EVENT_GOT_JOHTO_STARTERS_FROM_ELM
+	iftrue .AlreadyHaveStarters
+	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+	iftrue .ChikoritaWasOriginalStarter
+	checkevent EVENT_GOT_CYNDAQUIL_FROM_ELM
+	iftrue .CyndaquilWasOriginalStarter
+	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+	iftrue .TotodileWasOriginalStarter
+	closetext
+	end
+
+.ChikoritaWasOriginalStarter:
+	writetext ElmChikoritaWasOriginalStarterText
+	waitbutton
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	writetext ElmGiveTotodileCyndaquilText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke TOTODILE, 5
+	givepoke CYNDAQUIL, 5
+	setevent EVENT_GOT_JOHTO_STARTERS_FROM_ELM
+	closetext
+	end
+
+.CyndaquilWasOriginalStarter:
+	writetext ElmCyndaquilWasOriginalStarterText
+	waitbutton
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	writetext ElmGiveChikoritaTotodileText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke CHIKORITA, 5
+	givepoke TOTODILE, 5
+	setevent EVENT_GOT_JOHTO_STARTERS_FROM_ELM
+	closetext
+	end
+
+.TotodileWasOriginalStarter:
+	writetext ElmTotodileWasOriginalStarterText
+	waitbutton
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	writetext ElmGiveChikoritaCyndaquilText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke CHIKORITA, 5
+	givepoke CYNDAQUIL, 5
+	setevent EVENT_GOT_JOHTO_STARTERS_FROM_ELM
+	closetext
+	end
+
+.PartyFull:
+	writetext ElmJohtoStartersPartyFullText
+	waitbutton
+	closetext
+	end
+
+.AlreadyHaveStarters:
 	closetext
 	end
 
@@ -1367,6 +1433,89 @@ ElmsLabPCText:
 
 	para "…It says on the"
 	line "screen…"
+	done
+
+ElmChikoritaWasOriginalStarterText:
+	text "If I remember"
+	line "correctly, you"
+
+	para "chose CHIKORITA"
+	line "as your first"
+
+	para "#MON."
+	done
+
+ElmGiveTotodileCyndaquilText:
+	text "To reward you for"
+	line "gathering all"
+	
+	para "Johto and Kanto"
+	line "badges, I will"
+	
+	para "give you the other"
+	line "two Johto start-"
+	
+	para "ers: TOTODILE"
+	line "and CYNDAQUIL!"
+	done
+
+ElmCyndaquilWasOriginalStarterText:
+	text "If I remember"
+	line "correctly, you"
+
+	para "chose CYNDAQUIL"
+	line "as your first"
+
+	para "#MON."
+	done
+
+ElmGiveChikoritaTotodileText:
+	text "To reward you for"
+	line "gathering all"
+	
+	para "Johto and Kanto"
+	line "badges, I will"
+	
+	para "give you the other"
+	line "two Johto start-"
+	
+	para "ers: TOTODILE"
+	line "and CHIKORITA!"
+	done
+
+ElmTotodileWasOriginalStarterText:
+	text "If I remember"
+	line "correctly, you"
+
+	para "chose TOTODILE"
+	line "as your first"
+
+	para "#MON."
+	done
+
+ElmGiveChikoritaCyndaquilText:
+	text "To reward you for"
+	line "gathering all"
+	
+	para "Johto and Kanto"
+	line "badges, I will"
+	
+	para "give you the other"
+	line "two Johto start-"
+	
+	para "ers: CHIKORITA"
+	line "and CYNDAQUIL!"
+	done
+
+ElmJohtoStartersPartyFullText:
+	text "Oh no, it looks"
+	line "like you don't"
+
+	para "have enough space"
+	line "for both #MON."
+
+	para "Come back when"
+	line "you have space."
 	done
 
 ElmsLab_MapEvents:

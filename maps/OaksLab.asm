@@ -53,6 +53,32 @@ Oak:
 	promptbutton
 	sjump .CheckPokedex
 
+.KantoStarters:
+	checkevent EVENT_GOT_KANTO_STARTERS_FROM_OAK
+	iftrue .CheckPokedex
+	sjump .ReceiveKantoStarters
+
+.ReceiveKantoStarters:
+	writetext OakHasKantoStartersText
+	waitbutton
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	writetext OakGivesKantoStartersText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke BULBASAUR, 5
+	givepoke SQUIRTLE, 5
+	givepoke CHARMANDER, 5
+	setevent EVENT_GOT_KANTO_STARTERS_FROM_OAK
+	closetext
+	end
+
+.PartyFull:
+	writetext OakPartyFullText
+	waitbutton
+	closetext
+	end
+
 OaksAssistant1Script:
 	jumptextfaceplayer OaksAssistant1Text
 
@@ -252,6 +278,46 @@ OaksLabPCText:
 
 	para "ELM in NEW BARK"
 	line "TOWN 8-)"
+	done
+
+OakHasKantoStartersText:
+	text "OAK: <PLAY_G>!"
+	line "I have some"
+
+	para "#MON that I'd"
+	line "like to give you."
+
+	para "They are the three"
+	line "#MON that"
+
+	para "trainers in the"
+	line "Kanto region"
+
+	para "receive when they"
+	line "first start their"
+
+	para "own adventure!"
+	done
+
+OakPartyFullText:
+	text "Oh no, it looks"
+	line "like you don't"
+
+	para "have enough space"
+	line "for all three."
+
+	para "Come back when"
+	line "you have space."
+	done
+
+OakGivesKantoStartersText:
+	text "Here are the three"
+	line "Kanto starters:"
+
+	para "BULBASAUR,"
+	line "SQUIRTLE, and"
+
+	para "CHARMANDER!"
 	done
 
 OaksLab_MapEvents:
