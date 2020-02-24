@@ -32,7 +32,6 @@ VermilionPort_MapScripts:
 	clearevent EVENT_OLIVINE_PORT_PASSAGE_POKEFAN_M
 	setevent EVENT_FAST_SHIP_FIRST_TIME
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	blackoutmod VERMILION_CITY
 	end
 
 VermilionPortSailorAtGangwayScript:
