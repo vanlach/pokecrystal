@@ -8,18 +8,47 @@
 	const ROUTE42_POKE_BALL1
 	const ROUTE42_POKE_BALL2
 	const ROUTE42_SUICUNE
+	const ROUTE42_RAIKOU
 
 Route42_MapScripts:
 	db 2 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_ROUTE42_NOTHING
 	scene_script .DummyScene1 ; SCENE_ROUTE42_SUICUNE
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .Raikou
 
 .DummyScene0:
 	end
 
 .DummyScene1:
+	end
+
+.Raikou:
+	checkevent EVENT_FOUGHT_RAIKOU
+	iftrue .RaikouNoAppear
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .RaikouAppear
+	sjump .RaikouNoAppear
+
+.RaikouAppear:
+	appear ROUTE42_RAIKOU
+	return
+
+.RaikouNoAppear:
+	disappear ROUTE42_RAIKOU
+	return
+
+Raikou:
+	faceplayer
+	cry RAIKOU
+	pause 15
+	setevent EVENT_FOUGHT_RAIKOU
+	loadvar VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadwildmon RAIKOU, 40
+	startbattle
+	disappear ROUTE42_RAIKOU
+	reloadmapafterbattle
 	end
 
 Route42SuicuneScript:
@@ -336,7 +365,7 @@ Route42_MapEvents:
 	bg_event 54,  8, BGEVENT_READ, Route42Sign2
 	bg_event 16, 11, BGEVENT_ITEM, Route42HiddenMaxPotion
 
-	db 9 ; object events
+	db 10 ; object events
 	object_event 40, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherTully, -1
 	object_event 51,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerHikerBenjamin, -1
 	object_event 47,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacShane, -1
@@ -346,3 +375,4 @@ Route42_MapEvents:
 	object_event  6,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42UltraBall, EVENT_ROUTE_42_ULTRA_BALL
 	object_event 33,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42SuperPotion, EVENT_ROUTE_42_SUPER_POTION
 	object_event 26, 16, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_ON_ROUTE_42
+	object_event 33, 16, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Raikou, EVENT_ROUTE_42_RAIKOU

@@ -54,6 +54,8 @@ PalletGroupSprites:
 	db SPRITE_SWIMMER_GUY
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 ViridianGroupSprites:
 	db SPRITE_SUICUNE
@@ -79,6 +81,8 @@ ViridianGroupSprites:
 	db SPRITE_SWIMMER_GUY
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 PewterGroupSprites:
 	db SPRITE_SUICUNE
@@ -104,6 +108,8 @@ PewterGroupSprites:
 	db SPRITE_SWIMMER_GUY
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CinnabarGroupSprites:
 	db SPRITE_SUICUNE
@@ -129,6 +135,8 @@ CinnabarGroupSprites:
 	db SPRITE_SWIMMER_GUY
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CeruleanGroupSprites:
 	db SPRITE_SUICUNE
@@ -154,6 +162,8 @@ CeruleanGroupSprites:
 	db SPRITE_MISTY
 	db SPRITE_POKE_BALL
 	db SPRITE_SLOWPOKE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 SaffronGroupSprites:
 	db SPRITE_SUICUNE
@@ -179,6 +189,8 @@ SaffronGroupSprites:
 	db SPRITE_MISTY
 	db SPRITE_POKE_BALL
 	db SPRITE_SLOWPOKE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CeladonGroupSprites:
 	db SPRITE_SUICUNE
@@ -204,6 +216,8 @@ CeladonGroupSprites:
 	db SPRITE_BLUE
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 LavenderGroupSprites:
 	db SPRITE_SUICUNE
@@ -229,6 +243,8 @@ LavenderGroupSprites:
 	db SPRITE_BIKER
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 VermilionGroupSprites:
 	db SPRITE_SUICUNE
@@ -254,6 +270,8 @@ VermilionGroupSprites:
 	db SPRITE_BIKER
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 FuchsiaGroupSprites:
 	db SPRITE_SUICUNE
@@ -279,6 +297,8 @@ FuchsiaGroupSprites:
 	db SPRITE_BIKER
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 IndigoGroupSprites:
 	db SPRITE_SUICUNE
@@ -304,6 +324,8 @@ IndigoGroupSprites:
 	db SPRITE_BIKER
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
@@ -329,6 +351,8 @@ NewBarkGroupSprites:
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CherrygroveGroupSprites:
 	db SPRITE_SUICUNE
@@ -354,6 +378,8 @@ CherrygroveGroupSprites:
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 SilverGroupSprites:
 	db SPRITE_SUICUNE
@@ -379,6 +405,8 @@ SilverGroupSprites:
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 VioletGroupSprites:
 	db SPRITE_SUICUNE
@@ -404,6 +432,8 @@ VioletGroupSprites:
 	db SPRITE_WEIRD_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 EcruteakGroupSprites:
 	db SPRITE_SUICUNE
@@ -429,6 +459,8 @@ EcruteakGroupSprites:
 	db SPRITE_WEIRD_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 AzaleaGroupSprites:
 	db SPRITE_SUICUNE
@@ -454,6 +486,8 @@ AzaleaGroupSprites:
 	db SPRITE_SILVER
 	db SPRITE_FRUIT_TREE
 	db SPRITE_SLOWPOKE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 GoldenrodGroupSprites:
 	db SPRITE_SUICUNE
@@ -479,6 +513,8 @@ GoldenrodGroupSprites:
 	db SPRITE_DAY_CARE_MON_2
 	db SPRITE_FRUIT_TREE
 	db SPRITE_SLOWPOKE
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CianwoodGroupSprites:
 	db SPRITE_SUICUNE
@@ -504,6 +540,8 @@ CianwoodGroupSprites:
 	db SPRITE_TAUROS
 	db SPRITE_FRUIT_TREE
 	db SPRITE_ROCK
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 OlivineGroupSprites:
 	db SPRITE_SUICUNE
@@ -529,6 +567,8 @@ OlivineGroupSprites:
 	db SPRITE_TAUROS
 	db SPRITE_FRUIT_TREE
 	db SPRITE_ROCK
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 LakeOfRageGroupSprites:
 	db SPRITE_SUICUNE
@@ -554,6 +594,8 @@ LakeOfRageGroupSprites:
 	db SPRITE_GYARADOS
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 MahoganyGroupSprites:
 	db SPRITE_SUICUNE
@@ -579,6 +621,8 @@ MahoganyGroupSprites:
 	db SPRITE_FISHER
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 BlackthornGroupSprites:
 	db SPRITE_SUICUNE
@@ -604,6 +648,8 @@ BlackthornGroupSprites:
 	db SPRITE_FISHER
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 DungeonsGroupSprites:
 	db SPRITE_SUICUNE
@@ -629,6 +675,8 @@ DungeonsGroupSprites:
 	db SPRITE_SCIENTIST
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 FastShipGroupSprites:
 	db SPRITE_SUICUNE
@@ -654,6 +702,8 @@ FastShipGroupSprites:
 	db SPRITE_FAIRY
 	db SPRITE_POKE_BALL
 	db SPRITE_ROCK
+	db SPRITE_ENTEI
+	db SPRITE_RAIKOU
 
 CableClubGroupSprites:
 	db SPRITE_OAK

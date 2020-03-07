@@ -6,12 +6,14 @@
 	const ROUTE37_SUNNY
 	const ROUTE37_FRUIT_TREE2
 	const ROUTE37_FRUIT_TREE3
+	const ROUTE37_ENTEI
 
 Route37_MapScripts:
 	db 0 ; scene scripts
 
-	db 1 ; callbacks
+	db 2 ; callbacks
 	callback MAPCALLBACK_OBJECTS, .Sunny
+	callback MAPCALLBACK_OBJECTS, .Entei
 
 .Sunny:
 	readvar VAR_WEEKDAY
@@ -22,6 +24,33 @@ Route37_MapScripts:
 .SunnyAppears:
 	appear ROUTE37_SUNNY
 	return
+
+.Entei:
+	checkevent EVENT_FOUGHT_ENTEI
+	iftrue .EnteiNoAppear
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .EnteiAppear
+	sjump .EnteiNoAppear
+
+.EnteiAppear:
+	appear ROUTE37_ENTEI
+	return
+
+.EnteiNoAppear:
+	disappear ROUTE37_ENTEI
+	return
+
+Entei:
+	faceplayer
+	cry ENTEI
+	pause 15
+	setevent EVENT_FOUGHT_ENTEI
+	loadvar VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadwildmon ENTEI, 40
+	startbattle
+	disappear ROUTE37_ENTEI
+	reloadmapafterbattle
+	end
 
 TrainerTwinsAnnandanne1:
 	trainer TWINS, ANNANDANNE1, EVENT_BEAT_TWINS_ANN_AND_ANNE, TwinsAnnandanne1SeenText, TwinsAnnandanne1BeatenText, 0, .Script
@@ -246,7 +275,7 @@ Route37_MapEvents:
 	bg_event  5,  3, BGEVENT_READ, Route37Sign
 	bg_event  4,  2, BGEVENT_ITEM, Route37HiddenEther
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event  6, 12, SPRITE_WEIRD_TREE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsAnnandanne1, -1
 	object_event  7, 12, SPRITE_WEIRD_TREE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsAnnandanne2, -1
 	object_event  6,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychicGreg, -1
@@ -254,3 +283,4 @@ Route37_MapEvents:
 	object_event 16,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SunnyScript, EVENT_ROUTE_37_SUNNY_OF_SUNDAY
 	object_event 16,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route37FruitTree2, -1
 	object_event 15,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route37FruitTree3, -1
+	object_event 17,  2, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Entei, EVENT_ROUTE_37_ENTEI
