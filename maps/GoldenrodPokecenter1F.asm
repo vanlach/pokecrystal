@@ -16,12 +16,10 @@ GoldenrodPokecenter1FNurseScript:
 GoldenrodPokecenter1F_GSBallSceneLeft:
 	setval BATTLETOWERACTION_CHECKMOBILEEVENT
 	special BattleTowerAction
-	; ifequal MOBILE_EVENT_OBJECT_GS_BALL, .gsball
-	; end
+	ifequal MOBILE_EVENT_OBJECT_GS_BALL, .gsball
+	end
 
 .gsball
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .cancel
 	checkevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
@@ -50,12 +48,10 @@ GoldenrodPokecenter1F_GSBallSceneLeft:
 GoldenrodPokecenter1F_GSBallSceneRight:
 	setval BATTLETOWERACTION_CHECKMOBILEEVENT
 	special BattleTowerAction
-	; ifequal MOBILE_EVENT_OBJECT_GS_BALL, .gsball
-	; end
+	ifequal MOBILE_EVENT_OBJECT_GS_BALL, .gsball
+	end
 
 .gsball
-	checkevent EVENT_OPENED_MT_SILVER
-	iffalse .cancel
 	checkevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
