@@ -153,14 +153,6 @@ MomScript:
 NeighborScript:
 	faceplayer
 	opentext
-	setevent EVENT_BEAT_ELITE_FOUR
-	setevent EVENT_OPENED_MT_SILVER
-	givepoke MEWTWO, 100
-	givepoke MEW, 100
-	giveitem MASTER_BALL
-	giveitem MASTER_BALL
-	setflag ENGINE_FOGBADGE
-	giveitem HM_SURF
 	checktime MORN
 	iftrue .MornScript
 	checktime DAY
@@ -395,8 +387,8 @@ PlayersHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
-	warp_event  6,  7, POWER_PLANT, 1 
-	warp_event  7,  7, ECRUTEAK_CITY, 1
+	warp_event  6,  7, NEW_BARK_TOWN, 1 
+	warp_event  7,  7, NEW_BARK_TOWN, 1
 	warp_event  9,  0, PLAYERS_HOUSE_2F, 1
 
 	db 2 ; coord events
