@@ -1050,3 +1050,6 @@ SECTION "Map Blocks 4", ROMX
 
 PewterMuseum_Blocks:
 	INCBIN "maps/PewterCityMuseum.blk"
+
+ArticunoChamber_Blocks:
+	INCBIN "maps/ArticunoChamber.blk"

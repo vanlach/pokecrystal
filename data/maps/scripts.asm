@@ -485,3 +485,4 @@ SECTION "Map Scripts 25", ROMX
 INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/PewterCityMuseum.asm"
+INCLUDE "maps/ArticunoChamber.asm"
