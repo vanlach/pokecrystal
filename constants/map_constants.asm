@@ -203,6 +203,9 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
+	map_const CERULEAN_CAVE_1F,                            17, 11 ; 18
+	map_const CERULEAN_CAVE_2F,                            17, 11 ; 19
+	map_const CERULEAN_CAVE_B1F,                           17, 11 ; 20
 
 	newgroup                                                      ;  8
 

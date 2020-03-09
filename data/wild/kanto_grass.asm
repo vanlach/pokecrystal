@@ -812,4 +812,85 @@ KantoGrassWildMons:
 	db 42, GOLBAT
 	db 42, GOLBAT
 
+	map_id CERULEAN_CAVE_1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	;morn
+	db 65, CROBAT
+	db 65, PARASECT
+	db 66, PRIMEAPE
+	db 67, HYPNO
+	db 68, MACHAMP
+	db 67, ELECTRODE
+	db 70, DITTO
+	;day
+	db 65, CROBAT
+	db 65, PARASECT
+	db 66, PRIMEAPE
+	db 67, HYPNO
+	db 68, MACHAMP
+	db 67, ELECTRODE
+	db 70, DITTO
+	; nite
+	db 65, CROBAT
+	db 65, PARASECT
+	db 66, PRIMEAPE
+	db 67, HYPNO
+	db 68, MACHAMP
+	db 67, ELECTRODE
+	db 70, DITTO
+
+	map_id CERULEAN_CAVE_2F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 67, CROBAT
+	db 67, PARASECT
+	db 68, MACHAMP
+	db 69, MAGNETON
+	db 70, ALAKAZAM
+	db 69, ELECTRODE
+	db 72, DITTO
+	; day
+	db 67, CROBAT
+	db 67, PARASECT
+	db 68, MACHAMP
+	db 69, MAGNETON
+	db 70, ALAKAZAM
+	db 69, ELECTRODE
+	db 72, DITTO
+	; nite
+	db 67, CROBAT
+	db 67, PARASECT
+	db 68, MACHAMP
+	db 69, MAGNETON
+	db 70, GENGAR
+	db 69, ELECTRODE
+	db 72, DITTO
+
+	map_id CERULEAN_CAVE_B1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, PARASECT
+	db 69, MAGNETON
+	db 70, MACHAMP
+	db 71, GOLEM
+	db 72, ALAKAZAM
+	db 71, RAICHU
+	db 74, DITTO
+	; day
+	db 69, PARASECT
+	db 69, MAGNETON
+	db 70, MACHAMP
+	db 71, GOLEM
+	db 72, ALAKAZAM
+	db 71, RAICHU
+	db 74, DITTO
+	; nite
+	db 69, PARASECT
+	db 69, MAGNETON
+	db 70, MACHAMP
+	db 71, GOLEM
+	db 72, GENGAR
+	db 71, RAICHU
+	db 74, DITTO
+
 	db -1 ; end
