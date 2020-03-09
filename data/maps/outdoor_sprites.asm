@@ -29,6 +29,7 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw CustomGroupSprites
 
 ; Route1 and ViridianCity are connected
 ; Route2 and PewterCity are connected
@@ -301,4 +302,10 @@ FastShipGroupSprites:
 CableClubGroupSprites:
 ; (no outdoor maps)
 	; 0 of max 9 walking sprites
+	db 0 ; end
+
+CustomGroupSprites:
+; MewGarden
+	db SPRITE_FAIRY
+	; 1 of max 9 walking sprites
 	db 0 ; end

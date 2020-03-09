@@ -203,9 +203,6 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
-	map_const CERULEAN_CAVE_1F,                            17, 11 ; 18
-	map_const CERULEAN_CAVE_2F,                            17, 11 ; 19
-	map_const CERULEAN_CAVE_B1F,                           17, 11 ; 20
 
 	newgroup                                                      ;  8
 
@@ -496,3 +493,10 @@ ENDM
 	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
 	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
+
+	newgroup                                                      ; 27
+
+	map_const CERULEAN_CAVE_1F,                            17, 11 ;  1
+	map_const CERULEAN_CAVE_2F,                            17, 11 ;  2
+	map_const CERULEAN_CAVE_B1F,                           17, 11 ;  3
+	map_const MEW_GARDEN,                                  10, 15 ;  4

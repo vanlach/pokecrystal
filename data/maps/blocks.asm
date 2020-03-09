@@ -1063,3 +1063,5 @@ CeruleanCave2F_Blocks:
 CeruleanCaveB1F_Blocks:
 	INCBIN "maps/CeruleanCaveB1F.blk"
 
+MewGarden_Blocks:
+	INCBIN "maps/MewGarden.blk"
