@@ -80,5 +80,5 @@ PewterMuseum_MapEvents:
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  5,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PewterCityMuseumScientistScript, EVENT_PEWTER_CITY_MUSEUM_SCIENTIST
+	object_event  5,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PewterCityMuseumScientistScript, -1
 	
