@@ -121,6 +121,9 @@ TrainerCard_Page1_Joypad:
 	ld a, [hl]
 	and D_RIGHT | A_BUTTON
 	jr nz, .pressed_right_a
+	ld a, [hl]
+	and D_LEFT
+	jr nz, .pressed_left
 	ret
 
 .pressed_right_a
@@ -128,16 +131,21 @@ TrainerCard_Page1_Joypad:
 	ld [wJumptableIndex], a
 	ret
 
-.Unreferenced_KantoCheck:
-	ld a, [wKantoBadges]
-	and a
-	ret z
+.pressed_left
 	ld a, TRAINERCARDSTATE_PAGE3_LOADGFX
 	ld [wJumptableIndex], a
 	ret
 
 TrainerCard_Page2_LoadGFX:
 	call ClearSprites
+	call TrainerCard_ClearBottomHalf
+	call WaitBGMap
+
+	ld b, SCGB_TRAINER_CARD
+	call GetSGBLayout
+	call SetPalettes
+	call WaitBGMap
+
 	hlcoord 0, 8
 	ld d, 6
 	call TrainerCard_InitBorder
@@ -159,33 +167,33 @@ TrainerCard_Page2_Joypad:
 	call TrainerCard_Page2_3_AnimateBadges
 	ld hl, hJoyLast
 	ld a, [hl]
-	and A_BUTTON
-	jr nz, .Quit
+	and D_RIGHT | A_BUTTON
+	jr nz, .pressed_right_a
 	ld a, [hl]
 	and D_LEFT
 	jr nz, .d_left
 	ret
 
-.d_left
+.d_left ; go to page 1
 	ld a, TRAINERCARDSTATE_PAGE1_LOADGFX
 	ld [wJumptableIndex], a
 	ret
 
-.Unreferenced_KantoCheck:
-	ld a, [wKantoBadges]
-	and a
-	ret z
+.pressed_right_a
 	ld a, TRAINERCARDSTATE_PAGE3_LOADGFX
-	ld [wJumptableIndex], a
-	ret
-
-.Quit:
-	ld a, TRAINERCARDSTATE_QUIT
 	ld [wJumptableIndex], a
 	ret
 
 TrainerCard_Page3_LoadGFX:
 	call ClearSprites
+	call TrainerCard_ClearBottomHalf
+	call WaitBGMap
+
+	ld b, SCGB_TRAINER_CARD_PAGE_3
+	call GetSGBLayout
+	call SetPalettes
+	call WaitBGMap
+
 	hlcoord 0, 8
 	ld d, 6
 	call TrainerCard_InitBorder
@@ -266,6 +274,11 @@ TrainerCard_PrintTopHalfOfCard:
 .HorizontalDivider:
 	db $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $26, -1 ; ____________>
 
+TrainerCard_ClearBottomHalf:
+	hlcoord 2, 10
+	lb bc, 6, 17
+	jp ClearBox
+
 TrainerCard_Page1_PrintDexCaught_GameTime:
 	hlcoord 2, 10
 	ld de, .Dex_PlayTime
@@ -335,7 +348,7 @@ endr
 	ret
 
 .BadgesTilemap:
-	db $79, $7a, $7b, $7c, $7d, -1 ; "BADGES"
+	db $79, $7a, $7b, $7c, $7d, $7e, -1 ; "BADGES"
 
 TrainerCardSetup_PlaceTilemapString:
 .loop
@@ -606,8 +619,8 @@ TrainerCard_JohtoBadgesOAM:
 CardStatusGFX: INCBIN "gfx/trainer_card/card_status.2bpp"
 
 LeaderGFX:  INCBIN "gfx/trainer_card/leaders.2bpp"
-LeaderGFX2: INCBIN "gfx/trainer_card/leaders.2bpp"
+LeaderGFX2: INCBIN "gfx/trainer_card/leaders_kanto.2bpp"
 BadgeGFX:   INCBIN "gfx/trainer_card/badges.2bpp"
-BadgeGFX2:  INCBIN "gfx/trainer_card/badges.2bpp"
+BadgeGFX2:  INCBIN "gfx/trainer_card/kanto_badges.w16.2bpp"
 
 CardRightCornerGFX: INCBIN "gfx/trainer_card/card_right_corner.2bpp"
