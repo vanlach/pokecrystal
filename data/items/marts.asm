@@ -23,6 +23,7 @@ Marts:
 	dw MartVermilion
 	dw MartCeladon2F1
 	dw MartCeladon2F2
+	dw MartCeladon2F3
 	dw MartCeladon3F
 	dw MartCeladon4F
 	dw MartCeladon5F1
@@ -292,6 +293,16 @@ MartCeladon2F2:
 	db ICE_HEAL
 	db AWAKENING
 	db PARLYZ_HEAL
+	db -1 ; end
+
+MartCeladon2F3:
+	db 6 ; # items
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
+	db MOON_STONE
+	db SUN_STONE
 	db -1 ; end
 
 MartCeladon3F:
