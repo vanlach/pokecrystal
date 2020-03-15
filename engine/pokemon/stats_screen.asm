@@ -1,8 +1,9 @@
-	const_def 1
-	const PINK_PAGE  ; 1
-	const GREEN_PAGE ; 2
-	const BLUE_PAGE  ; 3
-NUM_STAT_PAGES EQU const_value + -1
+	const_def
+	const PINK_PAGE   ; 0
+	const GREEN_PAGE  ; 1
+	const BLUE_PAGE   ; 2
+	const ORANGE_PAGE ; 3
+NUM_STAT_PAGES EQU const_value
 
 BattleStatsScreenInit:
 	ld a, [wLinkMode]
@@ -62,13 +63,9 @@ StatsScreenMain:
 	ld [wJumptableIndex], a
 	; stupid interns
 	ld [wcf64], a
-	ld a, [wcf64]
-	and %11111100
-	or 1
-	ld [wcf64], a
 .loop
 	ld a, [wJumptableIndex]
-	and $ff ^ (1 << 7)
+	and $7f
 	ld hl, StatsScreenPointerTable
 	rst JumpTable
 	call StatsScreen_WaitAnim ; check for keys?
@@ -334,20 +331,22 @@ StatsScreen_JoypadAction:
 
 .a_button
 	ld a, c
-	cp BLUE_PAGE ; last page
+	cp ORANGE_PAGE ; last page
 	jr z, .b_button
 .d_right
 	inc c
-	ld a, BLUE_PAGE ; last page
+	ld a, ORANGE_PAGE ; last page
 	cp c
 	jr nc, .set_page
 	ld c, PINK_PAGE ; first page
 	jr .set_page
 
 .d_left
+	ld a, c
 	dec c
+	and a
 	jr nz, .set_page
-	ld c, BLUE_PAGE ; last page
+	ld c, ORANGE_PAGE ; last page
 	jr .set_page
 
 .done
@@ -467,7 +466,7 @@ StatsScreen_PlaceHorizontalDivider:
 	ret
 
 StatsScreen_PlacePageSwitchArrows:
-	hlcoord 12, 6
+	hlcoord 10, 6
 	ld [hl], "◀"
 	hlcoord 19, 6
 	ld [hl], "▶"
@@ -523,7 +522,6 @@ StatsScreen_LoadGFX:
 .PageTilemap:
 	ld a, [wcf64]
 	maskbits NUM_STAT_PAGES
-	dec a
 	ld hl, .Jumptable
 	rst JumpTable
 	ret
@@ -533,6 +531,7 @@ StatsScreen_LoadGFX:
 	dw .PinkPage
 	dw .GreenPage
 	dw .BluePage
+	dw .OrangePage
 
 .PinkPage:
 	hlcoord 0, 9
@@ -775,11 +774,247 @@ StatsScreen_LoadGFX:
 	dw sBoxMonOT
 	dw wBufferMonOT
 
+.OrangePage:
+	call PrintMonDVs
+	call TN_PrintToD
+	call TN_PrintLocation
+;	call TN_PrintLV
+	call PrintHappiness
+	ret
+
+PrintMonDVs
+call DisplayMonDVLabels
+call GetMonDVs
+call DisplayMonDVs
+
+DisplayMonDVLabels
+.place_HP_label
+	ld de, HPString
+	hlcoord 1, 8
+	call PlaceString
+.place_ATK_label
+	ld de, AttackString
+	hlcoord 4, 8
+	call PlaceString
+.place_DEF_label
+	ld de, DefenseString
+	hlcoord 8, 8
+	call PlaceString
+.place_SPE_label
+	ld de, SpeedString
+	hlcoord 12, 8
+	call PlaceString
+.place_SPC_label
+	ld de, SpecialString
+	hlcoord 16, 8
+	call PlaceString
+	ret
+
+GetMonDVs
+	; load DVs into hl
+	ld hl, wPartyMon1DVs
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [wCurPartyMon]
+	call AddNTimes
+.get_hp_dv
+; hl = DVs
+; DV_HP = (DV_ATK & 1) << 3 | (DV_DEF & 1) << 2 | (DV_SPD & 1) << 1 | (DV_SPC & 1)
+
+;   ATK & 1
+	ld a, [hl] ; ATK
+	swap a
+	and 1
+;	<< 3
+	add a
+	add a
+	add a
+;	Load result into b
+	ld b, a
+
+;	DEF & 1
+	ld a, [hli]
+	and 1
+;	<< 2
+	add a
+	add a
+;	Add b to a
+	add b
+;	Load result into b
+	ld b, a
+
+;	SPD & 1
+	ld a, [hl]
+	swap a
+	and 1
+;	<< 1
+	add a
+;	Add b to a
+	add b
+;	Load result into b
+	ld b, a
+
+;	SPC & 1
+	ld a, [hl]
+	and 1
+;	Add b to a
+	add b
+	dec hl
+	ret
+
+DisplayMonDVs
+.display_HP_DV
+	; a = HPDV
+	hlcoord 1, 9
+	call .print_DV
+.display_atk_DV
+	ld a, [wTempMonDVs]
+	swap a
+	and %1111
+	hlcoord 5, 9
+	call .print_DV
+.display_def_DV
+	ld a, [wTempMonDVs]
+	and %1111
+	hlcoord 9, 9
+	call .print_DV
+.display_spe_DV
+	ld a, [wTempMonDVs + 1]
+	swap a
+	and %1111
+	hlcoord 13, 9
+	call .print_DV
+.display_spc_DV
+	ld a, [wTempMonDVs + 1]
+	and %1111
+	hlcoord 17, 9
+	call .print_DV
+	ret
+.print_DV:
+; a = DV
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	call PrintNum
+	ret
+
+PrintHappiness:
+	ld a, [wTempMonHappiness]
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, PRINTNUM_LEFTALIGN | 1, 3
+	hlcoord 12, 14
+	call PrintNum
+	ld de, HappinessString
+	hlcoord 1, 14
+	call PlaceString
+	ret
+
+HPString:
+	db "HP@"
+
+AttackString:
+	db "ATK@"
+
+DefenseString:
+	db "DEF@"
+
+SpeedString:
+	db "SPE@"
+
+SpecialString:
+	db "SPC@"
+
 IDNoString:
 	db "<ID>№.@"
 
 OTString:
 	db "OT/@"
+
+HappinessString:
+	db "Happiness:@"
+
+TN_PrintToD
+	ld de, .caughtat
+	hlcoord 1, 11
+	call PlaceString
+	ld a, [wTempMonCaughtTime]
+	and CAUGHT_TIME_MASK
+	ld de, .unknown
+	jr z, .print
+	rlca
+	rlca
+	rlca
+	cp 2
+	ld de, .morn
+	jr c, .print
+	ld de, .day
+	jr z, .print
+	ld de, .nite
+.print
+	hlcoord 3, 12
+	jp PlaceString
+
+.caughtat
+	db "Met/@"
+
+.morn
+	db "Morn@"
+
+.day
+	db "Day@"
+
+.nite
+	db "Nite@"
+
+.unknown
+	db "???@"
+
+TN_PrintLocation:
+	ld a, [wTempMonCaughtLocation]
+	and a
+	ret z
+	ld de, .event
+	cp $ff
+	jr z, .print
+	ld e, a
+	farcall GetLandmarkName
+	ld de, wStringBuffer1
+.print
+	hlcoord 3, 13
+	jp PlaceString
+
+.event
+	db "Event #mon@"
+
+; TN_PrintLV:
+;	ld a, [wPartyMon1CaughtLevel]
+;	hlcoord 8, 12
+;	and a
+;	jr z, .unknown
+;	cp 1
+;	jr z, .hatched
+;	ld [wBuffer3], a
+;	ld de, .str_atlv
+;	call PlaceString
+;	ld de, wBuffer3
+;	lb bc, PRINTNUM_LEFTALIGN | 1, 3
+;	hlcoord 14, 12
+;	jp PrintNum
+; .hatched
+;	ld de, .str_hatched
+;	jp PlaceString
+; .unknown
+;	ld de, .str_unknown
+;	jp PlaceString
+;
+; .str_atlv
+;	db "at <LV>@"
+;
+; .str_hatched
+;	db "from Egg@"
+;
+; .str_unknown
+;	db "by trade@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
@@ -1054,25 +1289,32 @@ StatsScreen_AnimateEgg:
 	ret
 
 StatsScreen_LoadPageIndicators:
-	hlcoord 13, 5
-	ld a, $36 ; first of 4 small square tiles
-	call .load_square
-	hlcoord 15, 5
-	ld a, $36 ; " " " "
-	call .load_square
-	hlcoord 17, 5
-	ld a, $36 ; " " " "
-	call .load_square
-	ld a, c
-	cp GREEN_PAGE
-	ld a, $3a ; first of 4 large square tiles
-	hlcoord 13, 5 ; PINK_PAGE (< GREEN_PAGE)
-	jr c, .load_square
-	hlcoord 15, 5 ; GREEN_PAGE (= GREEN_PAGE)
-	jr z, .load_square
-	hlcoord 17, 5 ; BLUE_PAGE (> GREEN_PAGE)
-.load_square
-	push bc
+	; Write the smaller squares for page display.
+	hlcoord 11, 5
+	ld a, $7f
+	ld b, 8
+.loop
+	ld [hli], a
+	dec b
+	jr nz, .loop
+
+	hlcoord 11, 6
+	ld a, $38
+	ld b, 4
+.loop2
+	ld [hli], a
+	inc a
+	ld [hli], a
+	dec a
+	dec b
+	jr nz, .loop2
+
+	; Write the bigger (selected) square for selected page.
+	; c contains current page (0-3)
+	sla c
+	hlcoord 11, 5
+	add hl, bc
+	ld a, $3a
 	ld [hli], a
 	inc a
 	ld [hld], a
@@ -1082,7 +1324,6 @@ StatsScreen_LoadPageIndicators:
 	ld [hli], a
 	inc a
 	ld [hl], a
-	pop bc
 	ret
 
 CopyNickname:
