@@ -1943,7 +1943,8 @@ wTMHMPocketCursor::     db
 wBerryPocketCursor::    db
 
 wPCItemsScrollPosition::        db
-wPartyMenuScrollPosition::      db ; unused
+wBattleMenuFlags:: db
+; wPartyMenuScrollPosition::      db ; unused ; replaced with above line
 wItemsPocketScrollPosition::    db
 wKeyItemsPocketScrollPosition:: db
 wBallsPocketScrollPosition::    db

@@ -1,32 +1,41 @@
 LoadBattleMenu:
 	ld hl, BattleMenuHeader
-	call LoadMenuHeader
-	ld a, [wBattleMenuCursorBuffer]
-	ld [wMenuCursorBuffer], a
-	call InterpretBattleMenu
-	ld a, [wMenuCursorBuffer]
-	ld [wBattleMenuCursorBuffer], a
-	call ExitMenu
+	jr _BattleMenuCommon
 	ret
 
 SafariBattleMenu:
 ; untranslated
 	ld hl, MenuHeader_0x24f4e
-	call LoadMenuHeader
-	jr Function24f19
+	jp _BattleMenuCommon
 
 ContestBattleMenu:
 	ld hl, MenuHeader_0x24f89
-	call LoadMenuHeader
 
-Function24f19:
+_BattleMenuCommon:
+	call LoadMenuHeader
 	ld a, [wBattleMenuCursorBuffer]
 	ld [wMenuCursorBuffer], a
+	ld b, QUICK_B
+	ld a, [wBattleType]
+	cp BATTLETYPE_CONTEST
+	jr z, .ok
+	ld b, QUICK_B | QUICK_START | QUICK_SELECT
+	ld a, [wBattleMode]
+	dec a
+	ld a, QUICK_START | QUICK_SELECT
+	jr nz, .ok2
+.ok
+	ld a, b
+.ok2
+	ld [wBattleMenuFlags], a
 	call _2DMenu
+	ld a, [wBattleMenuFlags]
+	and QUICK_PACK
+	ld [wBattleMenuFlags], a
 	ld a, [wMenuCursorBuffer]
 	ld [wBattleMenuCursorBuffer], a
-	call ExitMenu
-	ret
+	jp ExitMenu
+
 
 BattleMenuHeader:
 	db MENU_BACKUP_TILES ; flags
@@ -35,7 +44,7 @@ BattleMenuHeader:
 	db 1 ; default option
 
 MenuData_0x24f34:
-	db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
+	db $91 ; flags
 	dn 2, 2 ; rows, columns
 	db 6 ; spacing
 	dba Strings24f3d
@@ -80,7 +89,7 @@ MenuHeader_0x24f89:
 	db 1 ; default option
 
 MenuData_0x24f91:
-	db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
+	db $91 ; flags
 	dn 2, 2 ; rows, columns
 	db 12 ; spacing
 	dba Strings24f9a

@@ -66,6 +66,17 @@ NUM_EXP_STATS EQU const_value + -1
 NUM_STATS EQU const_value + -1
 NUM_BATTLE_STATS EQU NUM_STATS + -1 ; don't count HP
 
+	const_def
+	const QUICK_B_F
+	const QUICK_START_F
+	const QUICK_SELECT_F
+	const QUICK_PACK_F
+
+QUICK_B      EQU 1 << QUICK_B_F
+QUICK_START  EQU 1 << QUICK_START_F
+QUICK_SELECT EQU 1 << QUICK_SELECT_F
+QUICK_PACK   EQU 1 << QUICK_PACK_F
+
 ; stat formula constants
 STAT_MIN_NORMAL EQU 5
 STAT_MIN_HP EQU 10
