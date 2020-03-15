@@ -211,16 +211,10 @@ GetStormBadgeText:
 
 ChuckExplainBadgeText:
 	text "STORMBADGE makes"
-	line "all #MON up to"
+	line "your #MON use"
 
-	para "L70 obey, even"
-	line "traded ones."
-
-	para "It also lets your"
-	line "#MON use FLY"
-
-	para "when you're not in"
-	line "a battle."
+	para "FLY when you're"
+	line "not in a battle."
 
 	para "Here, take this"
 	line "too!"
