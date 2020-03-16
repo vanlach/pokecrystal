@@ -104,6 +104,7 @@ GetBattleAnimOAMPointer:
 LoadBattleAnimGFX:
 	push hl
 	cp ANIM_GFX_POKE_BALL
+	call z, .LoadBallPalette
 	ld l, a
 	ld h, 0
 	add hl, hl
