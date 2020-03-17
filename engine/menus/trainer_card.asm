@@ -1,4 +1,5 @@
 ; TrainerCard.Jumptable indexes
+; TrainerCard.Jumptable indexes
 	const_def
 	const TRAINERCARDSTATE_PAGE1_LOADGFX ; 0
 	const TRAINERCARDSTATE_PAGE1_JOYPAD  ; 1
@@ -264,9 +265,9 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "Name/"
+	db   "NAME/"
 	next ""
-	next "Money@"
+	next "MONEY@"
 
 .ID_No:
 	db $27, $28, -1 ; ID NO
@@ -306,13 +307,13 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	ret
 
 .Dex_PlayTime:
-	db   "#dex"
-	next "Play Time@"
+	db   "#DEX"
+	next "PLAY TIME@"
 
 	db "@" ; unused
 
 .Badges:
-	db "  Badges▶@"
+	db "  BADGES▶@"
 
 .StatusTilemap:
 	db $29, $2a, $2b, $2c, $2d, -1
@@ -348,7 +349,7 @@ endr
 	ret
 
 .BadgesTilemap:
-	db $79, $7a, $7b, $7c, $7d, $7e, -1 ; "Badges"
+	db $79, $7a, $7b, $7c, $7d, $7e, -1 ; "BADGES"
 
 TrainerCardSetup_PlaceTilemapString:
 .loop

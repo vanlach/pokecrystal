@@ -61,21 +61,21 @@ _OptionsMenu:
 	ret
 
 StringOptions:
-	db "Text Speed<LF>"
+	db "TEXT SPEED<LF>"
 	db "        :<LF>"
-	db "Battle Scene<LF>"
+	db "BATTLE SCENE<LF>"
 	db "        :<LF>"
-	db "Battle Style<LF>"
+	db "BATTLE STYLE<LF>"
 	db "        :<LF>"
-	db "Sound<LF>"
+	db "SOUND<LF>"
 	db "        :<LF>"
-	db "Print<LF>"
+	db "PRINT<LF>"
 	db "        :<LF>"
-	db "Menu Account<LF>"
+	db "MENU ACCOUNT<LF>"
 	db "        :<LF>"
-	db "Frame<LF>"
-	db "        :Type<LF>"
-	db "Cancel@"
+	db "FRAME<LF>"
+	db "        :TYPE<LF>"
+	db "CANCEL@"
 
 GetOptionPointer:
 	ld a, [wJumptableIndex] ; load the cursor position to a
@@ -159,10 +159,10 @@ Options_TextSpeed:
 	dw .Slow
 	dw .None
 
-.Fast: db "Fast@"
-.Mid:  db "Mid @"
-.Slow: db "Slow@"
-.None: db "None@"
+.Fast: db "FAST@"
+.Mid:  db "MID @"
+.Slow: db "SLOW@"
+.None: db "NONE@"
 
 GetTextSpeed:
 ; converts TEXT_DELAY_* value in a to OPT_TEXT_SPEED_* value in c,
@@ -231,8 +231,8 @@ Options_BattleScene:
 	and a
 	ret
 
-.On:  db "On @"
-.Off: db "Off@"
+.On:  db "ON @"
+.Off: db "OFF@"
 
 Options_BattleStyle:
 	ld hl, wOptions
@@ -269,8 +269,8 @@ Options_BattleStyle:
 	and a
 	ret
 
-.Shift: db "Shift@"
-.Set:   db "Set  @"
+.Shift: db "SHIFT@"
+.Set:   db "SET  @"
 
 Options_Sound:
 	ld hl, wOptions
@@ -314,8 +314,8 @@ Options_Sound:
 	and a
 	ret
 
-.Mono:   db "Mono  @"
-.Stereo: db "Stereo@"
+.Mono:   db "MONO  @"
+.Stereo: db "STEREO@"
 
 	const_def
 	const OPT_PRINT_LIGHTEST ; 0
@@ -376,11 +376,11 @@ Options_Print:
 	dw .Darker
 	dw .Darkest
 
-.Lightest: db "Lightest@"
-.Lighter:  db "Lighter @"
-.Normal:   db "Normal  @"
-.Darker:   db "Darker  @"
-.Darkest:  db "Darkest @"
+.Lightest: db "LIGHTEST@"
+.Lighter:  db "LIGHTER @"
+.Normal:   db "NORMAL  @"
+.Darker:   db "DARKER  @"
+.Darkest:  db "DARKEST @"
 
 GetPrinterSetting:
 ; converts GBPRINTER_* value in a to OPT_PRINT_* value in c,
@@ -454,8 +454,8 @@ Options_MenuAccount:
 	and a
 	ret
 
-.Off: db "Off@"
-.On:  db "On @"
+.Off: db "OFF@"
+.On:  db "ON @"
 
 Options_Frame:
 	ld hl, wTextboxFrame

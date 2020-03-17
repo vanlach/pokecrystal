@@ -41,12 +41,12 @@ MainMenu:
 	dw .Strings
 
 .Strings:
-	db "Continue@"
-	db "New Game@"
-	db "Option@"
-	db "Mystery Gift@"
-	db "Mobile@"
-	db "Mobile Studium@"
+	db "CONTINUE@"
+	db "NEW GAME@"
+	db "OPTION@"
+	db "MYSTERY GIFT@"
+	db "MOBILE@"
+	db "MOBILE STUDIUM@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -278,7 +278,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .TimeNotSet:
-	db "Time Not Set@"
+	db "TIME NOT SET@"
 
 .MainMenuTimeUnknownText:
 	text_far _MainMenuTimeUnknownText
@@ -300,15 +300,15 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .Days:
-	db "Sun@"
-	db "Mon@"
-	db "Tues@"
-	db "Wednes@"
-	db "Thurs@"
-	db "Fri@"
-	db "Satur@"
+	db "SUN@"
+	db "MON@"
+	db "TUES@"
+	db "WEDNES@"
+	db "THURS@"
+	db "FRI@"
+	db "SATUR@"
 .Day:
-	db "Day@"
+	db "DAY@"
 
 Function49ed0:
 	xor a
