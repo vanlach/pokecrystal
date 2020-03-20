@@ -388,13 +388,13 @@ PlaceCommandCharacter::
 	jp NextChar
 
 TMCharText::      db "TM@"
-TrainerCharText:: db "Trainer@"
+TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
-RocketCharText::  db "Rocket@"
-PlacePOKeText::   db "Poké@"
+RocketCharText::  db "ROCKET@"
+PlacePOKeText::   db "POKé@"
 KougekiText::     db "こうげき@"
 SixDotsCharText:: db "……@"
-EnemyText::       db "Enemy @"
+EnemyText::       db "ENEMY @"
 PlacePKMNText::   db "<PK><MN>@"
 PlacePOKEText::   db "<PO><KE>@"
 String_Space::    db " @"
