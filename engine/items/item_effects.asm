@@ -1285,7 +1285,7 @@ RareCandyEffect:
 
 	ld a, [hl]
 	cp MAX_LEVEL
-	jp nc, NoEffectMessage
+	jp nc, .force_evolution
 
 	inc a
 	ld [hl], a
@@ -1361,6 +1361,9 @@ RareCandyEffect:
 	farcall EvolvePokemon
 
 	jp UseDisposableItem
+
+.force_evolution:
+	farcall EvolvePokemon
 
 HealPowderEffect:
 	ld b, PARTYMENUACTION_HEALING_ITEM
