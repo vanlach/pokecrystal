@@ -45,7 +45,7 @@ Unused_CheckShininess:
 	ret
 
 ; Unused_CheckShininess:
-; Return carry if the DVs at bc are all 12 or higher.
+; Return carry if the DVs at bc are all 10 or higher.
 CheckShininess:
 
 	ld l, c
@@ -53,24 +53,24 @@ CheckShininess:
 
 ; Attack
 	ld a, [hl]
-	cp 12 << 4
+	cp 10 << 4
 	jr c, .NotShiny
 
 ; Defense
 	ld a, [hli]
 	and $f
-	cp 12
+	cp 10
 	jr c, .NotShiny
 
 ; Speed
 	ld a, [hl]
-	cp 12 << 4
+	cp 10 << 4
 	jr c, .NotShiny
 
 ; Special
 	ld a, [hl]
 	and $f
-	cp 12
+	cp 10
 	jr c, .NotShiny
 
 .Shiny:
