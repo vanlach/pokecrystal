@@ -59,7 +59,7 @@ KantoWaterWildMons:
 	map_id ROUTE_20
 	db 6 percent ; encounter rate
 	db 35, TENTACOOL
-	db 30, TENTACOOL
+	db 30, SHELLDER
 	db 35, TENTACRUEL
 
 	map_id ROUTE_21

@@ -522,16 +522,16 @@ KantoGrassWildMons:
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
 	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 27, EXEGGCUTE
+	db 27, SCYTHER
 	db 25, CHANSEY
 	; day
 	db 23, NIDORINO
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
 	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 27, EXEGGCUTE
+	db 27, SCYTHER
 	db 25, CHANSEY
 	; nite
 	db 23, VENONAT
