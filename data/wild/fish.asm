@@ -20,6 +20,7 @@ FishGroups:
 	fishgroup 50 percent + 1, .Qwilfish_Old,         .Qwilfish_Good,         .Qwilfish_Super
 	fishgroup 50 percent + 1, .Remoraid_Old,         .Remoraid_Good,         .Remoraid_Super
 	fishgroup 50 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
+;	fishgroup 50 percent + 1, .Safari_Zone_Old,      .Safari_Zone_Good,      .Safari_Zone_Super
 
 .Shore_Old:
 	db  70 percent + 1, MAGIKARP,   10
@@ -203,6 +204,20 @@ FishGroups:
 	db  70 percent,     time_group 7
 	db  90 percent + 1, MAGIKARP,   40
 	db 100 percent,     REMORAID,   40
+
+;.Safari_Zone_Old:
+;	db  30 percent,		MAGIKARP,	10
+;	db  65 percent,		MAGIKARP,	15
+;	db 100 percent,		MAGIKARP,	15
+;.Safari_Zone_Good:
+;	db  50 percent,		MAGIKARP,	15
+;	db  75 percent,		MAGIKARP,	20
+;	db 100 percent,		GYARADOS,	25
+;.Safari_Zone_Super:
+;	db  50 percent,		MAGIKARP,	20
+;	db  80 percent,		GYARADOS,	30
+;	db  90 percent,		DRATINI,	20
+;	db 100 percent,		DRAGONAIR,	30
 
 TimeFishGroups:
 	;  day              nite

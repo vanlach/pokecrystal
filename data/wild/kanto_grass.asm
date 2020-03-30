@@ -893,4 +893,112 @@ KantoGrassWildMons:
 	db 71, RAICHU
 	db 74, DITTO
 
+;	map_id SAFARI_ZONE_1
+;	db 6 percent, 6 percent, 4 percent ; encounter rates: morn/day/nite
+;	; morn
+;	db 21, NIDORAN_F
+;	db 29, NIDORAN_M
+;	db 22, EXEGGCUTE
+;	db 19, CUBONE
+;	db 21, TAUROS
+;	db 32, NIDORINA
+;	db 15, CHANSEY
+;	; day
+;	db 21, NIDORAN_M
+;	db 29, NIDORAN_F
+;	db 19, CUBONE
+;	db 22, EXEGGCUTE
+;	db 15, SCYTHER
+;	db 21, TAUROS
+;	db 15, CHANSEY
+;	; nite
+;	db 21, NIDORAN_M
+;	db 21, NIDORAN_F
+;	db 15, SCYTHER
+;	db 26, EXEGGCUTE
+;	db 19, CUBONE
+;	db 24, MAROWAK
+;	db 21, TAUROS
+;
+;	map_id SAFARI_ZONE_2
+;	db 6 percent, 6 percent, 4 percent ; encounter rates: morn/day/nite
+;	; morn
+;	db 36, NIDORAN_M
+;	db 14, NIDORAN_F
+;	db 20, EXEGGCUTE
+;	db 16, CUBONE
+;	db 25, SCYTHER
+;	db 28, KANGASKHAN
+;	db 15, PINSIR
+;	; day
+;	db 36, NIDORAN_M
+;	db 20, EXEGGCUTE
+;	db 25, RHYHORN
+;	db 16, CUBONE
+;	db 23, NIDORINA
+;	db 33, KANGASKHAN
+;	db 15, PINSIR
+;	; nite
+;	db 20, EXEGGCUTE
+;	db 14, NIDORAN_F
+;	db 36, NIDORAN_M
+;	db 23, NIDORINA
+;	db 16, CUBONE
+;	db 25, RHYHORN
+;	db 33, KANGASKHAN
+;
+;	map_id SAFARI_ZONE_3
+;	db 6 percent, 6 percent, 4 percent ; encounter rates: morn/day/nite
+;	; morn
+;	db 22, EXEGGCUTE
+;	db 21, NIDORAN_F
+;	db 29, NIDORAN_M
+;	db 32, NIDORINO
+;	db 21, TAUROS
+;	db 25, PINSIR
+;	db 27, TANGELA
+;	; day
+;	db 21, NIDORAN_F
+;	db 29, NIDORAN_M
+;	db 19, CUBONE
+;	db 32, NIDORINO
+;	db 21, TAUROS
+;	db 27, TANGELA
+;	db 25, PINSIR
+;	; nite
+;	db 29, NIDORAN_M
+;	db 21, NIDORAN_F
+;	db 22, EXEGGCUTE
+;	db 27, TANGELA
+;	db 24, MAROWAK
+;	db 25, PINSIR
+;	db 21, TAUROS
+;
+;	map_id SAFARI_ZONE_CENTER
+;	db 6 percent, 6 percent, 4 percent ; encounter rates: morn/day/nite
+;	; morn
+;	db 14, NIDORAN_M
+;	db 24, EXEGGCUTE
+;	db 36, NIDORAN_F
+;	db 27, PARAS
+;	db 32, PARASECT
+;	db 22, TANGELA
+;	db 10, CHANSEY
+;	; day
+;	db 27, PARAS
+;	db 14, NIDORAN_M
+;	db 23, NIDORINO
+;	db 36, NIDORAN_F
+;	db 32, PARASECT
+;	db 10, CHANSEY
+;	db 25, RHYHORN
+;	; nite
+;	db 27, PARAS
+;	db 27, PARASECT
+;	db 32, PARASECT
+;	db 23, NIDORINO
+;	db 22, TANGELA
+;	db 20, RHYHORN
+;	db 24, EXEGGCUTE
+
 	db -1 ; end

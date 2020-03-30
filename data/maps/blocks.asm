@@ -1065,3 +1065,15 @@ CeruleanCaveB1F_Blocks:
 
 MewGarden_Blocks:
 	INCBIN "maps/MewGarden.blk"
+
+;SafariZoneCenter_Blocks:
+;	INCBIN "maps/SafariZoneCenter.blk"
+;
+;SafariZoneEast_Blocks:
+;	INCBIN "maps/SafariZoneEast.blk"
+;
+;SafariZoneNorth_Blocks:
+;	INCBIN "maps/SafariZoneNorth.blk"
+;
+;SafariZoneWest_Blocks:
+;	INCBIN "maps/SafariZoneWest.blk"

@@ -103,6 +103,7 @@ Landmarks:
 	landmark  20,  68, Route28Name
 	landmark 140, 116, FastShipName
 	landmark 100,  52, CeruleanCaveName
+;	landmark  92, 117, SafariZoneName
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
@@ -206,3 +207,4 @@ UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE¯TOWER@"
 SpecialMapName:      db "SPECIAL@"
 CeruleanCaveName:    db "CERULEAN¯CAVE@"
+;SafariZoneName:      db "SAFARI¯ZONE@"

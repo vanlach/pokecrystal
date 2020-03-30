@@ -500,3 +500,7 @@ ENDM
 	map_const CERULEAN_CAVE_2F,                            17, 11 ;  2
 	map_const CERULEAN_CAVE_B1F,                           17, 11 ;  3
 	map_const MEW_GARDEN,                                  10, 15 ;  4
+;	map_const SAFARI_ZONE_CENTER,                          15, 13 ;  5
+;	map_const SAFARI_ZONE_EAST,                            15, 13 ;  6
+;	map_const SAFARI_ZONE_NORTH,                           20, 18 ;  7
+;	map_const SAFARI_ZONE_WEST,                            15, 13 ;  8
