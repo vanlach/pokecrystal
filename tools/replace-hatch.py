@@ -1,3 +1,5 @@
+## This is a script to modify the hatch cycle of all the Pokémon at once.
+
 import glob
 
 filenames = glob.glob('data/pokemon/base_stats/*.asm')
@@ -15,6 +17,7 @@ for filename in filenames:
 				continue
 			if line == '\tdb 5 ; unknown 2\n':
 				file.write('\tdb 1 ; step cycles to hatch\n')
+				## This is what the script will be writing.
 			file.write(line)
 
 
