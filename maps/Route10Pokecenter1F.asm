@@ -35,7 +35,7 @@ Route10Pokecenter1FCooltrainerFScript:
 	jumptextfaceplayer Route10Pokecenter1FCooltrainerFText
 
 Route10Pokecenter1FGentlemanText:
-	text "A #MON CENTER"
+	text "A #mon Center"
 	line "near a cave?"
 
 	para "That's mighty"
@@ -43,11 +43,11 @@ Route10Pokecenter1FGentlemanText:
 	done
 
 Route10Pokecenter1FGymGuyText:
-	text "The POWER PLANT's"
-	line "MANAGER is looking"
+	text "The Power Plant's"
+	line "manager is looking"
 
 	para "for a strong #-"
-	line "MON trainer."
+	line "mon trainer."
 
 	para "He needs help"
 	line "getting back"
@@ -57,10 +57,10 @@ Route10Pokecenter1FGymGuyText:
 	done
 
 Route10Pokecenter1FGymGuyText_ReturnedMachinePart:
-	text "I hear TEAM ROCKET"
+	text "I hear Team Rocket"
 	line "got back together"
 
-	para "in JOHTO but fell"
+	para "in Johto but fell"
 	line "apart right away."
 
 	para "I didn't know any-"
@@ -74,8 +74,8 @@ Route10Pokecenter1FCooltrainerFText:
 	para "the roof of a big"
 	line "building."
 
-	para "That's the POWER"
-	line "PLANT."
+	para "That's the Power"
+	line "Plant."
 	done
 
 Route10Pokecenter1F_MapEvents:

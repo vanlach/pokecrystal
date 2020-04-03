@@ -347,102 +347,102 @@ MovementData_BattleTowerBattleRoomPlayerTurnsToFaceNextOpponent:
 	step_end
 
 Text_BattleTowerWelcomesYou:
-	text "BATTLE TOWER"
+	text "Battle Tower"
 	line "welcomes you!"
 
 	para "I could show you"
-	line "to a BATTLE ROOM."
+	line "to a Battle Room."
 	done
 
 Text_WantToGoIntoABattleRoom:
 	text "Want to go into a"
-	line "BATTLE ROOM?"
+	line "Battle Room?"
 	done
 
 Text_RightThisWayToYourBattleRoom:
 	text "Right this way to"
-	line "your BATTLE ROOM."
+	line "your Battle Room."
 	done
 
 Text_BattleTowerIntroduction_1:
-	text "BATTLE TOWER is a"
+	text "Battle Tower is a"
 	line "facility made for"
-	cont "#MON battles."
+	cont "#mon battles."
 
-	para "Countless #MON"
+	para "Countless #mon"
 	line "trainers gather"
 
 	para "from all over to"
 	line "hold battles in"
 
 	para "specially designed"
-	line "BATTLE ROOMS."
+	line "Battle Rooms."
 
 	para "There are many"
-	line "BATTLE ROOMS in"
-	cont "the BATTLE TOWER."
+	line "Battle Rooms in"
+	cont "the Battle Tower."
 
-	para "Each ROOM holds"
+	para "Each room holds"
 	line "seven trainers."
 
 	para "If you defeat the"
-	line "seven in a ROOM,"
+	line "seven in a room,"
 
 	para "and you have a"
 	line "good record, you"
 
 	para "could become the"
-	line "ROOM's LEADER."
+	line "Room's Leader."
 
-	para "All LEADERS will"
+	para "All leaders will"
 	line "be recorded in the"
 
-	para "HONOR ROLL for"
+	para "Honor Roll for"
 	line "posterity."
 
 	para "You may challenge"
 	line "in up to five"
 
-	para "BATTLE ROOMS each"
+	para "Battle Rooms each"
 	line "day."
 
 	para "However, you may"
 	line "battle only once a"
 
 	para "day in any given"
-	line "ROOM."
+	line "room."
 
 	para "To interrupt a"
 	line "session, you must"
 
-	para "SAVE. If not, you"
+	para "Save. If not, you"
 	line "won't be able to"
 
-	para "resume your ROOM"
+	para "resume your room"
 	line "challenge."
 
 	para ""
 	done
 
 Text_BattleTowerIntroduction_2:
-	text "BATTLE TOWER is a"
+	text "Battle Tower is a"
 	line "facility made for"
-	cont "#MON battles."
+	cont "#mon battles."
 
-	para "Countless #MON"
+	para "Countless #mon"
 	line "trainers gather"
 
 	para "from all over to"
 	line "hold battles in"
 
 	para "specially designed"
-	line "BATTLE ROOMS."
+	line "Battle Rooms."
 
 	para "There are many"
-	line "BATTLE ROOMS in"
-	cont "the BATTLE TOWER."
+	line "Battle Rooms in"
+	cont "the Battle Tower."
 
-	para "Each ROOM holds"
+	para "Each room holds"
 	line "seven trainers."
 
 	para "Beat them all, and"
@@ -451,10 +451,10 @@ Text_BattleTowerIntroduction_2:
 	para "To interrupt a"
 	line "session, you must"
 
-	para "SAVE. If not, you"
+	para "Save. If not, you"
 	line "won't be able to"
 
-	para "resume your ROOM"
+	para "resume your room"
 	line "challenge."
 
 	para ""
@@ -462,8 +462,8 @@ Text_BattleTowerIntroduction_2:
 
 Text_ReceivedAListOfLeadersOnTheHonorRoll:
 	text "Received a list of"
-	line "LEADERS on the"
-	cont "HONOR ROLL."
+	line "leaders on the"
+	cont "Honor Roll."
 
 	para ""
 	done
@@ -497,7 +497,7 @@ Text_BeatenAllTheTrainers_Mobile:
 	line "results, you may"
 
 	para "be chosen as a"
-	line "ROOM LEADER."
+	line "Room Leader."
 
 	para ""
 	done
@@ -519,7 +519,7 @@ Text_AskRegisterRecord_Mobile:
 	line "register your"
 
 	para "record with the"
-	line "CENTER?"
+	line "center?"
 	done
 
 Text_PlayerGotFive:
@@ -532,7 +532,7 @@ Text_PlayerGotFive:
 	text_end
 
 Text_YourPackIsStuffedFull:
-	text "Oops, your PACK is"
+	text "Oops, your Pack is"
 	line "stuffed full."
 
 	para "Please make room"
@@ -559,14 +559,14 @@ Text_PleaseStepThisWay:
 Text_WouldYouLikeToHearAboutTheBattleTower:
 	text "Would you like to"
 	line "hear about the"
-	cont "BATTLE TOWER?"
+	cont "Battle Tower?"
 	done
 
 Text_CantBeRegistered:
 	text "Your record from"
 	line "the previous"
 
-	para "BATTLE ROOM can't"
+	para "Battle Room can't"
 	line "be registered. OK?"
 	done
 
@@ -574,7 +574,7 @@ Text_CantBeRegistered_PreviousRecordDeleted:
 	text "Your record from"
 	line "the previous"
 
-	para "BATTLE ROOM can't"
+	para "Battle Room can't"
 	line "be registered."
 
 	para "Also, the existing"
@@ -583,19 +583,19 @@ Text_CantBeRegistered_PreviousRecordDeleted:
 	done
 
 Text_CheckTheLeaderHonorRoll:
-	text "Check the LEADER"
-	line "HONOR ROLL?"
+	text "Check the Leader"
+	line "Honor Roll?"
 	done
 
 Text_ReadBattleTowerRules:
-	text "BATTLE TOWER rules"
+	text "Battle Tower rules"
 	line "are written here."
 
 	para "Read the rules?"
 	done
 
 Text_BattleTowerRules:
-	text "Three #MON may"
+	text "Three #mon may"
 	line "enter battles."
 
 	para "All three must be"
@@ -605,7 +605,7 @@ Text_BattleTowerRules:
 	line "hold must also be"
 	cont "different."
 
-	para "Certain #MON"
+	para "Certain #mon"
 	line "may also have"
 
 	para "level restrictions"
@@ -614,10 +614,10 @@ Text_BattleTowerRules:
 
 Text_BattleTower_LeftWithoutSaving:
 	text "Excuse me!"
-	line "You didn't SAVE"
+	line "You didn't Save"
 
 	para "before exiting"
-	line "the BATTLE ROOM."
+	line "the Battle Room."
 
 	para "I'm awfully sorry,"
 	line "but your challenge"
@@ -627,7 +627,7 @@ Text_BattleTower_LeftWithoutSaving:
 	done
 
 Text_YourMonWillBeHealedToFullHealth:
-	text "Your #MON will"
+	text "Your #mon will"
 	line "be healed to full"
 	cont "health."
 	done
@@ -641,36 +641,36 @@ Text_NextUpOpponentNo:
 
 Text_SaveBeforeConnecting_Mobile:
 	text "Your session will"
-	line "be SAVED before"
+	line "be Saved before"
 
 	para "connecting with"
-	line "the CENTER."
+	line "the center."
 	done
 
 Text_SaveBeforeEnteringBattleRoom:
 	text "Before entering"
-	line "the BATTLE ROOM,"
+	line "the Battle Room,"
 
 	para "your progress will"
 	line "be saved."
 	done
 
 Text_SaveAndEndTheSession:
-	text "SAVE and end the"
+	text "Save and end the"
 	line "session?"
 	done
 
 Text_SaveBeforeReentry:
 	text "Your record will"
-	line "be SAVED before"
+	line "be Saved before"
 
 	para "you go back into"
-	line "the previous ROOM."
+	line "the previous room."
 	done
 
 Text_CancelYourBattleRoomChallenge:
-	text "Cancel your BATTLE"
-	line "ROOM challenge?"
+	text "Cancel your Battle"
+	line "Room challenge?"
 	done
 
 Text_RegisterRecordOnFile_Mobile:
@@ -679,20 +679,20 @@ Text_RegisterRecordOnFile_Mobile:
 
 	para "file. Would you"
 	line "like to register"
-	cont "it at the CENTER?"
+	cont "it at the center?"
 	done
 
 Text_WeveBeenWaitingForYou:
 	text "We've been waiting"
 	line "for you. This way"
 
-	para "to a BATTLE ROOM,"
+	para "to a Battle Room,"
 	line "please."
 	done
 
 Text_FiveDayBattleLimit_Mobile:
 	text "You may enter only"
-	line "five BATTLE ROOMS"
+	line "five Battle Rooms"
 	cont "each day."
 
 	para "Please come back"
@@ -706,7 +706,7 @@ Text_TooMuchTimeElapsedNoRegister:
 	para "register your"
 	line "current record at"
 
-	para "the CENTER because"
+	para "the center because"
 	line "too much time has"
 
 	para "elapsed since the"
@@ -722,7 +722,7 @@ Text_RegisterRecordTimedOut_Mobile:
 	para "register your most"
 	line "recent record at"
 
-	para "the CENTER because"
+	para "the center because"
 	line "too much time has"
 
 	para "elapsed since the"
@@ -732,7 +732,7 @@ Text_RegisterRecordTimedOut_Mobile:
 
 Text_AMonLevelExceeds:
 	text "One or more of"
-	line "your #MON's"
+	line "your #mon's"
 	cont "levels exceeds @"
 	text_decimal wScriptVar, 1, 3
 	text "."
@@ -741,10 +741,10 @@ Text_AMonLevelExceeds:
 Text_MayNotEnterABattleRoomUnderL70:
 	text_ram wcd49
 	text " may not"
-	line "enter a BATTLE"
-	cont "ROOM under L70."
+	line "enter a Battle"
+	cont "Room under L70."
 
-	para "This BATTLE ROOM"
+	para "This Battle Room"
 	line "is for L@"
 	text_decimal wScriptVar, 1, 3
 	text "."
@@ -760,7 +760,7 @@ Text_BattleTowerYoungster:
 
 Text_BattleTowerCooltrainerF:
 	text "There are lots of"
-	line "BATTLE ROOMS, but"
+	line "Battle Rooms, but"
 
 	para "I'm going to win"
 	line "them all!"
@@ -774,7 +774,7 @@ Text_BattleTowerGranny:
 	line "in battle."
 
 	para "Making your"
-	line "#MON hold items"
+	line "#mon hold items"
 
 	para "is the key to"
 	line "winning battles."
@@ -785,10 +785,10 @@ Text_BattleTowerBugCatcher:
 	line "how far I can go"
 
 	para "using just bug"
-	line "#MON."
+	line "#mon."
 
 	para "Don't let there be"
-	line "any fire #MON…"
+	line "any fire #mon…"
 	done
 
 BattleTower1F_MapEvents:

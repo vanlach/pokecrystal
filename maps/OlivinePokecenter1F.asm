@@ -22,14 +22,14 @@ OlivinePokecenter1FTeacherScript:
 	jumptextfaceplayer OlivinePokecenter1FTeacherText
 
 OlivinePokecenter1FFisherText:
-	text "The SAILOR in the"
-	line "OLIVINE CAFE next"
+	text "The sailor in the"
+	line "Olivine Cafe next"
 
 	para "door is really"
 	line "generous."
 
 	para "He taught my"
-	line "#MON STRENGTH."
+	line "#mon Strength."
 
 	para "Now it can move"
 	line "big boulders."
@@ -37,12 +37,12 @@ OlivinePokecenter1FFisherText:
 
 OlivinePokecenter1FTeacherText:
 	text "There's a person"
-	line "in CIANWOOD CITY"
+	line "in Cianwood City"
 	cont "across the sea."
 
 	para "I heard him brag-"
 	line "ging about his"
-	cont "rare #MON."
+	cont "rare #mon."
 	done
 
 OlivinePokecenter1F_MapEvents:

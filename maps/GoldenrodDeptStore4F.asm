@@ -39,30 +39,30 @@ GoldenrodDeptStore4FElevatorButton:
 
 GoldenrodDeptStore4FCooltrainerMText:
 	text "Hey. I love strong"
-	line "#MON."
+	line "#mon."
 
-	para "I feed them PRO-"
-	line "TEIN to crank up"
-	cont "their ATTACK."
+	para "I feed them Pro-"
+	line "tein to crank up"
+	cont "their Attack."
 	done
 
 GoldenrodDeptStore4FBugCatcherText:
-	text "IRON adds to your"
-	line "#MON's DEFENSE."
+	text "Iron adds to your"
+	line "#mon's Defense."
 	done
 
 GoldenrodDeptStore4FGameboyKidText:
-	text "Some #MON"
+	text "Some #mon"
 	line "evolve only by"
 
 	para "being traded via a"
 	line "Game Link cable."
 
 	para "I know of four:"
-	line "MACHOKE, KADABRA,"
+	line "Machoke, Kadabra,"
 
-	para "HAUNTER and, um,"
-	line "GRAVELER."
+	para "Haunter and, um,"
+	line "graveler."
 
 	para "I heard there are"
 	line "others too."
@@ -70,9 +70,9 @@ GoldenrodDeptStore4FGameboyKidText:
 
 GoldenrodDeptStore4FDirectoryText:
 	text "Let Us Pump Up"
-	line "Your #MON!"
+	line "Your #mon!"
 
-	para "4F MEDICINE BOX"
+	para "4F Medicine Box"
 	done
 
 GoldenrodDeptStore4F_MapEvents:

@@ -250,7 +250,7 @@ DudeMovementData2b:
 	step_end
 
 CatchingTutorialBoxFullText:
-	text "#MON hide in"
+	text "#mon hide in"
 	line "the grass. Who"
 
 	para "knows when they'll"
@@ -261,12 +261,12 @@ CatchingTutorialIntroText:
 	text "I've seen you a"
 	line "couple times. How"
 
-	para "many #MON have"
+	para "many #mon have"
 	line "you caught?"
 
 	para "Would you like me"
 	line "to show you how to"
-	cont "catch #MON?"
+	cont "catch #mon?"
 	done
 
 CatchingTutorialDebriefText:
@@ -274,7 +274,7 @@ CatchingTutorialDebriefText:
 	line "it."
 
 	para "If you weaken them"
-	line "first, #MON are"
+	line "first, #mon are"
 	cont "easier to catch."
 	done
 
@@ -284,19 +284,19 @@ CatchingTutorialDeclinedText:
 	para "Anyway, if you"
 	line "want to catch"
 
-	para "#MON, you have"
+	para "#mon, you have"
 	line "to walk a lot."
 	done
 
 CatchingTutorialRepeatText:
 	text "Huh? You want me"
 	line "to show you how to"
-	cont "catch #MON?"
+	cont "catch #mon?"
 	done
 
 Route29YoungsterText:
 	text "Yo. How are your"
-	line "#MON?"
+	line "#mon?"
 
 	para "If they're weak"
 	line "and not ready for"
@@ -311,7 +311,7 @@ Route29TeacherText:
 	cont "off them."
 
 	para "But you can go to"
-	line "NEW BARK without"
+	line "New Bark without"
 
 	para "walking through"
 	line "the grass."
@@ -328,7 +328,7 @@ Route29FisherText:
 ; unused
 Text_WaitingForDay:
 	text "I'm waiting for"
-	line "#MON that"
+	line "#mon that"
 
 	para "appear only in the"
 	line "daytime."
@@ -336,7 +336,7 @@ Text_WaitingForDay:
 
 Route29CooltrainerMText_WaitingForNight:
 	text "I'm waiting for"
-	line "#MON that"
+	line "#mon that"
 
 	para "appear only at"
 	line "night."
@@ -344,14 +344,14 @@ Route29CooltrainerMText_WaitingForNight:
 
 Route29CooltrainerMText_WaitingForMorning:
 	text "I'm waiting for"
-	line "#MON that"
+	line "#mon that"
 
 	para "appear only in the"
 	line "morning."
 	done
 
 MeetTuscanyText:
-	text "TUSCANY: I do be-"
+	text "Tuscany: I do be-"
 	line "lieve that this is"
 
 	para "the first time"
@@ -360,7 +360,7 @@ MeetTuscanyText:
 	para "Please allow me to"
 	line "introduce myself."
 
-	para "I am TUSCANY of"
+	para "I am Tuscany of"
 	line "Tuesday."
 	done
 
@@ -369,11 +369,11 @@ TuscanyGivesGiftText:
 	line "duction, please"
 
 	para "accept this gift,"
-	line "a PINK BOW."
+	line "a Pink Bow."
 	done
 
 TuscanyGaveGiftText:
-	text "TUSCANY: Wouldn't"
+	text "Tuscany: Wouldn't"
 	line "you agree that it"
 	cont "is most adorable?"
 
@@ -385,35 +385,35 @@ TuscanyGaveGiftText:
 	done
 
 TuscanyTuesdayText:
-	text "TUSCANY: Have you"
-	line "met MONICA, my"
+	text "Tuscany: Have you"
+	line "met Monica, my"
 	cont "older sister?"
 
 	para "Or my younger"
-	line "brother, WESLEY?"
+	line "brother, Wesley?"
 
 	para "I am the second of"
 	line "seven children."
 	done
 
 TuscanyNotTuesdayText:
-	text "TUSCANY: Today is"
+	text "Tuscany: Today is"
 	line "not Tuesday. That"
 	cont "is unfortunate…"
 	done
 
 Route29Sign1Text:
-	text "ROUTE 29"
+	text "Route 29"
 
-	para "CHERRYGROVE CITY -"
-	line "NEW BARK TOWN"
+	para "Cherrygrove City -"
+	line "New Bark Town"
 	done
 
 Route29Sign2Text:
-	text "ROUTE 29"
+	text "Route 29"
 
-	para "CHERRYGROVE CITY -"
-	line "NEW BARK TOWN"
+	para "Cherrygrove City -"
+	line "New Bark Town"
 	done
 
 Route29_MapEvents:

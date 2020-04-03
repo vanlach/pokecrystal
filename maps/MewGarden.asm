@@ -46,7 +46,7 @@ MewGardenSignpostText:
 	line "mysterious"
 
 	para "place. It is"
-	line "said that MEW"
+	line "said that Mew"
 
 	para "lives in this"
 	line "forest."

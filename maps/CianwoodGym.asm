@@ -167,7 +167,7 @@ ChuckIntroText1:
 	para "Let me tell you,"
 	line "I'm tough!"
 
-	para "My #MON will"
+	para "My #mon will"
 	line "crush stones and"
 	cont "shatter bones!"
 
@@ -175,7 +175,7 @@ ChuckIntroText1:
 	done
 
 ChuckIntroText2:
-	text "CHUCK: Urggh!"
+	text "Chuck: Urggh!"
 	line "…"
 
 	para "Oooarrgh!"
@@ -188,7 +188,7 @@ ChuckIntroText3:
 	para "What?"
 	line "It has nothing to"
 
-	para "do with #MON?"
+	para "do with #mon?"
 	line "That's true!"
 
 	para "Come on. We shall"
@@ -201,17 +201,17 @@ ChuckLossText:
 
 	para "How about that!"
 	line "You're worthy of"
-	cont "STORMBADGE!"
+	cont "Stormbadge!"
 	done
 
 GetStormBadgeText:
 	text "<PLAYER> received"
-	line "STORMBADGE."
+	line "Stormbadge."
 	done
 
 ChuckExplainBadgeText:
-	text "STORMBADGE makes"
-	line "your #MON use"
+	text "Stormbadge makes"
+	line "your #mon use"
 
 	para "FLY when you're"
 	line "not in a battle."
@@ -221,8 +221,8 @@ ChuckExplainBadgeText:
 	done
 
 ChuckExplainTMText:
-	text "That is DYNAMIC-"
-	line "PUNCH."
+	text "That is Dynamic-"
+	line "punch."
 
 	para "It doesn't always"
 	line "hit, but when it"
@@ -251,7 +251,7 @@ ChuckAfterText:
 	done
 
 Chuck_RematchDefeatText:
-	text "CHUCK: WAHAHAH!"
+	text "Chuck: WAHAHAH!"
 	line "That's another"
 	cont "loss for me."
 
@@ -260,7 +260,7 @@ Chuck_RematchDefeatText:
 	done
 
 BlackbeltYoshiSeenText:
-	text "My #MON and I"
+	text "My #mon and I"
 	line "are bound togeth-"
 	cont "er by friendship."
 
@@ -275,7 +275,7 @@ BlackbeltYoshiBeatenText:
 BlackbeltYoshiAfterText:
 	text "You seem to have a"
 	line "strong bond with"
-	cont "your #MON too!"
+	cont "your #mon too!"
 	done
 
 BlackbeltLaoSeenText:
@@ -288,7 +288,7 @@ BlackbeltLaoBeatenText:
 	done
 
 BlackbeltLaoAfterText:
-	text "Fighting #MON"
+	text "Fighting #mon"
 	line "are afraid of psy-"
 	cont "chics…"
 	done
@@ -311,7 +311,7 @@ BlackbeltNobAfterText:
 BlackbeltLungSeenText:
 	text "My raging fists"
 	line "will shatter your"
-	cont "#MON!"
+	cont "#mon!"
 	done
 
 BlackbeltLungBeatenText:
@@ -319,7 +319,7 @@ BlackbeltLungBeatenText:
 	done
 
 BlackbeltLungAfterText:
-	text "My #MON lost…"
+	text "My #mon lost…"
 	line "My… my pride is"
 	cont "shattered…"
 	done

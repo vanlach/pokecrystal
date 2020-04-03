@@ -104,11 +104,11 @@ OaksLabPC:
 	jumptext OaksLabPCText
 
 OakWelcomeKantoText:
-	text "OAK: Ah, <PLAY_G>!"
+	text "Oak: Ah, <PLAY_G>!"
 	line "It's good of you"
 
 	para "to come all this"
-	line "way to KANTO."
+	line "way to Kanto."
 
 	para "What do you think"
 	line "of the trainers"
@@ -119,7 +119,7 @@ OakWelcomeKantoText:
 
 OakLabDexCheckText:
 	text "How is your #-"
-	line "DEX coming?"
+	line "dex coming?"
 
 	para "Let's see…"
 	done
@@ -131,12 +131,12 @@ OakLabGoodbyeText:
 	done
 
 OakOpenMtSilverText:
-	text "OAK: Wow! That's"
+	text "Oak: Wow! That's"
 	line "excellent!"
 
 	para "You collected the"
-	line "BADGES of GYMS in"
-	cont "KANTO. Well done!"
+	line "badges of gyms in"
+	cont "Kanto. Well done!"
 
 	para "I was right in my"
 	line "assessment of you."
@@ -146,13 +146,13 @@ OakOpenMtSilverText:
 
 	para "arrangements so"
 	line "that you can go to"
-	cont "MT.SILVER."
+	cont "Mt.Silver."
 
-	para "MT.SILVER is a big"
+	para "Mt.Silver is a big"
 	line "mountain that is"
 
 	para "home to many wild"
-	line "#MON."
+	line "#mon."
 
 	para "It's too dangerous"
 	line "for your average"
@@ -164,23 +164,23 @@ OakOpenMtSilverText:
 	line "exception in your"
 	cont "case, <PLAY_G>."
 
-	para "Go up to INDIGO"
-	line "PLATEAU. You can"
+	para "Go up to Indigo"
+	line "Plateau. You can"
 
-	para "reach MT.SILVER"
+	para "reach Mt.Silver"
 	line "from there."
 	done
 
 OakNoKantoBadgesText:
-	text "OAK: Hmm? You're"
+	text "Oak: Hmm? You're"
 	line "not collecting"
-	cont "KANTO GYM BADGES?"
+	cont "Kanto gym badges?"
 
-	para "The GYM LEADERS in"
-	line "KANTO are as tough"
+	para "The gym leaders in"
+	line "Kanto are as tough"
 
 	para "as any you battled"
-	line "in JOHTO."
+	line "in Johto."
 
 	para "I recommend that"
 	line "you challenge"
@@ -188,9 +188,9 @@ OakNoKantoBadgesText:
 	done
 
 OakYesKantoBadgesText:
-	text "OAK: Ah, you're"
-	line "collecting KANTO"
-	cont "GYM BADGES."
+	text "Oak: Ah, you're"
+	line "collecting Kanto"
+	cont "gym badges."
 
 	para "I imagine that"
 	line "it's hard, but the"
@@ -209,11 +209,11 @@ OakYesKantoBadgesText:
 	done
 
 OaksAssistant1Text:
-	text "The PROF's #MON"
-	line "TALK radio program"
+	text "The Prof's #mon"
+	line "Talk radio program"
 
 	para "isn't aired here"
-	line "in KANTO."
+	line "in Kanto."
 
 	para "It's a shame--I'd"
 	line "like to hear it."
@@ -222,7 +222,7 @@ OaksAssistant1Text:
 OaksAssistant2Text:
 	text "Thanks to your"
 	line "work on the #-"
-	cont "DEX, the PROF's"
+	cont "Dex, the Prof's"
 
 	para "research is coming"
 	line "along great."
@@ -230,20 +230,20 @@ OaksAssistant2Text:
 
 OaksAssistant3Text:
 	text "Don't tell anyone,"
-	line "but PROF.OAK'S"
+	line "but Prof.Oak's"
 
-	para "#MON TALK isn't"
+	para "#mon Talk isn't"
 	line "a live broadcast."
 	done
 
 OaksLabPoster1Text:
-	text "Press START to"
-	line "open the MENU."
+	text "Press Start to"
+	line "open the Menu."
 	done
 
 OaksLabPoster2Text:
-	text "The SAVE option is"
-	line "on the MENU."
+	text "The Save option is"
+	line "on the Menu."
 
 	para "Use it in a timely"
 	line "manner."
@@ -260,7 +260,7 @@ OaksLabPCText:
 
 	para "…"
 
-	para "PROF.OAK, how is"
+	para "Prof.Oak, how is"
 	line "your research"
 	cont "coming along?"
 
@@ -276,19 +276,19 @@ OaksLabPCText:
 	para "I'm delighted to"
 	line "hear that."
 
-	para "ELM in NEW BARK"
-	line "TOWN 8-)"
+	para "Elm in New Bark"
+	line "Town 8-)"
 	done
 
 OakHasKantoStartersText:
-	text "OAK: <PLAY_G>!"
+	text "Oak: <PLAY_G>!"
 	line "I have some"
 
-	para "#MON that I'd"
+	para "#mon that I'd"
 	line "like to give you."
 
 	para "They are the three"
-	line "#MON that"
+	line "#mon that"
 
 	para "trainers in the"
 	line "Kanto region"
@@ -314,10 +314,10 @@ OakGivesKantoStartersText:
 	text "Here are the three"
 	line "Kanto starters:"
 
-	para "BULBASAUR,"
-	line "SQUIRTLE, and"
+	para "Bulbasaur,"
+	line "Squirtle, and"
 
-	para "CHARMANDER!"
+	para "Charmander!"
 	done
 
 OaksLab_MapEvents:

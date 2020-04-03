@@ -5674,7 +5674,7 @@ Function1027eb:
 	ret
 
 .Stats_Trade:
-	db "STATS     TRADE@"
+	db "Stats     Trade@"
 
 Function102814:
 	ld a, [wMenuCursorY]
@@ -5976,8 +5976,8 @@ Function1029fe:
 	ret
 
 String_102a26:
-	db   "TRADE"
-	next "CANCEL"
+	db   "Trade"
+	next "Cancel"
 	db   "@"
 
 MenuData3_102a33:
@@ -6493,7 +6493,7 @@ Function102e3e:
 	ret
 
 .CANCEL:
-	db "CANCEL@"
+	db "Cancel@"
 
 Function102e4f:
 	farcall Function16d42e

@@ -32,8 +32,8 @@ BattleTowerOutsideSign:
 
 BattleTowerOutsideYoungsterText_NotYetOpen:
 ; unreferenced
-	text "Wow, the BATTLE"
-	line "TOWER is huge! My"
+	text "Wow, the Battle"
+	line "Tower is huge! My"
 
 	para "neck is tired from"
 	line "looking up at it."
@@ -41,8 +41,8 @@ BattleTowerOutsideYoungsterText_NotYetOpen:
 
 BattleTowerOutsideYoungsterText_Mobile:
 ; unreferenced
-	text "Wow, the BATTLE"
-	line "TOWER is huge!"
+	text "Wow, the Battle"
+	line "Tower is huge!"
 
 	para "Since there are a"
 	line "whole bunch of"
@@ -51,15 +51,15 @@ BattleTowerOutsideYoungsterText_Mobile:
 	line "there must also be"
 
 	para "a wide variety of"
-	line "#MON."
+	line "#mon."
 	done
 
 BattleTowerOutsideYoungsterText:
-	text "Wow, the BATTLE"
-	line "TOWER is huge!"
+	text "Wow, the Battle"
+	line "Tower is huge!"
 
 	para "There must be many"
-	line "kinds of #MON"
+	line "kinds of #mon"
 	cont "in there!"
 	done
 
@@ -72,12 +72,12 @@ BattleTowerOutsideBuenaText_NotYetOpen:
 	line "anything, I guess"
 
 	para "it must be for"
-	line "#MON battles."
+	line "#mon battles."
 	done
 
 BattleTowerOutsideBuenaText:
 	text "You can use only"
-	line "three #MON."
+	line "three #mon."
 
 	para "It's so hard to"
 	line "decide which three"
@@ -94,7 +94,7 @@ BattleTowerOutsideSailorText_Mobile:
 
 	para "I'm never giving"
 	line "up until I become"
-	cont "a LEADER!"
+	cont "a leader!"
 	done
 
 BattleTowerOutsideSailorText:
@@ -110,11 +110,11 @@ BattleTowerOutsideSailorText:
 
 BattleTowerOutsideSignText_NotYetOpen:
 ; unused; originally shown when the Battle Tower was closed
-	text "BATTLE TOWER"
+	text "Battle Tower"
 	done
 
 BattleTowerOutsideSignText:
-	text "BATTLE TOWER"
+	text "Battle Tower"
 
 	para "Take the Ultimate"
 	line "Trainer Challenge!"
@@ -122,7 +122,7 @@ BattleTowerOutsideSignText:
 
 BattleTowerOutsideText_DoorsClosed:
 ; unused; originally shown when the Battle Tower was closed
-	text "The BATTLE TOWER's"
+	text "The Battle Tower's"
 	line "doors are closed…"
 	done
 

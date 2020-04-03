@@ -37,15 +37,15 @@ CianwoodPokecenter1FSuperNerdScript:
 
 CianwoodPokecenter1FLassText:
 	text "Did you meet the"
-	line "#MANIAC?"
+	line "#maniac?"
 
 	para "He's always brag-"
 	line "ging about his"
-	cont "rare #MON."
+	cont "rare #mon."
 	done
 
 CianwoodGymGuyText:
-	text "The #MON GYM"
+	text "The #mon gym"
 	line "trainers here are"
 	cont "macho bullies."
 
@@ -54,30 +54,30 @@ CianwoodGymGuyText:
 	cont "after me."
 
 	para "Here's some ad-"
-	line "vice: the GYM"
+	line "vice: the gym"
 
-	para "LEADER uses the"
+	para "leader uses the"
 	line "fighting-type."
 
 	para "So you should"
 	line "confound him with"
-	cont "psychic #MON."
+	cont "psychic #mon."
 
 	para "Wipe out his #-"
-	line "MON before they"
+	line "mon before they"
 
 	para "can use their"
 	line "physical strength."
 
 	para "And those boulders"
 	line "in the middle of"
-	cont "the GYM?"
+	cont "the gym?"
 
 	para "If you don't move"
 	line "them correctly,"
 
 	para "you won't reach"
-	line "the GYM LEADER."
+	line "the gym leader."
 
 	para "If you get stuck,"
 	line "go outside."
@@ -94,23 +94,23 @@ CianwoodPokecenter1FUnusedText1:
 	text "Don't you get the"
 	line "urge to show off"
 
-	para "your #MON to"
+	para "your #mon to"
 	line "friends?"
 
 	para "I wish I could"
-	line "show the #MON I"
+	line "show the #mon I"
 
 	para "raised to my pal"
-	line "in VIOLET."
+	line "in Violet."
 	done
 
 CianwoodPokecenter1FUnusedText2:
 ; unreferenced
 	text "I've been battling"
-	line "my pal in VIOLET"
+	line "my pal in Violet"
 
-	para "using a MOBILE"
-	line "ADAPTER link."
+	para "using a Mobile"
+	line "Adapter link."
 
 	para "I'm down 5-7"
 	line "against him. I've"
@@ -119,7 +119,7 @@ CianwoodPokecenter1FUnusedText2:
 
 CianwoodPokecenter1FSuperNerdText:
 	text "I love showing off"
-	line "the #MON that"
+	line "the #mon that"
 
 	para "I've raised."
 	line "Don't you?"
@@ -128,7 +128,7 @@ CianwoodPokecenter1FSuperNerdText:
 	line "into a bunch of"
 
 	para "battles, and show"
-	line "off my #MON!"
+	line "off my #mon!"
 	done
 
 CianwoodPokecenter1F_MapEvents:

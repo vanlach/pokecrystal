@@ -39,7 +39,7 @@ CianwoodPharmacyBookshelf:
 	jumpstd difficultbookshelf
 
 PharmacistGiveSecretpotionText:
-	text "Your #MON ap-"
+	text "Your #mon ap-"
 	line "pear to be fine."
 
 	para "Is something wor- "
@@ -47,8 +47,8 @@ PharmacistGiveSecretpotionText:
 
 	para "…"
 
-	para "The LIGHTHOUSE"
-	line "#MON is in"
+	para "The Lighthouse"
+	line "#mon is in"
 	cont "trouble?"
 
 	para "I got it!"
@@ -59,11 +59,11 @@ PharmacistGiveSecretpotionText:
 
 ReceivedSecretpotionText:
 	text "<PLAYER> received"
-	line "SECRETPOTION."
+	line "Secretpotion."
 	done
 
 PharmacistDescribeSecretpotionText:
-	text "My SECRETPOTION is"
+	text "My Secretpotion is"
 	line "a tad too strong."
 
 	para "I only offer it in"

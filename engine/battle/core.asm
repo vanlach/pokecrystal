@@ -8468,11 +8468,11 @@ DisplayLinkBattleResult:
 	ret
 
 .Win:
-	db "YOU WIN@"
+	db "You Win@"
 .Lose:
-	db "YOU LOSE@"
+	db "You Lose@"
 .Draw:
-	db "  DRAW@"
+	db "  Draw@"
 
 .Mobile_InvalidBattle:
 	hlcoord 6, 8
@@ -8484,7 +8484,7 @@ DisplayLinkBattleResult:
 	ret
 
 .Invalid:
-	db "INVALID BATTLE@"
+	db "Invalid Battle@"
 
 IsMobileBattle2:
 	ld a, [wLinkMode]
@@ -8636,11 +8636,11 @@ ReadAndPrintLinkBattleRecord:
 	db "  ---  <LF>"
 	db "         -    -    -@"
 .Record:
-	db "<PLAYER>'s RECORD@"
+	db "<PLAYER>'s Record@"
 .Result:
-	db "RESULT WIN LOSE DRAW@"
+	db "Result Win Lose Draw@"
 .Total:
-	db "TOTAL  WIN LOSE DRAW@"
+	db "Total  Win Lose Draw@"
 
 BattleEnd_HandleRoamMons:
 	ld a, [wBattleType]

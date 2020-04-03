@@ -8,7 +8,7 @@ _OakText7::
 	line "ready?"
 
 	para "Your very own"
-	line "#MON story is"
+	line "#mon story is"
 	cont "about to unfold."
 
 	para "You'll face fun"
@@ -18,7 +18,7 @@ _OakText7::
 	para "A world of dreams"
 	line "and adventures"
 
-	para "with #MON"
+	para "with #mon"
 	line "awaits! Let's go!"
 
 	para "I'll be seeing you"
@@ -58,7 +58,7 @@ _LinkTimeoutText::
 
 _LinkTradeCantBattleText::
 	text "If you trade that"
-	line "#MON, you won't"
+	line "#mon, you won't"
 	cont "be able to battle."
 	prompt
 
@@ -84,7 +84,7 @@ UnknownText_0x1c422a::
 	line "battle, you must"
 
 	para "pick a team of"
-	line "three #MON."
+	line "three #mon."
 
 	para "Is that OK?"
 	done
@@ -97,7 +97,7 @@ UnknownText_0x1c4275::
 UnknownText_0x1c4298::
 	text "For a mobile"
 	line "battle, choose"
-	cont "three #MON."
+	cont "three #mon."
 
 	para "The maximum daily"
 	line "play time is ten"
@@ -112,7 +112,7 @@ UnknownText_0x1c4298::
 	line "the player with"
 
 	para "the fewest fainted"
-	line "#MON wins."
+	line "#mon wins."
 
 	para "If tied, the team"
 	line "that lost the"
@@ -173,7 +173,7 @@ _MobileBattleNoTimeLeftForLinkingText::
 	done
 
 UnknownText_0x1c4508::
-	text "Pick three #MON"
+	text "Pick three #mon"
 	line "for battle."
 	done
 
@@ -190,8 +190,8 @@ _WouldYouLikeToSaveTheGameText::
 	done
 
 _SavingDontTurnOffThePowerText::
-	text "SAVING… DON'T TURN"
-	line "OFF THE POWER."
+	text "Saving… Don't turn"
+	line "off the Power."
 	done
 
 _SavedTheGameText::
@@ -212,13 +212,13 @@ _SaveFileCorruptedText::
 
 _ChangeBoxSaveText::
 	text "When you change a"
-	line "#MON BOX, data"
+	line "#mon Box, data"
 	cont "will be saved. OK?"
 	done
 
 _MoveMonWOMailSaveText::
 	text "Each time you move"
-	line "a #MON, data"
+	line "a #mon, data"
 	cont "will be saved. OK?"
 	done
 
@@ -279,7 +279,7 @@ _SeerSeeAllText::
 	line "I know all…"
 
 	para "Certainly, I know"
-	line "of your #MON!"
+	line "of your #mon!"
 	done
 
 _SeerCantTellAThingText::
@@ -354,7 +354,7 @@ _SeerNoLocationText::
 _SeerEggText::
 	text "Hey!"
 
-	para "That's an EGG!"
+	para "That's an egg!"
 
 	para "You can't say that"
 	line "you've met it yet…"
@@ -371,7 +371,7 @@ _SeerMoreCareText::
 	para "It would be wise"
 	line "to raise your"
 
-	para "#MON with a"
+	para "#mon with a"
 	line "little more care."
 	done
 
@@ -410,7 +410,7 @@ _SeerMightyText::
 	line "must have come"
 
 	para "through numerous"
-	line "#MON battles."
+	line "#mon battles."
 
 	para "It looks brimming"
 	line "with confidence."
@@ -425,7 +425,7 @@ _SeerImpressedText::
 	para "It's been a long"
 	line "time since I've"
 
-	para "seen a #MON as"
+	para "seen a #mon as"
 	line "mighty as this"
 	cont "@"
 	text_ram wSeerNickname
@@ -499,7 +499,7 @@ _HerbShopLadyIntroText::
 	para "They're good, but"
 	line "a trifle bitter."
 
-	para "Your #MON may"
+	para "Your #mon may"
 	line "not like them."
 
 	para "Hehehehe…"
@@ -525,7 +525,7 @@ _HerbalLadyThanksText::
 	done
 
 _HerbalLadyPackFullText::
-	text "Oh? Your PACK is"
+	text "Oh? Your Pack is"
 	line "full, dear."
 	done
 
@@ -563,7 +563,7 @@ _BargainShopThanksText::
 	done
 
 _BargainShopPackFullText::
-	text "Uh-oh, your PACK"
+	text "Uh-oh, your Pack"
 	line "is chock-full."
 	done
 
@@ -719,10 +719,10 @@ _SlotsDarnText::
 
 _MobileStadiumEntryText::
 	text "Data for use in"
-	line "the MOBILE STADIUM"
+	line "the Mobile Stadium"
 
-	para "of the N64 #MON"
-	line "STADIUM 2 can be"
+	para "of the N64 #mon"
+	line "Stadium 2 can be"
 	cont "read here."
 
 	para "Read the data?"
@@ -733,10 +733,10 @@ _MobileStadiumSuccessText::
 	line "complete."
 
 	para "We hope you enjoy"
-	line "MOBILE STADIUM"
+	line "Mobile Stadium"
 
 	para "battles in the N64"
-	line "#MON STADIUM 2."
+	line "#mon Stadium 2."
 
 	para ""
 	done
@@ -748,18 +748,18 @@ _MainMenuTimeUnknownText::
 ; unused mobile
 _DeleteSavedLoginPasswordText::
 	text "Delete the saved"
-	line "LOG-IN PASSWORD?"
+	line "Log-In Password?"
 	done
 
 ; unused mobile
 _DeletedTheLoginPasswordText::
-	text "Deleted the LOG-IN"
-	line "PASSWORD."
+	text "Deleted the Log-In"
+	line "Password."
 	done
 
 ; unused mobile
 _MobilePickThreeMonForBattle::
-	text "Pick three #MON"
+	text "Pick three #mon"
 	line "for battle."
 	prompt
 
@@ -779,19 +779,19 @@ _MobileUseTheseThreeMonText::
 
 ; unused mobile
 _MobileOnlyThreeMonMayEnterText::
-	text "Only three #MON"
+	text "Only three #mon"
 	line "may enter."
 	prompt
 
 ; unused mobile
 _MobileCardFolderIntro1Text::
-	text "The CARD FOLDER"
+	text "The Card Folder"
 	line "stores your and"
 
 	para "your friends'"
-	line "CARDS."
+	line "cards."
 
-	para "A CARD contains"
+	para "A card contains"
 	line "information like"
 
 	para "the person's name,"
@@ -803,13 +803,13 @@ _MobileCardFolderIntro1Text::
 
 ; unused mobile
 _MobileCardFolderIntro2Text::
-	text "This is your CARD."
+	text "This is your card."
 
 	para "Once you've"
 	line "entered your phone"
 
 	para "number, you can"
-	line "trade CARDS with"
+	line "trade cards with"
 	cont "your friends."
 
 	para ""
@@ -818,14 +818,14 @@ _MobileCardFolderIntro2Text::
 ; unused mobile
 _MobileCardFolderIntro3Text::
 	text "If you have your"
-	line "friend's CARD, you"
+	line "friend's card, you"
 
 	para "can use it to make"
 	line "a call from a"
 
 	para "mobile phone on"
 	line "the 2nd floor of a"
-	cont "#MON CENTER."
+	cont "#mon Center."
 
 	para ""
 	done
@@ -835,28 +835,28 @@ _MobileCardFolderIntro4Text::
 	text "To safely store"
 	line "your collection of"
 
-	para "CARDS, you must"
-	line "set a PASSCODE for"
-	cont "your CARD FOLDER."
+	para "cards, you must"
+	line "set a passcode for"
+	cont "your card folder."
 
 	para ""
 	done
 
 ; unused mobile
 _MobileCardFolderAskDeleteText::
-	text "If the CARD FOLDER"
+	text "If the card folder"
 	line "is deleted, all"
 
-	para "its CARDS and the"
-	line "PASSCODE will also"
+	para "its cards and the"
+	line "passcode will also"
 	cont "be deleted."
 
 	para "Beware--a deleted"
-	line "CARD FOLDER can't"
+	line "card folder can't"
 	cont "be restored."
 
 	para "Want to delete"
-	line "your CARD FOLDER?"
+	line "your card folder?"
 	done
 
 ; unused mobile
@@ -867,7 +867,7 @@ _MobileCardFolderDeleteAreYouSureText::
 
 ; unused mobile
 _MobileCardFolderDeletedText::
-	text "The CARD FOLDER"
+	text "The card folder"
 	line "has been deleted."
 
 	para ""
@@ -876,7 +876,7 @@ _MobileCardFolderDeletedText::
 ; unused mobile
 _MobileCardFolderAskOpenOldText::
 	text "There is an older"
-	line "CARD FOLDER from a"
+	line "card folder from a"
 	cont "previous journey."
 
 	para "Do you want to"
@@ -886,13 +886,13 @@ _MobileCardFolderAskOpenOldText::
 ; unused mobile
 _MobileCardFolderAskDeleteOldText::
 	text "Delete the old"
-	line "CARD FOLDER?"
+	line "card folder?"
 	done
 
 ; unused mobile
 _MobileCardFolderFinishRegisteringCardsText::
 	text "Finish registering"
-	line "CARDS?"
+	line "cards?"
 	done
 
 _PhoneWrongNumberText::
@@ -929,7 +929,7 @@ UnknownText_0x1c55d6::
 
 _PasswordAskResetText::
 	text "Password OK."
-	line "Select CONTINUE &"
+	line "Select Continue &"
 	cont "reset settings."
 	prompt
 
@@ -1153,20 +1153,20 @@ _BattleTowerReturnWhenReadyText::
 
 _NeedAtLeastThreeMonText::
 	text "You need at least"
-	line "three #MON."
+	line "three #mon."
 
 	para ""
 	done
 
 _EggDoesNotQualifyText::
-	text "Sorry, an EGG"
+	text "Sorry, an egg"
 	line "doesn't qualify."
 
 	para ""
 	done
 
 _OnlyThreeMonMayBeEnteredText::
-	text "Only three #MON"
+	text "Only three #mon"
 	line "may be entered."
 
 	para ""
@@ -1175,7 +1175,7 @@ _OnlyThreeMonMayBeEnteredText::
 _TheMonMustAllBeDifferentKindsText::
 	text "The @"
 	text_ram wStringBuffer2
-	text " #MON"
+	text " #mon"
 	line "must all be"
 	cont "different kinds."
 
@@ -1185,7 +1185,7 @@ _TheMonMustAllBeDifferentKindsText::
 _TheMonMustNotHoldTheSameItemsText::
 	text "The @"
 	text_ram wStringBuffer2
-	text " #MON"
+	text " #mon"
 	line "must not hold the"
 	cont "same items."
 
@@ -1194,26 +1194,26 @@ _TheMonMustNotHoldTheSameItemsText::
 
 _YouCantTakeAnEggText::
 	text "You can't take an"
-	line "EGG!"
+	line "egg!"
 
 	para ""
 	done
 
 _BallDodgedText::
 	text "It dodged the"
-	line "thrown BALL!"
+	line "thrown ball!"
 
-	para "This #MON"
+	para "This #mon"
 	line "can't be caught!"
 	prompt
 
 _BallMissedText::
 	text "You missed the"
-	line "#MON!"
+	line "#mon!"
 	prompt
 
 _BallBrokeFreeText::
-	text "Oh no! The #MON"
+	text "Oh no! The #mon"
 	line "broke free!"
 	prompt
 
@@ -1251,14 +1251,14 @@ _WaitButtonText::
 _BallSentToPCText::
 	text_ram wMonOrItemNameBuffer
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to Bill's PC."
 	prompt
 
 _NewDexDataText::
 	text_ram wEnemyMonNick
 	text "'s data"
 	line "was newly added to"
-	cont "the #DEX.@"
+	cont "the #dex.@"
 	sound_slot_machine_start
 	text_promptbutton
 	text_end
@@ -1282,18 +1282,18 @@ _ItemStatRoseText::
 
 _ItemCantUseOnMonText::
 	text "That can't be used"
-	line "on this #MON."
+	line "on this #mon."
 	prompt
 
 _RepelUsedEarlierIsStillInEffectText::
-	text "The REPEL used"
+	text "The Repel used"
 	line "earlier is still"
 	cont "in effect."
 	prompt
 
 _PlayedFluteText::
 	text "Played the #"
-	line "FLUTE."
+	line "Flute."
 
 	para "Now, that's a"
 	line "catchy tune!"
@@ -1301,12 +1301,12 @@ _PlayedFluteText::
 
 _FluteWakeUpText::
 	text "All sleeping"
-	line "#MON woke up."
+	line "#mon woke up."
 	prompt
 
 Text_PlayedPokeFlute::
 	text "<PLAYER> played the"
-	line "# FLUTE.@"
+	line "# Flute.@"
 	text_promptbutton
 	text_end
 
@@ -1371,11 +1371,11 @@ _ItemLooksBitterText::
 
 _ItemCantUseOnEggText::
 	text "That can't be used"
-	line "on an EGG."
+	line "on an egg."
 	prompt
 
 _ItemOakWarningText::
-	text "OAK: <PLAYER>!"
+	text "Oak: <PLAYER>!"
 	line "This isn't the"
 	cont "time to use that!"
 	prompt
@@ -1392,7 +1392,7 @@ _ItemWontHaveEffectText::
 
 _BallBlockedText::
 	text "The trainer"
-	line "blocked the BALL!"
+	line "blocked the ball!"
 	prompt
 
 _BallDontBeAThiefText::
@@ -1412,7 +1412,7 @@ _ItemCantGetOnText::
 	prompt
 
 _BallBoxFullText::
-	text "The #MON BOX"
+	text "The #mon Box"
 	line "is full. That"
 	cont "can't be used now."
 	prompt
@@ -1448,7 +1448,7 @@ _KnowsMoveText::
 	prompt
 
 _MoveKnowsOneText::
-	text "That #MON knows"
+	text "That #mon knows"
 	line "only one move."
 	done
 
@@ -1460,12 +1460,12 @@ _AskDeleteMoveText::
 	done
 
 _DeleterForgotMoveText::
-	text "Done! Your #MON"
+	text "Done! Your #mon"
 	line "forgot the move."
 	done
 
 _DeleterEggText::
-	text "An EGG doesn't"
+	text "An egg doesn't"
 	line "know any moves!"
 	done
 
@@ -1481,17 +1481,17 @@ _DeleterAskWhichMoveText::
 
 _DeleterIntroText::
 	text "Um… Oh, yes, I'm"
-	line "the MOVE DELETER."
+	line "the Move Deleter."
 
-	para "I can make #MON"
+	para "I can make #mon"
 	line "forget moves."
 
 	para "Shall I make a"
-	line "#MON forget?"
+	line "#mon forget?"
 	done
 
 _DeleterAskWhichMonText::
-	text "Which #MON?"
+	text "Which #mon?"
 	prompt
 
 _DSTIsThatOKText::
@@ -1537,7 +1537,7 @@ _TimesetAskAdjustDSTText::
 _MomLostGearBookletText::
 	text "I lost the in-"
 	line "struction booklet"
-	cont "for the #GEAR."
+	cont "for the #gear."
 
 	para "Come back again in"
 	line "a while."

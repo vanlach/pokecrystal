@@ -36,20 +36,20 @@ MahoganyRedGyaradosSpeechHouseUnusedBookshelf2:
 
 MahoganyRedGyaradosSpeechHouseBlackBeltText:
 	text "I heard that a red"
-	line "GYARADOS appeared"
-	cont "at the LAKE."
+	line "Gyarados appeared"
+	cont "at the lake."
 
 	para "That's odd, since"
 	line "even ordinary"
 
-	para "GYARADOS are rare"
+	para "Gyarados are rare"
 	line "in that lake…"
 	done
 
 MahoganyRedGyaradosSpeechHouseTeacherText:
 	text "My favorite radio"
 	line "program? I'd say"
-	cont "#MON MUSIC."
+	cont "#mon Music."
 	done
 
 MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower:

@@ -308,7 +308,7 @@ MovementData_0x1851fe:
 	step_end
 
 TinTowerEusineSuicuneText:
-	text "EUSINE: Awesome!"
+	text "Eusine: Awesome!"
 	line "Too awesome, even!"
 
 	para "I've never seen a"
@@ -317,23 +317,23 @@ TinTowerEusineSuicuneText:
 	para "That was truly"
 	line "inspiring to see."
 
-	para "SUICUNE was tough,"
+	para "Suicune was tough,"
 	line "but you were even"
 
 	para "more incredible,"
 	line "<PLAYER>."
 
-	para "I heard SUICUNE's"
+	para "I heard Suicune's"
 	line "mystic power"
 
 	para "summons a rainbow-"
-	line "colored #MON."
+	line "colored #mon."
 
 	para "Maybe, just maybe,"
 	line "what went on today"
 
 	para "will cause that"
-	line "#MON to appear."
+	line "#mon to appear."
 
 	para "I'm going to study"
 	line "the legends more."
@@ -350,27 +350,27 @@ TinTower1FSage1Text:
 	line "legend…"
 
 	para "When the souls of"
-	line "#MON and humans"
+	line "#mon and humans"
 
 	para "commune, from the"
 	line "heavens descends a"
 
-	para "#MON of rainbow"
+	para "#mon of rainbow"
 	line "colors…"
 
 	para "Could it mean the"
-	line "legendary #MON"
+	line "legendary #mon"
 
 	para "are testing us"
 	line "humans?"
 	done
 
 TinTower1FSage2Text:
-	text "When the BRASS"
-	line "TOWER burned down,"
+	text "When the Brass"
+	line "Tower burned down,"
 
 	para "three nameless"
-	line "#MON were said"
+	line "#mon were said"
 
 	para "to have perished."
 	line "It was tragic."
@@ -378,7 +378,7 @@ TinTower1FSage2Text:
 	para "However…"
 
 	para "A rainbow-colored"
-	line "#MON…"
+	line "#mon…"
 
 	para "In other words…"
 
@@ -386,26 +386,26 @@ TinTower1FSage2Text:
 	line "from the sky and"
 
 	para "gave new life to"
-	line "the three #MON."
+	line "the three #mon."
 
 	para "They are…"
 
-	para "SUICUNE, ENTEI and"
-	line "RAIKOU."
+	para "Suicune, Entei and"
+	line "Raikou."
 
 	para "That is what they"
 	line "say."
 	done
 
 TinTower1FSage3Text:
-	text "The two TOWERS are"
+	text "The two towers are"
 	line "said to have been"
 
 	para "built to foster"
 	line "friendship and"
 
 	para "hope between #-"
-	line "MON and people."
+	line "mon and people."
 
 	para "That was 700 years"
 	line "ago, but the ideal"
@@ -415,11 +415,11 @@ TinTower1FSage3Text:
 	done
 
 TinTower1FSage4Text1:
-	text "HO-OH appears to"
+	text "Ho-Oh appears to"
 	line "have descended"
 
-	para "upon this, the TIN"
-	line "TOWER!"
+	para "upon this, the Tin"
+	line "Tower!"
 	done
 
 TinTower1FSage5Text1:
@@ -444,7 +444,7 @@ TinTowerEusineHoOhText:
 	text "I knew it."
 
 	para "I knew you'd get"
-	line "to see the #MON"
+	line "to see the #mon"
 
 	para "of rainbow colors,"
 	line "<PLAYER>."
@@ -456,24 +456,24 @@ TinTowerEusineHoOhText:
 	line "bad, I might say."
 
 	para "I'm going to keep"
-	line "studying #MON"
+	line "studying #mon"
 
 	para "to become a famous"
-	line "#MANIAC!"
+	line "#maniac!"
 	done
 
 TinTower1FSage4Text2:
 	text "The legendary"
-	line "#MON are said"
+	line "#mon are said"
 
 	para "to embody three"
 	line "powers…"
 
 	para "The lightning that"
-	line "struck the TOWER."
+	line "struck the tower."
 
 	para "The fire that"
-	line "burned the TOWER."
+	line "burned the tower."
 
 	para "And the rain that"
 	line "put out the fire…"
@@ -481,7 +481,7 @@ TinTower1FSage4Text2:
 
 TinTower1FSage5Text3:
 	text "When the legendary"
-	line "#MON appeared…"
+	line "#mon appeared…"
 
 	para "They struck terror"
 	line "in those who saw"
@@ -493,7 +493,7 @@ TinTower1FSage5Text3:
 	line "futile attacks."
 
 	para "The legendary"
-	line "#MON, knowing"
+	line "#mon, knowing"
 
 	para "their own power,"
 	line "fled, ignoring the"
@@ -502,22 +502,22 @@ TinTower1FSage5Text3:
 
 TinTower1FSage6Text2:
 	text "Of the legendary"
-	line "#MON, SUICUNE"
+	line "#mon, Suicune"
 
 	para "is said to be the"
-	line "closest to HO-OH."
+	line "closest to Ho-Oh."
 
 	para "I hear there may"
 	line "also be a link to"
 
-	para "#MON known as"
-	line "UNOWN."
+	para "#mon known as"
+	line "Unown."
 
-	para "The #MON UNOWN"
+	para "The #mon Unown"
 	line "must be sharing a"
 
 	para "cooperative bond"
-	line "with SUICUNE."
+	line "with Suicune."
 	done
 
 TinTower1F_MapEvents:

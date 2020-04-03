@@ -3870,17 +3870,17 @@ Strings_L10ToL100:
 	db " L:80 @@"
 	db " L:90 @@"
 	db " L:100@@"
-	db "CANCEL@@"
+	db "Cancel@@"
 
 Strings_Ll0ToL40:
 	db " L:10 @@"
 	db " L:20 @@"
 	db " L:30 @@"
 	db " L:40 @@"
-	db "CANCEL@@"
+	db "Cancel@@"
 
 String_119d8c:
-	db "CANCEL@"
+	db "Cancel@"
 
 BattleTower_LevelCheck:
 	ldh a, [rSVBK]
@@ -4606,10 +4606,10 @@ BattleTowerRoomMenu2_UpdateYesNoMenu:
 	ret
 
 String_11a2cf:
-	db "YES@"
+	db "Yes@"
 
 String_11a2d3:
-	db "NO@"
+	db "No@"
 
 MenuHeader_11a2d6:
 	db MENU_BACKUP_TILES ; flags
@@ -5406,34 +5406,34 @@ Function11a9f4:
 	ret
 
 Text_SaveFileWillBeSent:
-	text "SAVE FILE will be"
+	text "Save file will be"
 	line "sent."
 	done
 
 Text_SentSaveFileReadingNews:
-	text "Sent SAVE FILE."
-	line "Reading NEWS…"
+	text "Sent save file."
+	line "Reading news…"
 	done
 
 Text_ReadingNews:
-	text "Reading NEWS…"
+	text "Reading news…"
 	done
 
 Text_ReceivedNews:
-	text "Received NEWS!"
+	text "Received news!"
 	done
 
 Text_QuitReadingNews:
-	text "Quit reading NEWS?"
+	text "Quit reading news?"
 	done
 
 Text_CanceledSendingSaveFile:
 	text "Canceled sending"
-	line "SAVE FILE."
+	line "save file."
 	done
 
 Text_ReceivedOddEgg:
-	text "ODD EGG"
+	text "Odd egg"
 	line "was received!"
 	done
 
@@ -5444,36 +5444,36 @@ Text_RegisteringRecord:
 
 Text_BattleRoomVisitLimit:
 	text "One visit per day"
-	line "per BATTLE ROOM!"
+	line "per Battle room!"
 	done
 
 Text_PartyMonTopsThisLevel:
-	text "A party #MON"
+	text "A party #mon"
 	line "tops this level."
 	done
 
 Text_UberRestriction:
 	text_ram wcd49
 	text " may go"
-	line "only to BATTLE"
+	line "only to Battle"
 
-	para "ROOMS that are"
+	para "Rooms that are"
 	line "Lv.70 or higher."
 	done
 
 Text_CancelBattleRoomChallenge:
-	text "Cancel your BATTLE"
-	line "ROOM challenge?"
+	text "Cancel your Battle"
+	line "Room challenge?"
 	done
 
 Text_ExitGymLeaderHonorRoll:
-	text "Exit GYM LEADER"
-	line "HONOR ROLL?"
+	text "Exit Gym Leader"
+	line "Honor Roll?"
 	done
 
 Text_LinkingWithCenter:
 	text "Linking with the"
-	line "CENTER…"
+	line "Center…"
 	done
 
 Text_WhatLevelDoYouWantToChallenge:
@@ -5482,22 +5482,22 @@ Text_WhatLevelDoYouWantToChallenge:
 	done
 
 Text_CheckBattleRoomListByMaxLevel:
-	text "Check BATTLE ROOM"
+	text "Check Battle Room"
 	line "list by max level?"
 	done
 
 Text_EnterWhichBattleRoom:
 	text "Enter which"
-	line "BATTLE ROOM?"
+	line "Battle Room?"
 	done
 
 Text_WhichBattleRoom:
-	text "Which BATTLE ROOM?"
+	text "Which Battle Room?"
 	done
 
 Text_ThisBattleRoomPleaseWait:
 	text_ram wStringBuffer3
-	text "'s ROOM"
+	text "'s Room"
 	line "@"
 	text_ram wStringBuffer4
 	text "?"

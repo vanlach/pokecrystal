@@ -741,15 +741,15 @@ IlexForestApprenticeIntroText:
 	line "is going to be"
 	cont "steaming…"
 
-	para "The FARFETCH'D"
-	line "that CUTS trees"
+	para "The Farfetch'd"
+	line "that Cuts trees"
 
 	para "for charcoal took"
 	line "off on me."
 
 	para "I can't go looking"
 	line "for it here in the"
-	cont "ILEX FOREST."
+	cont "Ilex Forest."
 
 	para "It's too big, dark"
 	line "and scary for me…"
@@ -759,23 +759,23 @@ IlexForestApprenticeAfterText:
 	text "Wow! Thanks a"
 	line "whole bunch!"
 
-	para "My boss's #MON"
+	para "My boss's #mon"
 	line "won't obey me be-"
 	cont "cause I don't have"
-	cont "a BADGE."
+	cont "a badge."
 	done
 
 Text_ItsTheMissingPokemon:
 	text "It's the missing"
-	line "#MON!"
+	line "#mon!"
 	done
 
 Text_Kwaaaa:
-	text "FARFETCH'D: Kwaa!"
+	text "Farfetch'd: Kwaa!"
 	done
 
 Text_CharcoalMasterIntro:
-	text "Ah! My FARFETCH'D!"
+	text "Ah! My Farfetch'd!"
 
 	para "You found it for"
 	line "us, kid?"
@@ -783,7 +783,7 @@ Text_CharcoalMasterIntro:
 	para "Without it, we"
 	line "wouldn't be able"
 
-	para "to CUT trees for"
+	para "to Cut trees for"
 	line "charcoal."
 
 	para "Thanks, kid!"
@@ -796,17 +796,17 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the CUT HM."
+	text "That's the Cut HM."
 	line "Teach that to a"
 
-	para "#MON to clear"
+	para "#mon to clear"
 	line "small trees."
 
 	para "Of course, you"
 	line "have to have the"
 
-	para "GYM BADGE from"
-	line "AZALEA to use it."
+	para "gym badge from"
+	line "Azalea to use it."
 	done
 
 Text_CharcoalMasterTalkAfter:
@@ -824,7 +824,7 @@ Text_HeadbuttIntro:
 	text "What am I doing?"
 
 	para "I'm shaking trees"
-	line "using HEADBUTT."
+	line "using Headbutt."
 
 	para "It's fun. Here,"
 	line "you try it too!"
@@ -832,9 +832,9 @@ Text_HeadbuttIntro:
 
 Text_HeadbuttOutro:
 	text "Rattle trees with"
-	line "HEADBUTT. Some-"
+	line "Headbutt. Some-"
 	cont "times, sleeping"
-	cont "#MON fall out."
+	cont "#mon fall out."
 	done
 
 Text_IlexForestLass:
@@ -844,7 +844,7 @@ Text_IlexForestLass:
 	done
 
 IlexForestSignpostText:
-	text "ILEX FOREST is"
+	text "Ilex Forest is"
 	line "so overgrown with"
 
 	para "trees that you"
@@ -856,8 +856,8 @@ IlexForestSignpostText:
 	done
 
 Text_IlexForestShrine:
-	text "ILEX FOREST"
-	line "SHRINE…"
+	text "Ilex Forest"
+	line "Shrine…"
 
 	para "It's in honor of"
 	line "the forest's"
@@ -865,8 +865,8 @@ Text_IlexForestShrine:
 	done
 
 Text_ShrineCelebiEvent:
-	text "ILEX FOREST"
-	line "SHRINE…"
+	text "Ilex Forest"
+	line "Shrine…"
 
 	para "It's in honor of"
 	line "the forest's"
@@ -877,16 +877,16 @@ Text_ShrineCelebiEvent:
 	para "It's a hole."
 	line "It looks like the"
 
-	para "GS BALL would fit"
+	para "GS Ball would fit"
 	line "inside it."
 
 	para "Want to put the GS"
-	line "BALL here?"
+	line "Ball here?"
 	done
 
 Text_InsertGSBall:
 	text "<PLAYER> put in the"
-	line "GS BALL."
+	line "GS Ball."
 	done
 
 Text_KurtCaughtCelebi:
@@ -897,14 +897,14 @@ Text_KurtCaughtCelebi:
 	line "fantastic. Thanks!"
 
 	para "The legends about"
-	line "that SHRINE were"
+	line "that shrine were"
 	cont "real after all."
 
 	para "I feel inspired by"
 	line "what I just saw."
 
 	para "It motivates me to"
-	line "make better BALLS!"
+	line "make better balls!"
 
 	para "I'm going!"
 	done
@@ -914,24 +914,24 @@ BugCatcherWayneSeenText:
 	line "me like that!"
 
 	para "You frightened a"
-	line "#MON away!"
+	line "#mon away!"
 	done
 
 BugCatcherWayneBeatenText:
 	text "I hadn't seen that"
-	line "#MON before…"
+	line "#mon before…"
 	done
 
 BugCatcherWayneAfterBattleText:
-	text "A #MON I've"
+	text "A #mon I've"
 	line "never seen before"
 
 	para "fell out of the"
 	line "tree when I used"
-	cont "HEADBUTT."
+	cont "Headbutt."
 
 	para "I ought to use"
-	line "HEADBUTT in other"
+	line "Headbutt in other"
 	cont "places too."
 	done
 

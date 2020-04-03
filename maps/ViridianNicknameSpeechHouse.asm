@@ -36,7 +36,7 @@ ViridianNicknameSpeechHousePokefanMText:
 	line "of thought into"
 
 	para "naming your"
-	line "#MON?"
+	line "#mon?"
 
 	para "Giving them good"
 	line "nicknames adds to"
@@ -46,17 +46,17 @@ ViridianNicknameSpeechHousePokefanMText:
 	done
 
 ViridianNicknameSpeechHouseLassText:
-	text "They're SPEARY--"
-	line "a SPEAROW--and"
-	cont "RATTEY--a RATTATA."
+	text "They're Speary--"
+	line "a Spearow--and"
+	cont "Rattey--a Rattata."
 	done
 
 SpearyText:
-	text "SPEARY: Ch-chun!"
+	text "Speary: Ch-chun!"
 	done
 
 RatteyText:
-	text "RATTEY: Kikiii!"
+	text "Rattey: Kikiii!"
 	done
 
 ViridianNicknameSpeechHouse_MapEvents:

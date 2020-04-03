@@ -170,11 +170,11 @@ CeruleanCityHiddenBerserkGene:
 	hiddenitem BERSERK_GENE, EVENT_FOUND_BERSERK_GENE_IN_CERULEAN_CITY
 
 CeruleanCityCooltrainerMText1:
-	text "KANTO's POWER"
-	line "PLANT?"
+	text "Kanto's Power"
+	line "Plant?"
 
 	para "It's near the end"
-	line "of ROUTE 9, the"
+	line "of Route 9, the"
 
 	para "road that heads"
 	line "east from here."
@@ -187,7 +187,7 @@ CeruleanCityCooltrainerMText1:
 CeruleanCityCooltrainerMText2:
 	text "You're collecting"
 	line "every single kind"
-	cont "of #MON?"
+	cont "of #mon?"
 
 	para "That must be quite"
 	line "a challenge, but"
@@ -195,7 +195,7 @@ CeruleanCityCooltrainerMText2:
 	done
 
 CeruleanCitySuperNerdText:
-	text "The CAPE in the"
+	text "The cape in the"
 	line "north is a good"
 
 	para "place for dates."
@@ -203,18 +203,18 @@ CeruleanCitySuperNerdText:
 	done
 
 CeruleanCitySlowbroText:
-	text "SLOWBRO: Yarah?"
+	text "Slowbro: Yarah?"
 	done
 
 CeruleanCityCooltrainerFText1:
-	text "My SLOWBRO and I"
+	text "My Slowbro and I"
 	line "make an awesome"
 	cont "combination!"
 	done
 
 CeruleanCityCooltrainerFText2:
-	text "SLOWBRO, show me"
-	line "your CONFUSION!"
+	text "Slowbro, show me"
+	line "your Confusion!"
 	done
 
 CeruleanCityCooltrainerFText3:
@@ -223,14 +223,14 @@ CeruleanCityCooltrainerFText3:
 
 CeruleanCityFisherText:
 	text "I'm a huge fan of"
-	line "CERULEAN GYM's"
-	cont "MISTY."
+	line "Cerulean Gym's"
+	cont "Misty."
 	done
 
 CeruleanCityFisherRocketTipText:
 	text "I saw this shady"
 	line "guy go off toward"
-	cont "CERULEAN's CAPE."
+	cont "Cerulean's Cape."
 	done
 
 CeruleanCityYoungsterText1:
@@ -238,27 +238,27 @@ CeruleanCityYoungsterText1:
 	line "cave here that had"
 
 	para "horribly powerful"
-	line "#MON in it."
+	line "#mon in it."
 	done
 
 CeruleanCityYoungsterText2:
 	text "Ayuh?"
 
-	para "My ITEMFINDER is"
+	para "My Itemfinder is"
 	line "responding…"
 	done
 
 CeruleanCitySignText:
-	text "CERULEAN CITY"
+	text "Cerulean City"
 
 	para "A Mysterious Blue"
 	line "Aura Surrounds It"
 	done
 
 CeruleanGymSignText:
-	text "CERULEAN CITY"
-	line "#MON GYM"
-	cont "LEADER: MISTY"
+	text "Cerulean City"
+	line "#mon Gym"
+	cont "Leader: Misty"
 
 	para "The Tomboyish"
 	line "Mermaid"
@@ -268,9 +268,9 @@ CeruleanBikeShopSignText:
 	text "There's a notice"
 	line "here…"
 
-	para "The BIKE SHOP has"
-	line "moved to GOLDENROD"
-	cont "CITY in JOHTO…"
+	para "The Bike Shop has"
+	line "moved to Goldenrod"
+	cont "City in Johto…"
 	done
 
 CeruleanPoliceSignText:
@@ -283,12 +283,12 @@ CeruleanPoliceSignText:
 	para "a friendlier, more"
 	line "cheerful place!"
 
-	para "CERULEAN POLICE"
+	para "Cerulean Police"
 	done
 
 CeruleanCapeSignText:
-	text "CERULEAN CAPE"
-	line "AHEAD"
+	text "Cerulean Cape"
+	line "ahead"
 	done
 
 CeruleanLockedDoorText:
@@ -296,17 +296,17 @@ CeruleanLockedDoorText:
 	done
 
 ;CeruleanCaveIsDangerousText
-	text "This is CERULEAN"
-	line "CAVE! Horribly"
+	text "This is Cerulean"
+	line "Cave! Horribly"
 
-	para "strong #MON"
+	para "strong #mon"
 	line "live in there!"
 
 	para "Only trainers"
 	line "strong enough"
 
-	para "to travel to MT"
-	line "SILVER are"
+	para "to travel to Mt."
+	line "Silver are"
 	cont "allowed in!"
 	done
 

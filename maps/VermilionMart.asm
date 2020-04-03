@@ -21,8 +21,8 @@ VermilionMartBuenaScript:
 	jumptextfaceplayer VermilionMartBuenaText
 
 VermilionMartSuperNerdText:
-	text "TEAM ROCKET is no"
-	line "longer in KANTO."
+	text "Team Rocket is no"
+	line "longer in Kanto."
 
 	para "That alone makes"
 	line "me happy."
@@ -31,7 +31,7 @@ VermilionMartSuperNerdText:
 VermilionMartBuenaText:
 	text "I'm thinking about"
 	line "going shopping in"
-	cont "SAFFRON."
+	cont "Saffron."
 	done
 
 VermilionMart_MapEvents:

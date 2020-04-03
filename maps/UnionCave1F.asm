@@ -87,9 +87,9 @@ UnionCave1FUnusedSign:
 
 HikerRussellSeenText:
 	text "You're headed to"
-	line "AZALEA, are you?"
+	line "Azalea, are you?"
 
-	para "Let my #MON see"
+	para "Let my #mon see"
 	line "if you are good"
 	cont "enough to battle."
 	done
@@ -103,17 +103,17 @@ HikerRussellAfterBattleText:
 	line "I've decided."
 
 	para "I'm not leaving"
-	line "until my #MON"
+	line "until my #mon"
 	cont "get tougher!"
 	done
 
 PokemaniacLarrySeenText:
 	text "I roam far and"
 	line "wide in search of"
-	cont "#MON."
+	cont "#mon."
 
 	para "Are you looking"
-	line "for #MON too?"
+	line "for #mon too?"
 
 	para "Then you're my"
 	line "collecting rival!"
@@ -121,12 +121,12 @@ PokemaniacLarrySeenText:
 
 PokemaniacLarryBeatenText:
 	text "Ugh. My poor #-"
-	line "MON…"
+	line "mon…"
 	done
 
 PokemaniacLarryAfterBattleText:
 	text "Every Friday, you"
-	line "can hear #MON"
+	line "can hear #mon"
 
 	para "roars from deep"
 	line "inside the cave."
@@ -147,17 +147,17 @@ HikerDanielBeatenText:
 
 HikerDanielAfterBattleText:
 	text "I was conned into"
-	line "buying a SLOWPOKE-"
-	cont "TAIL."
+	line "buying a Slowpoke-"
+	cont "tail."
 
 	para "I feel sorry for"
-	line "the poor #MON."
+	line "the poor #mon."
 	done
 
 FirebreatherBillSeenText:
-	text "ZUBAT's SUPERSONIC"
+	text "Zubat's Supersonic"
 	line "keeps confusing"
-	cont "my #MON."
+	cont "my #mon."
 
 	para "I'm seriously"
 	line "upset about that!"
@@ -180,22 +180,22 @@ FirebreatherRaySeenText:
 	line "cave isn't scary."
 
 	para "If you're strong,"
-	line "#MON aren't"
+	line "#mon aren't"
 	cont "scary."
 	done
 
 FirebreatherRayBeatenText:
-	text "FLASH!"
+	text "Flash!"
 	done
 
 FirebreatherRayAfterBattleText:
-	text "It's my #MON's"
+	text "It's my #mon's"
 	line "fire that lights"
 	cont "up this cave."
 	done
 
 UnionCave1FUnusedSignText:
-	text "UNION CAVE"
+	text "Union Cave"
 	done
 
 UnionCave1F_MapEvents:

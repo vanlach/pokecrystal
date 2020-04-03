@@ -97,7 +97,7 @@ UnusedMissingDaughterText:
 
 	para "No… She couldn't"
 	line "have gone to the"
-	cont "BURNED TOWER."
+	cont "Burned Tower."
 
 	para "I told her not to"
 	line "go near it…"
@@ -110,7 +110,7 @@ UnusedMissingDaughterText:
 	done
 
 EcruteakCityGramps1Text:
-	text "ECRUTEAK used to"
+	text "Ecruteak used to"
 	line "have two towers:"
 
 	para "one each in the"
@@ -122,10 +122,10 @@ EcruteakCityGramps2Text:
 	line "Have you learned"
 
 	para "to dance like the"
-	line "KIMONO GIRLS?"
+	line "Kimono Girls?"
 
 	para "If you go to their"
-	line "DANCE THEATER, an"
+	line "Dance Theater, an"
 
 	para "odd old man will"
 	line "give you something"
@@ -134,9 +134,9 @@ EcruteakCityGramps2Text:
 
 EcruteakCityLass1Text:
 	text "I'm going to prac-"
-	line "tice at the DANCE"
+	line "tice at the Dance"
 
-	para "THEATER. Care to"
+	para "Theater. Care to"
 	line "join me?"
 	done
 
@@ -150,7 +150,7 @@ EcruteakCityLass2Text:
 	done
 
 EcruteakCityLass2Text_ReleasedBeasts:
-	text "Three big #MON"
+	text "Three big #mon"
 	line "ran off in differ-"
 	cont "ent directions."
 	cont "What were they?"
@@ -158,10 +158,10 @@ EcruteakCityLass2Text_ReleasedBeasts:
 
 EcruteakCityFisherText:
 	text "I heard a rumor"
-	line "about OLIVINE"
-	cont "LIGHTHOUSE."
+	line "about Olivine"
+	cont "Lighthouse."
 
-	para "The #MON that"
+	para "The #mon that"
 	line "serves as the"
 
 	para "beacon fell ill."
@@ -170,8 +170,8 @@ EcruteakCityFisherText:
 	done
 
 EcruteakCityFisherText_JasmineReturned:
-	text "The #MON at"
-	line "OLIVINE LIGHTHOUSE"
+	text "The #mon at"
+	line "Olivine Lighthouse"
 	cont "has been cured."
 
 	para "Boats can safely"
@@ -180,10 +180,10 @@ EcruteakCityFisherText_JasmineReturned:
 	done
 
 EcruteakCityYoungsterText:
-	text "I hear #MON are"
+	text "I hear #mon are"
 	line "rampaging at the"
 
-	para "LAKE OF RAGE. I'd"
+	para "Lake of Rage. I'd"
 	line "like to see that."
 	done
 
@@ -194,11 +194,11 @@ EcruteakCityGramps3Text:
 	para "This tower burned"
 	line "in a fire. Three"
 
-	para "nameless #MON"
+	para "nameless #mon"
 	line "perished in it."
 
 	para "A rainbow-colored"
-	line "#MON descended"
+	line "#mon descended"
 
 	para "from the sky and"
 	line "resurrected them…"
@@ -206,8 +206,8 @@ EcruteakCityGramps3Text:
 	para "It's a legend that"
 	line "has been passed"
 
-	para "down by ECRUTEAK"
-	line "GYM LEADERS."
+	para "down by Ecruteak"
+	line "gym leaders."
 
 	para "Me?"
 
@@ -217,7 +217,7 @@ EcruteakCityGramps3Text:
 	done
 
 EcruteakCitySignText:
-	text "ECRUTEAK CITY"
+	text "Ecruteak City"
 	line "A Historical City"
 
 	para "Where the Past"
@@ -225,29 +225,29 @@ EcruteakCitySignText:
 	done
 
 TinTowerSignText:
-	text "TIN TOWER"
+	text "Tin Tower"
 
 	para "A legendary #-"
-	line "MON is said to"
+	line "mon is said to"
 	cont "roost here."
 	done
 
 EcruteakGymSignText:
-	text "ECRUTEAK CITY"
-	line "#MON GYM"
-	cont "LEADER: MORTY"
+	text "Ecruteak City"
+	line "#mon Gym"
+	cont "Leader: Morty"
 
 	para "The Mystic Seer of"
 	line "the Future"
 	done
 
 EcruteakDanceTheaterSignText:
-	text "ECRUTEAK DANCE"
-	line "THEATER"
+	text "Ecruteak Dance"
+	line "Theater"
 	done
 
 BurnedTowerSignText:
-	text "BURNED TOWER"
+	text "Burned Tower"
 
 	para "It was destroyed"
 	line "by a mysterious"

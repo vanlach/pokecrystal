@@ -241,7 +241,7 @@ Route31MailRecipientScript:
 	end
 
 ReceivedSpearowMailText:
-	db   "DARK CAVE leads"
+	db   "Dark Cave leads"
 	next "to another road@"
 
 Route31YoungsterScript:
@@ -266,16 +266,16 @@ Route31PokeBall:
 	itemball POKE_BALL
 
 Route31CooltrainerMText:
-	text "DARK CAVE…"
+	text "Dark Cave…"
 
-	para "If #MON could"
+	para "If #mon could"
 	line "light it up, I'd"
 	cont "explore it."
 	done
 
 BugCatcherWade1SeenText:
 	text "I caught a bunch"
-	line "of #MON. Let me"
+	line "of #mon. Let me"
 	cont "battle with you!"
 	done
 
@@ -285,14 +285,14 @@ BugCatcherWade1BeatenText:
 
 BugCatcherWade1AfterText:
 	text "You can catch"
-	line "#MON even if"
+	line "#mon even if"
 
 	para "you have six with"
 	line "you."
 
 	para "If you catch one,"
 	line "it'll go to your"
-	cont "BOX automatically."
+	cont "box automatically."
 	done
 
 Text_Route31SleepyMan:
@@ -300,13 +300,13 @@ Text_Route31SleepyMan:
 
 	para "I walked too far"
 	line "today looking for"
-	cont "#MON."
+	cont "#mon."
 
 	para "My feet hurt and"
 	line "I'm sleepy…"
 
 	para "If I were a wild"
-	line "#MON, I'd be"
+	line "#mon, I'd be"
 	cont "easy to catch…"
 
 	para "…Zzzz…"
@@ -316,19 +316,19 @@ Text_Route31SleepyManGotMail:
 	text "…Zzzz… Huh?"
 
 	para "What's that? You"
-	line "have MAIL for me?"
+	line "have mail for me?"
 	done
 
 Text_Route31HandOverMailMon:
 	text "<PLAYER> handed"
-	line "over the #MON"
-	cont "holding the MAIL."
+	line "over the #mon"
+	cont "holding the mail."
 	done
 
 Text_Route31ReadingMail:
 	text "Let's see…"
 
-	para "…DARK CAVE leads"
+	para "…Dark Cave leads"
 	line "to another road…"
 
 	para "That's good to"
@@ -350,7 +350,7 @@ Text_Route31ReadingMail:
 	done
 
 Text_Route31DescribeNightmare:
-	text "TM50 is NIGHTMARE."
+	text "TM50 is Nightmare."
 
 	para "It's a wicked move"
 	line "that steadily cuts"
@@ -366,16 +366,16 @@ Text_Route31DescribeNightmare:
 	done
 
 Text_Route31WrongMail:
-	text "This MAIL isn't"
+	text "This mail isn't"
 	line "for me."
 	done
 
 Text_Route31MissingMail:
 	text "Why is this #-"
-	line "MON so special?"
+	line "mon so special?"
 
 	para "It doesn't have"
-	line "any MAIL."
+	line "any mail."
 	done
 
 Text_Route31DeclinedToHandOverMail:
@@ -385,7 +385,7 @@ Text_Route31DeclinedToHandOverMail:
 
 Text_Route31CantTakeLastMon:
 	text "If I take that"
-	line "#MON from you,"
+	line "#mon from you,"
 
 	para "what are you going"
 	line "to use in battle?"
@@ -393,26 +393,26 @@ Text_Route31CantTakeLastMon:
 
 Route31YoungsterText:
 	text "I found a good"
-	line "#MON in DARK"
-	cont "CAVE."
+	line "#mon in Dark"
+	cont "Cave."
 
 	para "I'm going to raise"
 	line "it to take on"
-	cont "FALKNER."
+	cont "Falkner."
 
 	para "He's the leader of"
-	line "VIOLET CITY's GYM."
+	line "Violet City's gym."
 	done
 
 Route31SignText:
-	text "ROUTE 31"
+	text "Route 31"
 
-	para "VIOLET CITY -"
-	line "CHERRYGROVE CITY"
+	para "Violet City -"
+	line "Cherrygrove City"
 	done
 
 DarkCaveSignText:
-	text "DARK CAVE"
+	text "Dark Cave"
 	done
 
 Route31_MapEvents:

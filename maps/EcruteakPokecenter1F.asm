@@ -98,7 +98,7 @@ EcruteakPokecenter1FPlayerMovement1:
 	step_end
 
 EcruteakPokecenter1F_BillText1:
-	text "Hi, I'm BILL. And"
+	text "Hi, I'm Bill. And"
 	line "who are you?"
 
 	para "Hmm, <PLAYER>, huh?"
@@ -109,13 +109,13 @@ EcruteakPokecenter1F_BillText1:
 EcruteakPokecenter1F_BillText2:
 	text "I just finished"
 	line "adjustments on my"
-	cont "TIME CAPSULE."
+	cont "Time Capsule."
 
 	para "You know that"
-	line "#MON can be"
+	line "#mon can be"
 	cont "traded, right?"
 
-	para "My TIME CAPSULE"
+	para "My Time Capsule"
 	line "was developed to"
 
 	para "enable trades with"
@@ -140,33 +140,33 @@ EcruteakPokecenter1F_BillText2:
 	para "Put simply, no"
 	line "sending new moves"
 
-	para "or new #MON in"
-	line "the TIME CAPSULE."
+	para "or new #mon in"
+	line "the Time Capsule."
 
 	para "Don't you worry."
 	line "I'm done with the"
 	cont "adjustments."
 
-	para "Tomorrow, TIME"
-	line "CAPSULES will be"
+	para "Tomorrow, Time"
+	line "Capsules will be"
 
 	para "running at all"
-	line "#MON CENTERS."
+	line "#mon Centers."
 
 	para "I have to hurry on"
-	line "back to GOLDENROD"
+	line "back to Goldenrod"
 	cont "and see my folks."
 
 	para "Buh-bye!"
 	done
 
 EcruteakPokecenter1FPokefanMText:
-	text "The way the KIMONO"
-	line "GIRLS dance is"
+	text "The way the Kimono"
+	line "Girls dance is"
 
 	para "marvelous. Just"
 	line "like the way they"
-	cont "use their #MON."
+	cont "use their #mon."
 	done
 
 EcruteakPokecenter1FPokefanMTextMobile:
@@ -182,23 +182,23 @@ EcruteakPokecenter1FPokefanMTextMobile:
 	para "Where, you ask?"
 
 	para "It's a little past"
-	line "OLIVINE CITY."
+	line "Olivine City."
 	done
 
 EcruteakPokecenter1FCooltrainerFText:
-	text "MORTY, the GYM"
-	line "LEADER, is soooo"
+	text "Morty, the gym"
+	line "leader, is soooo"
 	cont "cool."
 
-	para "His #MON are"
+	para "His #mon are"
 	line "really tough too."
 	done
 
 EcruteakPokecenter1FGymGuyText:
-	text "LAKE OF RAGE…"
+	text "Lake of Rage…"
 
 	para "The appearance of"
-	line "a GYARADOS swarm…"
+	line "a Gyarados swarm…"
 
 	para "I smell a conspir-"
 	line "acy. I know it!"

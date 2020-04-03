@@ -320,7 +320,7 @@ Route44HiddenElixer:
 
 FisherWilton1SeenText:
 	text "Aack! You made me"
-	line "lose a POLIWAG!"
+	line "lose a Poliwag!"
 
 	para "What are you going"
 	line "to do about it?"
@@ -332,7 +332,7 @@ FisherWilton1BeatenText:
 	done
 
 FisherWiltonHugePoliwagText:
-	text "That POLIWAG that"
+	text "That Poliwag that"
 	line "got away…"
 	cont "It was huge."
 
@@ -349,7 +349,7 @@ FisherEdgarSeenText:
 
 	para "That's my"
 	line "relationship"
-	cont "with my #MON."
+	cont "with my #mon."
 	done
 
 FisherEdgarBeatenText:
@@ -368,7 +368,7 @@ FisherEdgarAfterBattleText:
 BirdKeeperVance1SeenText:
 	text "Do you know about"
 	line "the legendary bird"
-	cont "#MON?"
+	cont "#mon?"
 	done
 
 BirdKeeperVance1BeatenText:
@@ -377,11 +377,11 @@ BirdKeeperVance1BeatenText:
 	done
 
 BirdKeeperVanceLegendaryBirdsText:
-	text "ARTICUNO, ZAPDOS"
-	line "and MOLTRES are"
+	text "Articuno, Zapdos"
+	line "and Moltres are"
 
 	para "the three legend-"
-	line "ary bird #MON."
+	line "ary bird #mon."
 
 	para "I heard there are"
 	line "other legendary"
@@ -418,16 +418,16 @@ PsychicPhilAfterBattleText:
 PokemaniacZachSeenText:
 	text "I'll do anything"
 	line "to get my hands on"
-	cont "rare #MON!"
+	cont "rare #mon!"
 	done
 
 PokemaniacZachBeatenText:
-	text "Oooh, your #MON"
+	text "Oooh, your #mon"
 	line "are so appealing."
 	done
 
 PokemaniacZachAfterBattleText:
-	text "If a #MON has"
+	text "If a #mon has"
 	line "different colors"
 
 	para "from usual, it's"
@@ -443,7 +443,7 @@ CooltrainermAllenSeenText:
 	cont "looking at you."
 
 	para "I'm good at #-"
-	line "MON, and I can see"
+	line "mon, and I can see"
 	cont "that you are too."
 	done
 
@@ -454,15 +454,15 @@ CooltrainermAllenBeatenText:
 
 CooltrainermAllenAfterBattleText:
 	text "Wow. You have a"
-	line "lot of BADGES."
+	line "lot of badges."
 
 	para "No wonder you're"
 	line "so tough."
 
 	para "I wonder if"
-	line "ECRUTEAK GYM's"
+	line "Ecruteak Gym's"
 
-	para "MORTY is still in"
+	para "Morty is still in"
 	line "training?"
 
 	para "He really hammered"
@@ -493,15 +493,15 @@ CooltrainerfCybilAfterBattleText:
 	done
 
 Route44Sign1Text:
-	text "ROUTE 44"
-	line "ICE PATH AHEAD"
+	text "Route 44"
+	line "Ice Path ahead"
 	done
 
 Route44Sign2Text:
-	text "ROUTE 44"
+	text "Route 44"
 
-	para "MAHOGANY TOWN -"
-	line "BLACKTHORN CITY"
+	para "Mahogany Town -"
+	line "Blackthorn City"
 	done
 
 Route44_MapEvents:

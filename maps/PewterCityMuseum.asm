@@ -38,10 +38,10 @@ PewterCityMuseumScientistScript:
 
 GiveFossilPokemonText:
 	text "I have the three"
-	line "FOSSIL #MON:"
+	line "fossil #mon:"
 
-	para "OMANYTE, KABUTO"
-	line "and AERODACTYL."
+	para "Omanyte, Kabuto"
+	line "and Aerodactyl."
 
 	para "Please take them"
 	line "to help with my"
@@ -65,7 +65,7 @@ PewterCityMuseumScientistText:
 
 	para "can continue re-"
 	line "searching the"
-	cont "FOSSIL #MON."
+	cont "fossil #mon."
 	done
 
 PewterMuseum_MapEvents:

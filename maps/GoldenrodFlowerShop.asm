@@ -89,7 +89,7 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 	text "Have you seen that"
 	line "wiggly tree that's"
 
-	para "growing on ROUTE"
+	para "growing on Route"
 	line "36?"
 
 	para "My little sister"
@@ -115,11 +115,11 @@ GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
 
 GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
 	text "Oh, you're better"
-	line "than WHITNEY…"
+	line "than Whitney…"
 
 	para "You'll be OK,"
 	line "then. Here's the"
-	cont "SQUIRTBOTTLE!"
+	cont "Squirtbottle!"
 	done
 
 GoldenrodFlowerShopTeacherDontDoAnythingDangerousText:
@@ -140,7 +140,7 @@ GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
 	para "tree, she told me"
 	line "it's dangerous."
 
-	para "If I beat WHITNEY,"
+	para "If I beat Whitney,"
 	line "I wonder if she'll"
 
 	para "lend me her water"
@@ -149,12 +149,12 @@ GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
 
 GoldenrodFlowerShopFloriaYouBeatWhitneyText:
 	text "Wow, you beat"
-	line "WHITNEY? Cool!"
+	line "Whitney? Cool!"
 	done
 
 GoldenrodFlowerShopFloriaItReallyWasAMonText:
 	text "So it really was a"
-	line "#MON!"
+	line "#mon!"
 	done
 
 GoldenrodFlowerShop_MapEvents:

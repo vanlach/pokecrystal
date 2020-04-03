@@ -4937,31 +4937,31 @@ Unknown_112089:
 	db $e4, $0c, $dd
 
 Unknown_11209e:
-	db "HELO ", 0
+	db "Helo ", 0
 Unknown_1120a4:
-	db "MAIL FROM:<", 0
+	db "Mail From:<", 0
 Unknown_1120b0:
-	db "RCPT TO:<", 0
+	db "Rcpt To:<", 0
 Unknown_1120ba:
-	db "DATA<CR>\n", 0
+	db "Data<CR>\n", 0
 Unknown_1120c1:
-	db "QUIT<CR>\n", 0
+	db "Quit<CR>\n", 0
 Unknown_1120c8:
-	db "USER ", 0
+	db "User ", 0
 Unknown_1120ce:
-	db "PASS ", 0
+	db "Pass ", 0
 Unknown_1120d4:
-	db "STAT<CR>\n", 0
+	db "Stat<CR>\n", 0
 Unknown_1120db:
-	db "LIST 00000<CR>\n", 0
+	db "List 00000<CR>\n", 0
 Unknown_1120e8:
-	db "RETR 00000<CR>\n", 0
+	db "Retr 00000<CR>\n", 0
 Unknown_1120f5:
-	db "DELE 00000<CR>\n", 0
+	db "Dele 00000<CR>\n", 0
 Unknown_112102:
-	db "TOP 00000 0<CR>\n", 0
+	db "Top 00000 0<CR>\n", 0
 Unknown_112110:
-	db "GET ", 0
+	db "Get ", 0
 Unknown_112115:
 	db " HTTP/1.0<CR>\n", 0
 Unknown_112121:
@@ -4969,7 +4969,7 @@ Unknown_112121:
 Unknown_112132:
 	db "<CR>\n<CR>\n", 0
 Unknown_112137:
-	db "POST ", 0
+	db "Post ", 0
 Unknown_11213d:
 	db "Content-Length: ", 0
 

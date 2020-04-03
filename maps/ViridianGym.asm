@@ -71,11 +71,11 @@ ViridianGymStatue:
 	jumpstd gymstatue2
 
 LeaderBlueBeforeText:
-	text "BLUE: Yo! Finally"
+	text "Blue: Yo! Finally"
 	line "got here, huh?"
 
 	para "I wasn't in the"
-	line "mood at CINNABAR,"
+	line "mood at Cinnabar,"
 
 	para "but now I'm ready"
 	line "to battle you."
@@ -84,9 +84,9 @@ LeaderBlueBeforeText:
 
 	para "You're telling me"
 	line "you conquered all"
-	cont "the GYMS in JOHTO?"
+	cont "the gyms in Johto?"
 
-	para "Heh! JOHTO's GYMS"
+	para "Heh! Johto's gyms"
 	line "must be pretty"
 	cont "pathetic then."
 
@@ -99,12 +99,12 @@ LeaderBlueBeforeText:
 	para "battling you right"
 	line "now."
 
-	para "Ready, JOHTO"
-	line "CHAMP?"
+	para "Ready, Johto"
+	line "Champ?"
 	done
 
 LeaderBlueWinText:
-	text "BLUE: What?"
+	text "Blue: What?"
 
 	para "How the heck did I"
 	line "lose to you?"
@@ -113,16 +113,16 @@ LeaderBlueWinText:
 
 	para "Tch, all right…"
 	line "Here, take this--"
-	cont "it's EARTHBADGE."
+	cont "it's Earthbadge."
 	done
 
 Text_ReceivedEarthBadge:
 	text "<PLAYER> received"
-	line "EARTHBADGE."
+	line "Earthbadge."
 	done
 
 LeaderBlueAfterText:
-	text "BLUE: …"
+	text "Blue: …"
 
 	para "All right, I was"
 	line "wrong. You're the"
@@ -138,7 +138,7 @@ LeaderBlueAfterText:
 	done
 
 LeaderBlueEpilogueText:
-	text "BLUE: Listen, you."
+	text "Blue: Listen, you."
 
 	para "You'd better not"
 	line "lose until I beat"
@@ -155,7 +155,7 @@ LeaderBlueEpilogueText:
 	done
 
 Blue_RematchDefeatText:
-	text "BLUE: What?"
+	text "Blue: What?"
 
 	para "How the heck did I"
 	line "lose to you again?"
@@ -164,17 +164,17 @@ Blue_RematchDefeatText:
 	done
 
 ViridianGymGuyText:
-	text "Yo, CHAMP in"
+	text "Yo, champ in"
 	line "making!"
 
 	para "How's it going?"
 	line "Looks like you're"
 	cont "on a roll."
 
-	para "The GYM LEADER is"
+	para "The gym leader is"
 	line "a guy who battled"
 
-	para "the CHAMPION three"
+	para "the champion three"
 	line "years ago."
 
 	para "He's no pushover."

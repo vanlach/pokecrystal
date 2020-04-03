@@ -89,38 +89,38 @@ Unknown_11417f:
 	dw .XGBMailType
 
 .From:
-	db "FROM:", 0
+	db "From:", 0
 .Sender:
-	db "SENDER:", 0
+	db "Sender:", 0
 .ReplyTo:
-	db "REPLY-TO:", 0
+	db "Reply-To:", 0
 .To:
-	db "TO:", 0
+	db "To:", 0
 .CC:
 	db "CC:", 0
 .Subject:
-	db "SUBJECT:", 0
+	db "Subject:", 0
 .Date:
-	db "DATE:", 0
+	db "Date:", 0
 .ContentType:
-	db "CONTENT-TYPE:", 0
+	db "Content-Type:", 0
 .MimeVersion:
-	db "MIME-VERSION:", 0
+	db "MIME-Version:", 0
 .XMailer:
-	db "X-MAILER:", 0
+	db "X-Mailer:", 0
 .XGameTitle:
-	db "X-GAME-TITLE:", 0
+	db "X-Game-Title:", 0
 .XGameCode:
-	db "X-GAME-CODE:", 0
+	db "X-Game-Code:", 0
 .XGBMailType:
-	db "X-GBMAIL-TYPE:", 0
+	db "X-GBMail-Type:", 0
 
 String_114218:
-	db "NAME=", 0
+	db "Name=", 0
 String_11421e:
-	db "MULTIPART", 0
+	db "Multipart", 0
 String_114228:
-	db "BOUNDARY=", 0
+	db "Boundary=", 0
 String_114232:
 	db "=?ISO-2022-JP?B?", 0
 
