@@ -426,7 +426,14 @@ NamingScreenJoypadLoop:
 	jr z, .end
 	call NamingScreen_GetLastCharacter
 	call NamingScreen_TryAddCharacter
-	ret nc
+	jr c, .start
+	ld a, [wNamingScreenLetterCase]
+	and a ; 0?
+	ret nz
+	ld a, [wNamingScreenCurNameLength]
+	dec a ; 1?
+	jr z, .select
+	ret
 
 .start
 	ld hl, wNamingScreenCursorObjectPointer
@@ -446,13 +453,13 @@ NamingScreenJoypadLoop:
 
 .b
 	call NamingScreen_DeleteCharacter
-	ret
-
-.end
-	call NamingScreen_StoreEntry
-	ld hl, wJumptableIndex
-	set 7, [hl]
-	ret
+	ld a, [wNamingScreenLetterCase]
+	and a ; 0?
+	ret z
+	ld a, [wNamingScreenCurNameLength]
+	and a ; 0?
+	ret nz
+	; fallthrough
 
 .select
 	ld hl, wNamingScreenLetterCase
@@ -462,6 +469,12 @@ NamingScreenJoypadLoop:
 	jr z, .upper
 	ld de, NameInputLower
 	call NamingScreen_ApplyTextInputMode
+	ret
+
+.end
+	call NamingScreen_StoreEntry
+	ld hl, wJumptableIndex
+	set 7, [hl]
 	ret
 
 .upper
