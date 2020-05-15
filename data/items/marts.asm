@@ -33,6 +33,7 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+	dw MartSilverCaveCenter
 .End
 
 MartCherrygrove:
@@ -391,6 +392,14 @@ MartUnderground:
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db -1 ; end
+
+MartSilverCaveCenter:
+	db 4 ; # items
+	db RARE_CANDY
+	db MAX_REVIVE
+	db MAX_ELIXER
+	db MASTER_BALL
 	db -1 ; end
 
 DefaultMart:

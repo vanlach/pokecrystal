@@ -22,6 +22,7 @@ OpenMartDialog::
 	dw BargainShop
 	dw Pharmacist
 	dw RooftopSale
+	dw RareItems
 
 MartDialog:
 	ld a, MARTTYPE_STANDARD
@@ -69,6 +70,16 @@ Pharmacist:
 	call MartTextbox
 	call BuyMenu
 	ld hl, PharmacyComeAgainText
+	call MartTextbox
+	ret
+
+RareItems:
+	call FarReadMart
+	call LoadStandardMenuHeader
+	ld hl, Text_RareItems_Intro
+	call MartTextbox
+	call BuyMenu
+	ld hl, Text_RareItems_ComeAgain
 	call MartTextbox
 	ret
 
@@ -434,6 +445,7 @@ GetMartDialogGroup:
 	dwb .BargainShopPointers, 1
 	dwb .PharmacyPointers, 0
 	dwb .StandardMartPointers, 2
+	dwb .RareItemsPointers, 0
 
 .StandardMartPointers:
 	dw MartHowManyText
@@ -465,6 +477,14 @@ GetMartDialogGroup:
 	dw PharmacyNoMoneyText
 	dw PharmacyPackFullText
 	dw PharmacyThanksText
+	dw BuyMenuLoop
+
+.RareItemsPointers:
+	dw Text_RareItems_HowMany
+	dw Text_RareItems_CostsThisMuch
+	dw Text_RareItems_InsufficientFunds
+	dw Text_RareItems_BagFull
+	dw Text_RareItems_HereYouGo
 	dw BuyMenuLoop
 
 BuyMenuLoop:
@@ -891,6 +911,34 @@ MartAskMoreText:
 
 MartBoughtText:
 	text_far _MartBoughtText
+	text_end
+
+Text_RareItems_Intro:
+	text_far RareItems_IntroText
+	text_end
+
+Text_RareItems_ComeAgain:
+	text_far RareItems_ComeAgainText
+	text_end
+
+Text_RareItems_HowMany:
+	text_far RareItems_HowManyText
+	text_end
+
+Text_RareItems_CostsThisMuch:
+	text_far RareItems_CostsThisMuchText
+	text_end
+
+Text_RareItems_InsufficientFunds:
+	text_far RareItems_InsufficientFundsText
+	text_end
+
+Text_RareItems_BagFull:
+	text_far RareItems_BagFullText
+	text_end
+
+Text_RareItems_HereYouGo:
+	text_far RareItems_HereYouGoText
 	text_end
 
 PlayTransactionSound:

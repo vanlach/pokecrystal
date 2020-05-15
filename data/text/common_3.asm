@@ -1542,3 +1542,44 @@ _MomLostGearBookletText::
 	para "Come back again in"
 	line "a while."
 	prompt
+
+RareItems_IntroText::
+	text "Looking to buy"
+	line "some rare items?"
+	done
+
+RareItems_ComeAgainText::
+	text "Pleasure doing"
+	line "business with you."
+	done
+
+RareItems_HowManyText::
+	text "How many do you"
+	line "want?"
+	done
+
+RareItems_CostsThisMuchText::
+	text "That'll cost you"
+	line "¥@"
+	text_decimal hMoneyTemp, 3, 6
+	text "."
+	done
+
+RareItems_InsufficientFundsText::
+	text "Doesn't look like"
+	line "you have enough"
+
+	para "to buy this."
+	done
+
+RareItems_BagFullText::
+	text "Looks like your"
+	line "bag is full…"
+
+	para "Free some space"
+	line "and return to me."
+	done
+
+RareItems_HereYouGoText::
+	text "Here you go!"
+	done

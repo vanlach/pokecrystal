@@ -25,6 +25,7 @@ Red:
 	closetext
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
+	setevent EVENT_UNLOCKED_RARE_ITEM_SELLER
 	disappear SILVERCAVEROOM3_RED
 	pause 15
 	special FadeInQuickly
