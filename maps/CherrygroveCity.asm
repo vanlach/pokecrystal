@@ -167,6 +167,15 @@ CherrygroveSilverSceneNorth:
 	playsound SFX_TACKLE
 	applymovement PLAYER, CherrygroveCity_RivalPushesYouOutOfTheWay
 	turnobject PLAYER, LEFT
+	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalForgetsTrainerCard
+	showemote EMOTE_SHOCK, CHERRYGROVECITY_SILVER, 15
+	turnobject CHERRYGROVECITY_SILVER, RIGHT
+	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalTakesTrainerCard
+	opentext
+	writetext CherrygroveCitySilverForgotTrainerCardText
+	waitbutton
+	closetext
+	turnobject CHERRYGROVECITY_SILVER, LEFT
 	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalExitsStageLeft
 	disappear CHERRYGROVECITY_SILVER
 	setscene SCENE_CHERRYGROVECITY_NOTHING
@@ -328,9 +337,22 @@ CherrygroveCity_RivalExitsStageLeft:
 	big_step LEFT
 	big_step LEFT
 	big_step UP
-	big_step UP
 	big_step LEFT
 	big_step LEFT
+	step_end
+
+CherrygroveCity_RivalForgetsTrainerCard:
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
+CherrygroveCity_RivalTakesTrainerCard:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	turn_head DOWN
 	step_end
 
 GuideGentIntroText:
@@ -459,8 +481,6 @@ SilverCherrygroveWinText:
 CherrygroveRivalText_YouLost:
 	text "<……> <……> <……>"
 
-	para "My name's ???."
-
 	para "I'm going to be"
 	line "the world's great-"
 	cont "est #mon"
@@ -475,12 +495,18 @@ SilverCherrygroveLossText:
 CherrygroveRivalText_YouWon:
 	text "<……> <……> <……>"
 
-	para "My name's ???."
-
 	para "I'm going to be"
 	line "the world's great-"
 	cont "est #mon"
 	cont "trainer."
+	done
+
+CherrygroveCitySilverForgotTrainerCardText:
+	text "Hey! Give me my"
+	line "trainer card back!"
+
+	para "Oh no… You saw my"
+	line "name."
 	done
 
 CherrygroveTeacherText_NoMapCard:
