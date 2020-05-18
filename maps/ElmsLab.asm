@@ -51,11 +51,6 @@ ElmsLab_MapScripts:
 	opentext
 	writetext ElmText_Intro
 	sjump .ElmGetsEmail
-;.MustSayYes:
-;	yesorno
-;	iftrue .ElmGetsEmail
-;	writetext ElmText_Refused
-;	sjump .MustSayYes
 
 .ElmGetsEmail:
 	writetext ElmText_Accepted
@@ -275,6 +270,7 @@ ElmDirectionsScript:
 	setevent EVENT_RIVAL_CHERRYGROVE_CITY
 	setscene SCENE_ELMSLAB_AIDE_GIVES_POTION
 	setmapscene NEW_BARK_TOWN, SCENE_FINISHED
+	setmapscene CHERRYGROVE_CITY, SCENE_CHERRYGROVECITY_GUIDE_GENT
 	end
 
 ElmDescribesMrPokemonScript:
