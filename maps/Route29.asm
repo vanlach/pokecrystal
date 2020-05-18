@@ -44,17 +44,19 @@ Route29Tutorial1:
 	setevent EVENT_DUDE_TALKED_TO_YOU
 	opentext
 	writetext CatchingTutorialIntroText
-	yesorno
-	iffalse Script_RefusedTutorial1
 	closetext
 	follow ROUTE29_COOLTRAINER_M1, PLAYER
 	applymovement ROUTE29_COOLTRAINER_M1, DudeMovementData1b
 	stopfollow
-	loadwildmon RATTATA, 5
+	loadwildmon EEVEE, 5
 	catchtutorial BATTLETYPE_TUTORIAL
 	turnobject ROUTE29_COOLTRAINER_M1, UP
 	opentext
 	writetext CatchingTutorialDebriefText
+	writetext CatchingTutorialGiveEeveeText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke EEVEE, 5
 	waitbutton
 	closetext
 	setscene SCENE_ROUTE29_NOTHING
@@ -75,11 +77,15 @@ Route29Tutorial2:
 	follow ROUTE29_COOLTRAINER_M1, PLAYER
 	applymovement ROUTE29_COOLTRAINER_M1, DudeMovementData2b
 	stopfollow
-	loadwildmon RATTATA, 5
+	loadwildmon EEVEE, 5
 	catchtutorial BATTLETYPE_TUTORIAL
 	turnobject ROUTE29_COOLTRAINER_M1, UP
 	opentext
 	writetext CatchingTutorialDebriefText
+	writetext CatchingTutorialGiveEeveeText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke EEVEE, 5
 	waitbutton
 	closetext
 	setscene SCENE_ROUTE29_NOTHING
@@ -261,12 +267,10 @@ CatchingTutorialIntroText:
 	text "I've seen you a"
 	line "couple times. How"
 
-	para "many #mon have"
-	line "you caught?"
+	para "about I show you"
+	line "how to catch a"
 
-	para "Would you like me"
-	line "to show you how to"
-	cont "catch #mon?"
+	para "#mon."
 	done
 
 CatchingTutorialDebriefText:
@@ -292,6 +296,25 @@ CatchingTutorialRepeatText:
 	text "Huh? You want me"
 	line "to show you how to"
 	cont "catch #mon?"
+	done
+
+CatchingTutorialGiveEeveeText:
+	text "Here, I'll even"
+	line "give you this"
+
+	para "Eevee. It's a"
+	line "#mon with many"
+
+	para "evolutions."
+
+	para "You can buy any"
+	line "of the evolution"
+
+	para "stones needed to"
+	line "evolve the Eevee"
+
+	para "at the Goldenrod"
+	line "Dept. store."
 	done
 
 Route29YoungsterText:
