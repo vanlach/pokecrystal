@@ -986,35 +986,35 @@ TN_PrintLocation:
 .event
 	db "Event #mon@"
 
-; TN_PrintLV:
-;	ld a, [wPartyMon1CaughtLevel]
-;	hlcoord 8, 12
-;	and a
-;	jr z, .unknown
-;	cp 1
-;	jr z, .hatched
-;	ld [wBuffer3], a
-;	ld de, .str_atlv
-;	call PlaceString
-;	ld de, wBuffer3
-;	lb bc, PRINTNUM_LEFTALIGN | 1, 3
-;	hlcoord 14, 12
-;	jp PrintNum
-; .hatched
-;	ld de, .str_hatched
-;	jp PlaceString
-; .unknown
-;	ld de, .str_unknown
-;	jp PlaceString
-;
-; .str_atlv
-;	db "at <LV>@"
-;
-; .str_hatched
-;	db "from Egg@"
-;
-; .str_unknown
-;	db "by trade@"
+TN_PrintLV:
+	ld a, [wTempMonCaughtLevel]
+	hlcoord 8, 12
+	and a
+	jr z, .unknown
+	cp 1
+	jr z, .hatched
+	ld [wBuffer2], a
+	ld de, .str_atlv
+	call PlaceString
+	ld de, wBuffer2
+	lb bc, PRINTNUM_LEFTALIGN | 1, 3
+	hlcoord 14, 12
+	jp PrintNum
+.hatched
+	ld de, .str_hatched
+	jp PlaceString
+.unknown
+	ld de, .str_unknown
+	jp PlaceString
+
+.str_atlv
+	db "at <LV>@"
+
+.str_hatched
+	db "from Egg@"
+
+.str_unknown
+	db "by trade@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
