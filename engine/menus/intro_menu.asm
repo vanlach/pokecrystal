@@ -653,7 +653,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTileMap
 
-	ld a, WOOPER
+	ld a, LARVITAR
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
