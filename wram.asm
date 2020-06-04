@@ -360,10 +360,10 @@ wVirtualOAMEnd::
 
 SECTION "Tilemap", WRAM0
 
-wTileMap:: ; c4a0
+wTilemap:: ; c4a0
 ; 20x18 grid of 8x8 tiles
 	ds SCREEN_WIDTH * SCREEN_HEIGHT
-wTileMapEnd::
+wTilemapEnd::
 
 
 SECTION "Miscellaneous", WRAM0
@@ -640,6 +640,7 @@ wEnemyScreens:: ; c700
 ; see wPlayerScreens
 	db
 
+UNION ; c701
 wPlayerSafeguardCount:: db ; c701
 wPlayerLightScreenCount:: db ; c702
 wPlayerReflectCount:: db ; c703
@@ -648,7 +649,19 @@ wPlayerReflectCount:: db ; c703
 wEnemySafeguardCount:: db ; c705
 wEnemyLightScreenCount:: db ; c706
 wEnemyReflectCount:: db ; c707
-	ds 2
+	ds 1
+
+NEXTU ; c701
+	ds 1
+wBetaPokerSGBPals:: dw ; c702
+	ds 1
+wBetaPokerSGBAttr:: db ; c705
+wBetaPokerSGBCol:: db ; c706
+wBetaPokerSGBRow:: db ; c707
+	ds 1
+ENDU ; c708
+
+	ds 1
 
 wBattleWeather:: ; c70a
 ; 00 normal
@@ -966,8 +979,8 @@ wPrinterSendByteOffset:: dw
 wPrinterSendByteCounter:: dw
 
 ; tilemap backup?
-wPrinterTileMapBuffer:: ds SCREEN_HEIGHT * SCREEN_WIDTH ; ca90
-wPrinterTileMapBufferEnd::
+wPrinterTilemapBuffer:: ds SCREEN_HEIGHT * SCREEN_WIDTH ; ca90
+wPrinterTilemapBufferEnd::
 wPrinterStatus:: db ; cbf8
 	ds 1
 ; High nibble is for margin before the image, low nibble is for after.
@@ -1175,8 +1188,7 @@ wBGMapBufferEnd::
 
 NEXTU ; cd20
 ; credits
-wCreditsPos:: db
-wCreditsUnusedCD21:: db
+wCreditsPos:: dw
 wCreditsTimer:: db
 
 NEXTU ; cd20
@@ -1325,7 +1337,7 @@ wCurHPPal:: db
 
 wSGBPals:: ds 48 ; cda9
 
-wAttrMap:: ; cdd9
+wAttrmap:: ; cdd9
 ; 20x18 grid of bg tile attributes for 8x8 tiles
 ; read horizontally from the top row
 ;		bit 7: priority
@@ -1335,7 +1347,7 @@ wAttrMap:: ; cdd9
 ;		bit 3: vram bank (cgb only)
 ;		bit 2-0: pal # (cgb only)
 	ds SCREEN_WIDTH * SCREEN_HEIGHT
-wAttrMapEnd::
+wAttrmapEnd::
 
 UNION ; cf41
 ; addresses dealing with serial comms
@@ -2351,7 +2363,7 @@ ENDU ; d430
 wd430:: ; mobile
 wBattleAction:: db ; d430
 
-wd431:: db ; mobile
+wLinkBattleSentAction:: db ; d431
 wMapStatus:: db ; d432
 wMapEventStatus:: db ; d433
 
@@ -2397,9 +2409,9 @@ wPlayerSpriteSetupFlags:: ; d45b
 ; bit 2: female player has been transformed into male
 ; bits 0-1: direction facing
 	db
-wMapReentryScriptQueueFlag:: db ; d45c MemScriptFlag
-wMapReentryScriptBank:: db ; d45d MemScriptBank
-wMapReentryScriptAddress:: dw ; d45e MemScriptAddr
+wMapReentryScriptQueueFlag:: db ; d45c
+wMapReentryScriptBank:: db ; d45d
+wMapReentryScriptAddress:: dw ; d45e
 	ds 4
 wTimeCyclesSinceLastCall:: db ; d464
 wReceiveCallDelay_MinsRemaining:: db ; d465
@@ -2852,15 +2864,15 @@ wCurMapData::
 
 wVisitedSpawns:: flag_array NUM_SPAWNS ; dca5
 
-wDigWarpNumber:: db ; dcaa
-wDigMapGroup::   db ; dcab
-wDigMapNumber::  db ; dcac
+wDigWarpNumber:: db ; dca9
+wDigMapGroup::   db ; dcaa
+wDigMapNumber::  db ; dcab
 
 ; used on maps like second floor pokécenter, which are reused, so we know which
 ; map to return to
-wBackupWarpNumber:: db ; dcad
-wBackupMapGroup::   db ; dcae
-wBackupMapNumber::  db ; dcaf
+wBackupWarpNumber:: db ; dcac
+wBackupMapGroup::   db ; dcad
+wBackupMapNumber::  db ; dcae
 
 	ds 3
 
@@ -2868,10 +2880,10 @@ wLastSpawnMapGroup:: db
 wLastSpawnMapNumber:: db
 
 wWarpNumber:: db ; dcb4
-wMapGroup:: db ; dcb5 ; map group of current map
-wMapNumber:: db ; dcb6 ; map number of current map
-wYCoord:: db ; dcb7 ; current y coordinate relative to top-left corner of current map
-wXCoord:: db ; dcb8 ; current x coordinate relative to top-left corner of current map
+wMapGroup:: db ; dcb5
+wMapNumber:: db ; dcb6
+wYCoord:: db ; dcb7
+wXCoord:: db ; dcb8
 wScreenSave:: ds SCREEN_META_WIDTH * SCREEN_META_HEIGHT
 
 wCurMapDataEnd::
@@ -2881,8 +2893,8 @@ SECTION "Party", WRAMX
 
 wPokemonData::
 
-wPartyCount::   db ; dcd7 ; number of Pokémon in party
-wPartySpecies:: ds PARTY_LENGTH ; dcd8 ; species of each Pokémon in party
+wPartyCount::   db ; dcd7
+wPartySpecies:: ds PARTY_LENGTH ; dcd8
 wPartyEnd::     db ; dcde ; older code doesn't check wPartyCount
 
 wPartyMons::
@@ -2970,7 +2982,7 @@ wGameDataEnd::
 
 SECTION "Pic Animations", WRAMX
 
-wTempTileMap::
+wTempTilemap::
 ; 20x18 grid of 8x8 tiles
 	ds SCREEN_WIDTH * SCREEN_HEIGHT ; $168 = 360
 
@@ -3193,8 +3205,8 @@ w5_MobileOpponentBattleLossMessage:: ds $c ; dc3e
 SECTION "Scratch RAM", WRAMX
 
 UNION ; d000
-wScratchTileMap:: ds BG_MAP_WIDTH * BG_MAP_HEIGHT
-wScratchAttrMap:: ds BG_MAP_WIDTH * BG_MAP_HEIGHT
+wScratchTilemap:: ds BG_MAP_WIDTH * BG_MAP_HEIGHT
+wScratchAttrmap:: ds BG_MAP_WIDTH * BG_MAP_HEIGHT
 
 NEXTU ; d000
 wDecompressScratch:: ds $80 tiles

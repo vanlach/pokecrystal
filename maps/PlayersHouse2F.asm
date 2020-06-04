@@ -9,7 +9,7 @@ PlayersHouse2F_MapScripts:
 
 	db 2 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .InitializeRoom
-	callback MAPCALLBACK_TILES, .SetSpawn
+	callback MAPCALLBACK_TILES, .SetUpTileDecorations
 
 ; unused
 .Null:
@@ -20,13 +20,13 @@ PlayersHouse2F_MapScripts:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_8
 	return
 
-.SetSpawn:
+.SetUpTileDecorations:
 	special ToggleMaptileDecorations
 	return
 
 	db 0, 0, 0 ; filler
 
-Doll1Script:
+Doll1Script::
 	describedecoration DECODESC_LEFT_DOLL
 
 Doll2Script:

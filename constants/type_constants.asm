@@ -26,14 +26,14 @@ UNUSED_TYPES EQU const_value
 	const TYPE_16
 	const TYPE_17
 	const TYPE_18
-	const CURSE_T
+	const CURSE_TYPE
 UNUSED_TYPES_END EQU const_value
 
 	const FIRE
 	const WATER
 	const GRASS
 	const ELECTRIC
-	const PSYCHIC
+	const PSYCHIC_TYPE
 	const ICE
 	const DRAGON
 	const DARK

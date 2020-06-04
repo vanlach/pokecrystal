@@ -214,7 +214,7 @@ CheckOwnMon:
 
 	ld hl, wPlayerName
 
-rept PLAYER_NAME_LENGTH + -2
+rept PLAYER_NAME_LENGTH - 2
 	ld a, [de]
 	cp [hl]
 	jr nz, .notfound

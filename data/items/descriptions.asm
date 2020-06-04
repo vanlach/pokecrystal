@@ -188,7 +188,7 @@ ItemDescriptions:
 	dw MorphMailDesc
 	dw BlueSkyMailDesc
 	dw MusicMailDesc
-	dw MewMailDesc
+	dw MirageMailDesc
 	dw TeruSama25Desc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
@@ -978,7 +978,7 @@ MusicMailDesc:
 	db   "Natu-print mail."
 	next "(Hold)@"
 
-MewMailDesc:
+MirageMailDesc:
 	db   "Mew-print mail."
 	next "(Hold)@"
 

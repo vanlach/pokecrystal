@@ -27,11 +27,11 @@ BASE_TMHM        EQUS "(wBaseTMHM - wCurBaseData)"
 BASE_DATA_SIZE   EQUS "(wCurBaseDataEnd - wCurBaseData)"
 
 ; gender ratio constants
-GENDER_F0      EQU 0 percent
-GENDER_F12_5   EQU 12 percent + 1
-GENDER_F25     EQU 25 percent
-GENDER_F50     EQU 50 percent
-GENDER_F75     EQU 75 percent
+GENDER_F0      EQU   0 percent
+GENDER_F12_5   EQU  12 percent + 1
+GENDER_F25     EQU  25 percent
+GENDER_F50     EQU  50 percent
+GENDER_F75     EQU  75 percent
 GENDER_F100    EQU 100 percent - 1
 GENDER_UNKNOWN EQU -1
 
@@ -124,7 +124,7 @@ MONS_PER_BOX EQU 20
 NUM_BOXES    EQU 14
 
 ; hall of fame
-HOF_MON_LENGTH EQU 1 + 2 + 2 + 1 + (MON_NAME_LENGTH + -1) ; species, id, dvs, level, nick
+HOF_MON_LENGTH EQU 1 + 2 + 2 + 1 + (MON_NAME_LENGTH - 1) ; species, id, dvs, level, nick
 HOF_LENGTH EQU 1 + HOF_MON_LENGTH * PARTY_LENGTH + 1 ; win count, party, terminator
 NUM_HOF_TEAMS EQU 30
 

@@ -114,10 +114,10 @@ WaitTop::
 	ret
 
 UpdateBGMap::
-; Update the BG Map, in thirds, from wTileMap and wAttrMap.
+; Update the BG Map, in thirds, from wTilemap and wAttrmap.
 
 	ldh a, [hBGMapMode]
-	and a
+	and a ; 0
 	ret z
 
 ; BG Map 0
@@ -127,7 +127,7 @@ UpdateBGMap::
 	jr z, .Attr
 
 ; BG Map 1
-	dec a
+	dec a ; useless
 
 	ldh a, [hBGMapAddress]
 	ld l, a
@@ -159,7 +159,7 @@ UpdateBGMap::
 	ld a, 1
 	ldh [rVBK], a
 
-	hlcoord 0, 0, wAttrMap
+	hlcoord 0, 0, wAttrmap
 	call .update
 
 	ld a, 0
@@ -232,9 +232,9 @@ THIRD_HEIGHT EQU SCREEN_HEIGHT / 3
 	ldh [hBGMapThird], a
 
 ; Rows of tiles in a third
-	ld a, SCREEN_HEIGHT / 3
+	ld a, THIRD_HEIGHT
 
-; Discrepancy between wTileMap and BGMap
+; Discrepancy between wTilemap and BGMap
 	ld bc, BG_MAP_WIDTH - (SCREEN_WIDTH - 1)
 
 .row

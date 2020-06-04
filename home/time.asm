@@ -1,6 +1,6 @@
 ; Functions relating to the timer interrupt and the real-time-clock.
 
-AskTimer::
+Unreferenced_Timer::
 	push af
 	ldh a, [hMobile]
 	and a
@@ -195,7 +195,7 @@ InitTime::
 	farcall _InitTime
 	ret
 
-PanicResetClock::
+ClearClock::
 	call .ClearhRTC
 	call SetClock
 	ret
@@ -256,7 +256,7 @@ SetClock::
 	call CloseSRAM ; unlatch clock, disable clock r/w
 	ret
 
-ClearRTCStatus::
+UnreferencedClearRTCStatus::
 ; clear sRTCStatusFlags
 	xor a
 	push af
