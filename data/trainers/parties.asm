@@ -2699,6 +2699,31 @@ BlackbeltGroup:
 	db 34, MACHOKE
 	db -1 ; end
 
+	; BLACKBELT_T (10)
+	db "Hideki", TRAINERTYPE_NORMAL
+	db 32, MACHOP
+	db 32, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT_T (11)
+	db "Hitoshi", TRAINERTYPE_NORMAL
+	db 31, MACHOP
+	db 31, MANKEY
+	db 31, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT_T (12)
+	db "Mike", TRAINERTYPE_NORMAL
+	db 31, MANKEY
+	db 31, MANKEY
+	db 31, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT_T (13)
+	db "Aaron", TRAINERTYPE_NORMAL
+	db 36, PRIMEAPE
+	db -1 ; end
+
 ExecutiveMGroup:
 	; EXECUTIVEM (1)
 	db "Executive@", TRAINERTYPE_MOVES
