@@ -3562,3 +3562,64 @@ MysticalmanGroup:
 	db 23, HAUNTER,    LICK, HYPNOSIS, MEAN_LOOK, CURSE
 	db 25, ELECTRODE,  SCREECH, SONICBOOM, THUNDER, ROLLOUT
 	db -1 ; end
+
+TrainingTrainerGroup:
+	; Traynee (1)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 25, CHANSEY	
+	db 25, CHANSEY	
+	db 25, CHANSEY	
+	db 25, CHANSEY	
+	db 25, CHANSEY	
+	db 25, CHANSEY	
+	db -1 ; end
+
+	; Traynee (2)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 40, CHANSEY	
+	db 40, CHANSEY	
+	db 40, CHANSEY	
+	db 40, CHANSEY	
+	db 40, CHANSEY	
+	db 40, CHANSEY	
+	db -1 ; end
+
+	; Traynee (3)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 55, BLISSEY	
+	db 55, BLISSEY	
+	db 55, BLISSEY	
+	db 55, BLISSEY	
+	db 55, BLISSEY	
+	db 55, BLISSEY	
+	db -1 ; end
+
+	; Traynee (4)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 70, BLISSEY	
+	db 70, BLISSEY	
+	db 70, BLISSEY	
+	db 70, BLISSEY	
+	db 70, BLISSEY	
+	db 70, BLISSEY	
+	db -1 ; end
+
+	; Traynee (5)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 80, BLISSEY
+	db 80, BLISSEY
+	db 80, BLISSEY
+	db 80, BLISSEY
+	db 80, BLISSEY
+	db 80, BLISSEY	
+	db -1 ; end
+
+	; Traynee (6)
+	db "Traynee@", TRAINERTYPE_NORMAL
+	db 90, BLISSEY	
+	db 90, BLISSEY	
+	db 90, BLISSEY	
+	db 90, BLISSEY	
+	db 90, BLISSEY	
+	db 90, BLISSEY	
+	db -1 ; end

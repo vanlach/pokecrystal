@@ -67,3 +67,4 @@ TrainerClassNames::
 	db "Officer@"
 	db "Rocket@"
 	db "Mysticalman@"
+	db "Trainer@"

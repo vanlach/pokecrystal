@@ -127,6 +127,7 @@ ROMX $2d
 ROMX $2e
 	"bank2E"
 	"Events"
+	"Trainer Pic Pointers"
 ROMX $2f
 	"Phone Scripts 2"
 ROMX $30
@@ -193,7 +194,6 @@ ROMX $49
 	"Unown Pic Pointers"
 	"Pics 2"
 ROMX $4a
-	"Trainer Pic Pointers"
 	"Pics 3"
 ROMX $4b
 	"Pics 4"
