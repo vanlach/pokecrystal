@@ -55,4 +55,4 @@ ArticunoChamber_MapEvents:
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  4,  2, SPRITE_ARTICUNO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ArticunoChamberArticuno, EVENT_ARTICUNO_CHAMBER_ARTICUNO
+	object_event  4,  2, SPRITE_HO_OH, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ArticunoChamberArticuno, EVENT_ARTICUNO_CHAMBER_ARTICUNO

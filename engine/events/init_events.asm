@@ -30,7 +30,7 @@ InitializeEvents:
 	push hl
 	farcall EngineFlagAction
 	pop hl
-	jr .flags_done
+	jr .flags_loop
 .flags_done
 
 ; initialize variable sprites

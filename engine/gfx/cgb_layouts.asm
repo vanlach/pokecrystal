@@ -227,27 +227,27 @@ _CGB_StatsScreenHPPals:
 	ld a, $2 ; exp palette
 	call ByteFill
 
-	hlcoord 11, 5, wAttrMap
+	hlcoord 11, 5, wAttrmap
 	lb bc, 2, 2
 	ld a, $3 ; pink page palette
 	call FillBoxCGB
 
-	hlcoord 13, 5, wAttrMap
+	hlcoord 13, 5, wAttrmap
 	lb bc, 2, 2
 	ld a, $4 ; green page palette
 	call FillBoxCGB
 
-	hlcoord 15, 5, wAttrMap
+	hlcoord 15, 5, wAttrmap
 	lb bc, 2, 2
 	ld a, $5 ; blue page palette
 	call FillBoxCGB
 
-	hlcoord 17, 5, wAttrMap
+	hlcoord 17, 5, wAttrmap
 	lb bc, 2, 2
 	ld a, $6 ; orange page palette
 	call FillBoxCGB
 
-	call ApplyAttrMap
+	call ApplyAttrmap
 	call ApplyPals
 	ld a, $1
 	ldh [hCGBPalUpdate], a
@@ -692,31 +692,31 @@ _CGB_TrainerCard:
 	; top-right corner still uses the border's palette
 	hlcoord 18, 1, wAttrmap
 	ld [hl], $1
-	hlcoord 3, 10, wAttrMap
+	hlcoord 3, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $1 ; falkner
 	call FillBoxCGB
-	hlcoord 7, 10, wAttrMap
+	hlcoord 7, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $2 ; bugsy
 	call FillBoxCGB
-	hlcoord 10, 10, wAttrMap
+	hlcoord 10, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $3 ; whitney
 	call FillBoxCGB
-	hlcoord 15, 10, wAttrMap
+	hlcoord 15, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $4 ; morty
 	call FillBoxCGB
-	hlcoord 3, 13, wAttrMap
+	hlcoord 3, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $5 ; chuck
 	call FillBoxCGB
-	hlcoord 7, 13, wAttrMap
+	hlcoord 7, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $6 ; jasmine
 	call FillBoxCGB
-	hlcoord 11, 13, wAttrMap
+	hlcoord 11, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $7 ; pryce
 	call FillBoxCGB
@@ -725,7 +725,7 @@ _CGB_TrainerCard:
 	and a
 	push af
 	jr z, .got_gender3
-	hlcoord 15, 13, wAttrMap
+	hlcoord 15, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $1
 	call FillBoxCGB
@@ -780,7 +780,7 @@ _CGB_TrainerCardPage3:
 	call FarCopyWRAM
 
 	; fill screen with opposite-gender palette for the card border
-	hlcoord 0, 0, wAttrMap
+	hlcoord 0, 0, wAttrmap
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
 	ld a, [wPlayerGender]
 	and a
@@ -790,7 +790,7 @@ _CGB_TrainerCardPage3:
 .got_gender
 	call ByteFill
 	; fill trainer sprite area with same-gender palette
-	hlcoord 14, 1, wAttrMap
+	hlcoord 14, 1, wAttrmap
 	lb bc, 7, 5
 	ld a, [wPlayerGender]
 	and a
@@ -800,48 +800,48 @@ _CGB_TrainerCardPage3:
 .got_gender2
 	call FillBoxCGB
 	
-	hlcoord 3, 10, wAttrMap
+	hlcoord 3, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $2 ; brock
 	call FillBoxCGB
 
-	hlcoord 7, 10, wAttrMap
+	hlcoord 7, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $3 ; misty
 	call FillBoxCGB
 
-	hlcoord 11, 10, wAttrMap
+	hlcoord 11, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $4 ; lt. surge
 	call FillBoxCGB
 
-	hlcoord 15, 10, wAttrMap
+	hlcoord 15, 10, wAttrmap
 	lb bc, 3, 3
 	ld a, $4 ; erika
 	call FillBoxCGB
 
-	hlcoord 3, 13, wAttrMap
+	hlcoord 3, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $5 ; janine
 	call FillBoxCGB
 
-	hlcoord 7, 13, wAttrMap
+	hlcoord 7, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $6 ; sabrina
 	call FillBoxCGB
 
-	hlcoord 11, 13, wAttrMap
+	hlcoord 11, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $3 ; blaine
 	call FillBoxCGB
 
-	hlcoord 15, 13, wAttrMap
+	hlcoord 15, 13, wAttrmap
 	lb bc, 3, 3
 	ld a, $7 ; blue
 	call FillBoxCGB
 
 	; top-right corner still uses the border's palette
-	hlcoord 18, 1, wAttrMap
+	hlcoord 18, 1, wAttrmap
 	ld a, [wPlayerGender]
 	and a
 	ld a, $1 ; kris
@@ -849,7 +849,7 @@ _CGB_TrainerCardPage3:
 	ld a, $0 ; chris
 .got_gender3
 	ld [hl], a
-	call ApplyAttrMap
+	call ApplyAttrmap
 	call ApplyPals
 	ld a, $1
 	ldh [hCGBPalUpdate], a

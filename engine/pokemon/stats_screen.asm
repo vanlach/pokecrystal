@@ -788,12 +788,12 @@ StatsScreen_LoadGFX:
 	call PrintHappiness
 	ret
 
-PrintMonDVs
-call DisplayMonDVLabels
-call GetMonDVs
-call DisplayMonDVs
+PrintMonDVs:
+	call DisplayMonDVLabels
+	call GetMonDVs
+	call DisplayMonDVs
 
-DisplayMonDVLabels
+DisplayMonDVLabels:
 .place_HP_label
 	ld de, HPString
 	hlcoord 1, 8
@@ -816,7 +816,7 @@ DisplayMonDVLabels
 	call PlaceString
 	ret
 
-GetMonDVs
+GetMonDVs:
 	; load DVs into hl
 	ld hl, wPartyMon1DVs
 	ld bc, PARTYMON_STRUCT_LENGTH
@@ -867,7 +867,7 @@ GetMonDVs
 	dec hl
 	ret
 
-DisplayMonDVs
+DisplayMonDVs:
 .display_HP_DV
 	; a = HPDV
 	hlcoord 1, 9
@@ -939,7 +939,7 @@ OTString:
 HappinessString:
 	db "Happiness:@"
 
-TN_PrintToD
+TN_PrintToD:
 	ld de, .caughtat
 	hlcoord 1, 11
 	call PlaceString

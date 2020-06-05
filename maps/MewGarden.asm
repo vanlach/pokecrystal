@@ -75,4 +75,4 @@ MewGarden_MapEvents:
 	bg_event 12,  6, BGEVENT_READ, MewGardenShrineText
 
 	db 1 ; object events
-	object_event 9, 4, SPRITE_MEW, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Mew, EVENT_MEW_GARDEN_MEW
+	object_event 9, 4, SPRITE_FAIRY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Mew, EVENT_MEW_GARDEN_MEW

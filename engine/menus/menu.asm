@@ -9,6 +9,18 @@ _2DMenu_::
 	call Get2DMenuSelection
 	ret
 
+_InterpretBattleMenu::
+	ld hl, CopyMenuData
+	ld a, [wMenuData_2DMenuItemStringsBank]
+	rst FarCall
+
+	call Draw2DMenu
+	farcall MobileTextBorder
+	call UpdateSprites
+	call ApplyTilemap
+	call Get2DMenuSelection
+	ret
+
 _InterpretMobileMenu::
 	ld hl, CopyMenuData
 	ld a, [wMenuData_2DMenuItemStringsBank]
