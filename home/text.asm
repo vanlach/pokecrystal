@@ -1087,4 +1087,4 @@ TextCommand_DAY::
 .Thurs:  db "Thurs@"
 .Fri:    db "Fri@"
 .Satur:  db "Satur@"
-.Day:    db "Day@"
+.Day:    db "day@"

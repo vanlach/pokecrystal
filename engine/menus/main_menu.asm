@@ -308,7 +308,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	db "Fri@"
 	db "Satur@"
 .Day:
-	db "Day@"
+	db "day@"
 
 Function49ed0:
 	xor a
