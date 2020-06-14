@@ -2609,7 +2609,7 @@ wPokegearFlags::
 	db
 wRadioTuningKnob:: db
 wLastDexMode:: db
-	ds 1
+wCurPokedexColor:: db ; current dex color
 wWhichRegisteredItem:: db ; d95b
 wRegisteredItem:: db ; d95c
 

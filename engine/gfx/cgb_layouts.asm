@@ -261,7 +261,54 @@ INCLUDE "gfx/stats/stats.pal"
 
 _CGB_Pokedex:
 	ld de, wBGPals1
+	ld a, [wCurPokedexColor]
+	cp DEXCOLOR_BLUE
+	jr nz, .Purple
+	ld a, PREDEFPAL_TRADE_TUBE
+	jr .setColor
+.Purple
+	cp DEXCOLOR_PURPLE
+	jr nz, .Brown
+	ld a, PREDEFPAL_RB_PURPLEMON
+	jr .setColor
+.Brown
+	cp DEXCOLOR_BROWN
+	jr nz, .Green
+	ld a, PREDEFPAL_RB_BROWNMON
+	jr .setColor
+.Green
+	cp DEXCOLOR_GREEN
+	jr nz, .Pink
+	ld a, PREDEFPAL_RB_GREENMON
+	jr .setColor
+.Pink
+	cp DEXCOLOR_PINK
+	jr nz, .Yellow
+	ld a, PREDEFPAL_RB_PINKMON
+	jr .setColor
+.Yellow
+	cp DEXCOLOR_YELLOW
+	jr nz, .Cyan
+	ld a, PREDEFPAL_RB_YELLOWMON
+	jr .setColor
+.Cyan
+	cp DEXCOLOR_CYAN
+	jr nz, .Gray
+	ld a, PREDEFPAL_RB_CYANMON
+	jr .setColor
+.Gray
+	cp DEXCOLOR_GRAY
+	jr nz, .Mewtwo
+	ld a, PREDEFPAL_CGB_BADGE
+	jr .setColor
+.Mewtwo
+	cp DEXCOLOR_MEWTWO
+	jr nz, .Red
+	ld a, PREDEFPAL_DIPLOMA
+	jr .setColor	
+.Red
 	ld a, PREDEFPAL_POKEDEX
+.setColor
 	call GetPredefPal
 	call LoadHLPaletteIntoDE ; dex interface palette
 	ld a, [wCurPartySpecies]
