@@ -1755,4 +1755,4 @@ Movement_ContestResults_WalkAfterWarp:
 	step RIGHT
 	step DOWN
 	turn_head UP
-	step_resume
+	step_end

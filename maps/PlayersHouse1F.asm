@@ -192,8 +192,7 @@ MomTurnsBackMovement:
 
 MomWalksBackMovement:
 	slow_step LEFT
-	; step_end causes moving artifacts, so we use:
-	step_resume
+	step_end
 
 ElmsLookingForYouText:
 	text "Oh, <PLAYER>…! Our"

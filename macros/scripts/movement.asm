@@ -124,9 +124,10 @@ step_end: MACRO
 	db movement_step_end
 ENDM
 
-	enum movement_step_resume
-step_resume: MACRO
-	db movement_step_resume ; $48
+	enum movement_step_48 ; $48
+step_48: MACRO
+	db movement_step_48
+	db \1 ; ???
 ENDM
 
 	enum movement_remove_object ; $49
@@ -217,10 +218,3 @@ ENDM
 skyfall_top: MACRO
 	db movement_skyfall_top
 ENDM
-
-	enum movement_run_step
-run_step: MACRO
-	db movement_run_step + \1 ; $5a
-ENDM
-
-__enum__ = __enum__ + 3

@@ -72,7 +72,7 @@ MovementPointers:
 	dw Movement_step_sleep_8          ; 45
 	dw Movement_step_sleep            ; 46
 	dw Movement_step_end              ; 47
-	dw Movement_step_resume           ; 48
+	dw Movement_48                    ; 48
 	dw Movement_remove_object         ; 49
 	dw Movement_step_loop             ; 4a
 	dw Movement_4b                    ; 4b
@@ -90,10 +90,6 @@ MovementPointers:
 	dw Movement_rock_smash            ; 57
 	dw Movement_return_dig            ; 58
 	dw Movement_skyfall_top           ; 59
-	dw Movement_run_step_down         ; 5a
-	dw Movement_run_step_up           ; 5b
-	dw Movement_run_step_left         ; 5c
-	dw Movement_run_step_right        ; 5d
 
 Movement_teleport_from:
 	ld hl, OBJECT_STEP_TYPE
@@ -198,16 +194,7 @@ Movement_step_loop:
 	jp ContinueReadingMovement
 
 Movement_step_end:
-; check for player object
-	ld hl, OBJECT_MAP_OBJECT_INDEX
-	add hl, bc
-	ld a, [hl]
-	and a
-	ld a, SPRITEMOVEDATA_PLAYER
-	jr z, .player
-	xor a
-
-.player
+	call RestoreDefaultMovement
 	ld hl, OBJECT_MOVEMENTTYPE
 	add hl, bc
 	ld [hl], a
@@ -224,7 +211,7 @@ Movement_step_end:
 	ld [hl], STEP_TYPE_SLEEP
 	ret
 
-Movement_step_resume:
+Movement_48:
 	call RestoreDefaultMovement
 	ld hl, OBJECT_MOVEMENTTYPE
 	add hl, bc
@@ -234,12 +221,17 @@ Movement_step_resume:
 	add hl, bc
 	ld [hl], $0
 
-	ld hl, wVramState
-	res 7, [hl]
+	call JumpMovementPointer
+	ld hl, OBJECT_STEP_DURATION
+	add hl, bc
+	ld [hl], a
 
 	ld hl, OBJECT_STEP_TYPE
 	add hl, bc
-	ld [hl], STEP_TYPE_SLEEP
+	ld [hl], STEP_TYPE_03
+
+	ld hl, wVramState
+	res 7, [hl]
 	ret
 
 Movement_remove_object:
@@ -447,69 +439,51 @@ TurnHead:
 
 Movement_slow_step_down:
 	ld a, STEP_SLOW << 2 | DOWN
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_slow_step_up:
 	ld a, STEP_SLOW << 2 | UP
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_slow_step_left:
 	ld a, STEP_SLOW << 2 | LEFT
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_slow_step_right:
 	ld a, STEP_SLOW << 2 | RIGHT
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_step_down:
 	ld a, STEP_WALK << 2 | DOWN
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_step_up:
 	ld a, STEP_WALK << 2 | UP
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_step_left:
 	ld a, STEP_WALK << 2 | LEFT
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_step_right:
 	ld a, STEP_WALK << 2 | RIGHT
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_big_step_down:
 	ld a, STEP_BIKE << 2 | DOWN
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_big_step_up:
 	ld a, STEP_BIKE << 2 | UP
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_big_step_left:
 	ld a, STEP_BIKE << 2 | LEFT
-	jp Movement_do_step
+	jp NormalStep
 
 Movement_big_step_right:
 	ld a, STEP_BIKE << 2 | RIGHT
-Movement_do_step:
-	ld d, OBJECT_ACTION_STEP
-Movement_normal_step:
 	jp NormalStep
-
-Movement_run_step_down:
-	ld a, $3 << 2 | DOWN  ; STEP_RUN
-	jr Movement_do_run
-Movement_run_step_up:
-	ld a, $3 << 2 | UP    ; STEP_RUN
-	jr Movement_do_run
-Movement_run_step_left:
-	ld a, $3 << 2 | LEFT  ; STEP_RUN
-	jr Movement_do_run
-Movement_run_step_right:
-	ld a, $3 << 2 | RIGHT ; STEP_RUN
-Movement_do_run:
-	ld d, OBJECT_ACTION_RUN
-	jr Movement_normal_step
 
 Movement_turn_away_down:
 	ld a, STEP_SLOW << 2 | DOWN
@@ -686,13 +660,11 @@ TurnStep:
 	ret
 
 NormalStep:
-	push de
 	call InitStep
 	call UpdateTallGrassFlags
 	ld hl, OBJECT_ACTION
 	add hl, bc
-	pop de
-	ld [hl], d
+	ld [hl], OBJECT_ACTION_STEP
 
 	ld hl, OBJECT_NEXT_TILE
 	add hl, bc

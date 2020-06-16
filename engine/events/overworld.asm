@@ -698,7 +698,7 @@ Script_UsedWaterfall:
 
 .WaterfallStep:
 	turn_waterfall UP
-	step_resume
+	step_end
 
 .UseWaterfallText:
 	text_far _UseWaterfallText
@@ -866,12 +866,12 @@ EscapeRopeOrDig:
 .DigOut:
 	step_dig 32
 	hide_object
-	step_resume
+	step_end
 
 .DigReturn:
 	show_object
 	return_dig 32
-	step_resume
+	step_end
 
 TeleportFunction:
 	call FieldMoveJumptableReset
@@ -950,11 +950,11 @@ TeleportFunction:
 
 .TeleportFrom:
 	teleport_from
-	step_resume
+	step_end
 
 .TeleportTo:
 	teleport_to
-	step_resume
+	step_end
 
 StrengthFunction:
 	call .TryStrength
@@ -1381,7 +1381,7 @@ RockSmashScript:
 
 MovementData_0xcf55:
 	rock_smash 10
-	step_resume
+	step_end
 
 UseRockSmashText:
 	text_far _UseRockSmashText
@@ -1554,7 +1554,7 @@ Script_GotABite:
 	fish_got_bite
 	fish_got_bite
 	show_emote
-	step_resume
+	step_end
 
 .Movement_FacingUp:
 	fish_got_bite
@@ -1563,12 +1563,12 @@ Script_GotABite:
 	fish_got_bite
 	step_sleep 1
 	show_emote
-	step_resume
+	step_end
 
 .Movement_RestoreRod:
 	hide_emote
 	fish_cast_rod
-	step_resume
+	step_end
 
 Fishing_CheckFacingUp:
 	ld a, [wPlayerDirection]

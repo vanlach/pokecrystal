@@ -184,8 +184,7 @@ Movement_SilverShovesYouOut_NBT:
 
 Movement_SilverReturnsToTheShadows_NBT:
 	step RIGHT
-	; step_end causes moving artifacts, so we use:
-	step_resume
+	step_end
 
 Text_GearIsImpressive:
 	text "Wow, your #gear"

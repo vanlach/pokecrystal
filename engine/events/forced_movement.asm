@@ -27,25 +27,25 @@ Script_ForcedMovement::
 	turn_in DOWN
 	step_dig 16
 	turn_head DOWN
-	step_resume
+	step_end
 
 .MovementData_down:
 	step_dig 16
 	turn_in UP
 	step_dig 16
 	turn_head UP
-	step_resume
+	step_end
 
 .MovementData_right:
 	step_dig 16
 	turn_in LEFT
 	step_dig 16
 	turn_head LEFT
-	step_resume
+	step_end
 
 .MovementData_left:
 	step_dig 16
 	turn_in RIGHT
 	step_dig 16
 	turn_head RIGHT
-	step_resume
+	step_end
