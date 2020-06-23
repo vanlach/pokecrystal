@@ -69,8 +69,8 @@ MonMenuIconPals:
 	icon_pals BROWN,  GRAY   ; Abra
 	icon_pals BROWN,  GRAY   ; Kadabra
 	icon_pals BROWN,  PINK   ; Alakazam
-	icon_pals TEAL,   BROWN  ; Machop
-	icon_pals PURPLE, GREEN  ; Machoke
+	icon_pals GRAY,   BROWN  ; Machop
+	icon_pals GRAY,   GREEN  ; Machoke
 	icon_pals GRAY,   GREEN  ; Machamp
 	icon_pals GREEN,  BROWN  ; Bellsprout
 	icon_pals GREEN,  BROWN  ; Weepinbell
@@ -150,9 +150,9 @@ MonMenuIconPals:
 	icon_pals BLUE,   GRAY   ; Articuno
 	icon_pals BROWN,  RED    ; Zapdos
 	icon_pals RED,    PINK   ; Moltres
-	icon_pals TEAL,   PINK   ; Dratini
-	icon_pals TEAL,   PINK   ; Dragonair
-	icon_pals BROWN,  GREEN  ; Dragonite
+	icon_pals BLUE,   PINK   ; Dratini
+	icon_pals BLUE,   PINK   ; Dragonair
+	icon_pals BROWN,  PINK   ; Dragonite
 	icon_pals PURPLE, GREEN  ; Mewtwo
 	icon_pals PINK,   TEAL   ; Mew
 	icon_pals GREEN,  BROWN  ; Chikorita

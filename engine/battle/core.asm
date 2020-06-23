@@ -6091,8 +6091,6 @@ LoadEnemyMon:
 	ld a, [wBaseItem1]
 	jr z, .UpdateItem
 
-; Sometimes Pokémon will have a berry
-
 ; 50% chance to get any item at all
 	call BattleRandom
 	cp 50 percent + 1
@@ -6105,7 +6103,8 @@ LoadEnemyMon:
 	ld a, [wBaseItem1]
 	jr nc, .UpdateItem
 
-	; 12.5% chance of getting item 2
+; 12.5% chance of getting item 2
+	; credit i-am-the-pokeman
 	cp 50 percent
 	ld a, [wBaseItem2]
 	jr nc, .UpdateItem

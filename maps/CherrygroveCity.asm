@@ -183,11 +183,13 @@ CherrygroveSilverSceneNorth:
 	showemote EMOTE_SHOCK, CHERRYGROVECITY_SILVER, 15
 	turnobject CHERRYGROVECITY_SILVER, RIGHT
 	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalTakesTrainerCard
+	turnobject PLAYER, UP
 	opentext
 	writetext CherrygroveCitySilverForgotTrainerCardText
 	waitbutton
 	closetext
 	turnobject CHERRYGROVECITY_SILVER, LEFT
+	turnobject PLAYER, LEFT
 	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalExitsStageLeft
 	disappear CHERRYGROVECITY_SILVER
 	setscene SCENE_CHERRYGROVECITY_NOTHING
