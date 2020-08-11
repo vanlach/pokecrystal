@@ -25,7 +25,7 @@ Some of the notable features are:
 * Pokémon stats updated to generation 8, some type reworks, and some move buffs.
 * Tons of bug fixes.
 
-For an extensive list of changes, look at the [FEATURES.md]() file as well as a list of credits.
+For an extensive list of changes, look at the [FEATURES.md](FEATURES.md) file as well as a list of credits.
 
 ---
 
