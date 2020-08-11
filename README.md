@@ -1,3 +1,34 @@
+# Pokémon Crystal Flair
+
+This is an enhancement hack of Pokémon Crystal based on the disassembly of Pokémon Crystal (more info below).
+
+If you've stumbled upon this hack then feel free to build and play it yourself! All badges should be obtainable unless I've messed something up somewhere.
+
+This is a personal hack that I've been working on sporadically. I don't plan on advertising this since probably 80% of the changes are not originally mine. I've done my best to indicate where I got any non-original code in the commit descriptions as well as having a general credits list in FEATURES.md
+
+Some of the notable features are:
+
+* The addition of Fairy type.
+* New evolution methods.
+* Increased shiny odds.
+* Physical Special Split.
+* Gen 6 style exp gain.
+* Individual menu icons with colors for every Pokémon and their shiny.
+* Running shoes.
+* Full text decapitalization.
+* New maps. Some familiar ones restored, some got additions, and some completely new maps.
+* All 251 Pokémon can be obtained.
+* Tons of new events.
+* Gym leaders and Elite Four members have full teams of 6 Pokémon. Gym leaders can also be rematched.
+* Infinite TMs and deletable HMs.
+* HMs can be used just by having the required badge, no more HM slaves.
+* Pokémon stats updated to generation 8, some type reworks, and some move buffs.
+* Tons of bug fixes.
+
+For an extensive list of changes, look at the [FEATURES.md]() file as well as a list of credits.
+
+---
+
 # Pokémon Crystal [![Build Status][travis-badge]][travis]
 
 This is a disassembly of Pokémon Crystal.
