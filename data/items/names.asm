@@ -23,7 +23,7 @@ ItemNames::
 	db "Fire Stone@"
 	db "Thunderstone@"
 	db "Water Stone@"
-	db "TERU-SAMA@"
+	db "Pocket PC@"
 	db "HP Up@"
 	db "Protein@"
 	db "Iron@"
