@@ -13,7 +13,7 @@ FindItemInBallScript::
 	opentext
 	writetext .FoundItemText
 	playsound SFX_ITEM
-	pause 15
+	pause 30
 	itemnotify
 	closetext
 	end
