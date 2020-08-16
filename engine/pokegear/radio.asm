@@ -244,10 +244,11 @@ rept 4
 	inc hl
 endr
 	; Generate a number, either 0, 1, or 2, to choose a time of day.
+	; Can't pick 3 since evening does not have wild data.
 .loop2
 	call Random
 	maskbits NUM_DAYTIMES
-	cp DARKNESS_F
+	cp EVE_F
 	jr z, .loop2
 
 	ld bc, 2 * NUM_GRASSMON
@@ -575,7 +576,7 @@ OaksPKMNTalk11:
 	jp PlaceRadioString
 
 .pokemon_string
-	db "#MON@"
+	db "#mon@"
 
 OaksPKMNTalk12:
 	ld hl, wRadioTextDelay
@@ -587,7 +588,7 @@ OaksPKMNTalk12:
 	jp PlaceRadioString
 
 .pokemon_channel_string
-	db "#MON Channel@"
+	db "#mon Channel@"
 
 OaksPKMNTalk13:
 	ld hl, wRadioTextDelay
@@ -1705,11 +1706,11 @@ BuenasPassword21:
 BuenasPasswordCheckTime:
 	call UpdateTime
 	ldh a, [hHours]
-	cp NITE_HOUR
+	cp EVE_HOUR
 	ret
 
 BuenasPasswordChannelName:
-	db "BUENA'S PASSWORD@"
+	db "Buena's Password@"
 
 BuenaRadioText1:
 	text_far _BuenaRadioText1

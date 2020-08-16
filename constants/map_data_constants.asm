@@ -31,7 +31,7 @@ MAP_NONE   EQU 0
 	const PALETTE_DAY
 	const PALETTE_NITE
 	const PALETTE_MORN
-	const PALETTE_DARK
+	const PALETTE_EVE
 
 ; FishGroups indexes (see data/wild/fish.asm)
 	const_def

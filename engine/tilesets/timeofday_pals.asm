@@ -186,10 +186,17 @@ endr
 	ret
 
 ReplaceTimeOfDayPals:
-	ld hl, .BrightnessLevels
 	ld a, [wMapTimeOfDay]
-	cp $4 ; Dark cave, needs Flash
-	jr z, .DarkCave
+	bit IN_DARKNESS_F, a
+	jr z, .not_dark
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_FLASH_F, a
+	jr nz, .not_dark
+	ld a, DARKNESS_PALSET
+	jr .done
+
+.not_dark:
+	ld hl, BrightnessLevels
 	and $7
 	add l
 	ld l, a
@@ -197,31 +204,17 @@ ReplaceTimeOfDayPals:
 	adc h
 	ld h, a
 	ld a, [hl]
-	ld [wTimeOfDayPalset], a
-	ret
-
-.DarkCave:
-	ld a, [wStatusFlags]
-	bit STATUSFLAGS_FLASH_F, a
-	jr nz, .UsedFlash
-	ld a, %11111111 ; 3, 3, 3, 3
-	ld [wTimeOfDayPalset], a
-	ret
-
-.UsedFlash:
-	ld a, %10101010 ; 2, 2, 2, 2
+.done:
 	ld [wTimeOfDayPalset], a
 	ret
 
 .BrightnessLevels:
-	dc 3, 2, 1, 0
+; EVE_F, NITE_F, DAY_F, MORN_F
+	dc 3, 2, 1, 2
 	dc 1, 1, 1, 1
 	dc 2, 2, 2, 2
 	dc 0, 0, 0, 0
 	dc 3, 3, 3, 3
-	dc 3, 2, 1, 0
-	dc 3, 2, 1, 0
-	dc 3, 2, 1, 0
 
 GetTimePalette:
 	ld a, [wTimeOfDay]
@@ -236,10 +229,10 @@ GetTimePalette:
 	jp hl
 
 .TimePalettes:
-	dw .MorningPalette
-	dw .DayPalette
-	dw .NitePalette
-	dw .DarknessPalette
+	dw .MorningPalette ; MORN_F
+	dw .DayPalette     ; DAY_F
+	dw .NitePalette    ; NITE_F
+	dw .EveningPalette ; EVE_F
 
 .MorningPalette:
 	ld a, [wTimeOfDayPalset]
@@ -259,7 +252,7 @@ GetTimePalette:
 	swap a
 	ret
 
-.DarknessPalette:
+.EveningPalette:
 	ld a, [wTimeOfDayPalset]
 	and %11000000 ; 3
 	rlca
