@@ -2179,6 +2179,7 @@ GetMapMusic::
 	push bc
 	ld de, MAP_MUSIC
 	call GetMapField
+	call ChangeMusicIfNight
 	ld a, c
 	cp MUSIC_MAHOGANY_MART
 	jr z, .mahoganymart
@@ -2277,4 +2278,19 @@ InexplicablyEmptyFunction::
 rept 16
 	nop
 endr
+	ret
+
+ChangeMusicIfNight::
+	ld a, [wTimeOfDay]
+	cp NITE_F
+	ret c
+	ld hl, NightMusicTable
+.loop
+	ld a, [hli]
+	cp -1
+	ret z
+	cp c
+	ld a, [hli]
+	jr nz, .loop
+	ld c, a
 	ret

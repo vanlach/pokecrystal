@@ -67,6 +67,10 @@ PlayBattleMusic:
 
 .kantowild
 	ld de, MUSIC_KANTO_WILD_BATTLE
+	ld a, [wTimeOfDay]
+	cp NITE_F
+	jr c, .done ; not NITE_F or EVE_F
+	ld de, MUSIC_KANTO_WILD_BATTLE_NIGHT
 	jr .done
 
 .trainermusic
