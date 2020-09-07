@@ -8,9 +8,11 @@ This is a personal hack that I've been working on sporadically. I don't plan on 
 
 Some of the notable features are:
 
+(Please note: This hack is still incomplete in some regards, though it is possible to beat the Pokémon League and get all 16 badges (barring any unforseen bugs).)
+
 * The addition of Fairy type.
 * New evolution methods.
-* Increased shiny odds.
+* Increased shiny odds (1/50).
 * Physical Special Split.
 * Gen 6 style exp gain.
 * Individual menu icons with colors for every Pokémon and their shiny.
@@ -25,7 +27,9 @@ Some of the notable features are:
 * Pokémon stats updated to generation 8, some type reworks, and some move buffs.
 * Tons of bug fixes.
 
-For an extensive list of changes, look at the [FEATURES.md](FEATURES.md) file as well as a list of credits.
+For an extensive list of changes, look at the [FEATURES.md](FEATURES.md) file. 
+
+A list of credits is located at the bottom of the [FEATURES.md](FEATURES.md) file.
 
 ---
 
